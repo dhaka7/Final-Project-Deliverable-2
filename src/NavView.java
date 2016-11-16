@@ -45,8 +45,8 @@ public class NavView extends JFrame{
         nVpanel.removeSplash();
         nVpanel.removeMain();
         nVpanel.removeOptions();
-        //nVpanel.removeInstructions();
-        //nVpanel.addCredits();
+        nVpanel.removeInstructions();
+        nVpanel.addCredits();
     }
     
     public void swtichToInstructionsPanel()
