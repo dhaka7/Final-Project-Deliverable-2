@@ -5,10 +5,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
-public class NavViewSplashPanel extends JPanel {
+public class SplashScreenPanel extends JPanel {
     JButton splashButton;
     JLabel optionsLabel;
-    NavViewSplashPanel()
+    SplashScreenPanel()
     {
          splashButton = new JButton(new ImageIcon("file:/Users/RamsonDhaka/Desktop/final pic.png"));            
             add(splashButton);
