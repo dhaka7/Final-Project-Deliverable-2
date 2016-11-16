@@ -10,8 +10,8 @@ public class NavViewPanel extends JPanel{
     
     OptionsView o_view;
     MainView m_view;
-    CreditsView c_view;
-    InstructionsView i_view;
+    Credits c_view;
+    Instructions i_view;
     
     public NavViewPanel() {
         super();
@@ -42,7 +42,7 @@ public class NavViewPanel extends JPanel{
         repaint();
     }    
     
-    public void addCredits(CreditsView c_view)
+    public void addCredits(Credits c_view)
     {
         this.c_view = c_view;
         add(c_view, BorderLayout.CENTER);
@@ -77,6 +77,18 @@ public class NavViewPanel extends JPanel{
         if (this.m_view != null)
             remove(this.m_view);
     }    
+    
+    public void removeCredits()
+    {
+        if(this.c_view != null)
+            remove(this.c_view);
+    }
+    
+    public void removeInstructions()
+    {
+        if(this.i_view != null)
+            remove(this.i_view);
+    }
     
     public void removeSplash()
     {
