@@ -14,10 +14,10 @@ public class Instructions extends JPanel{
     {
         setLayout(new FlowLayout());
         
-        Instructions = new JTextArea("");
+        instructions = new JTextArea("");
         
         back = new JButton("Return");
-        add(Instructions); 
+        add(instructions); 
         add(back);
     }
     
