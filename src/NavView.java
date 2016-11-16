@@ -26,14 +26,36 @@ public class NavView extends JFrame{
     {
         nVpanel.removeSplash();
         nVpanel.removeMain();
-        nVpanel.addOptions(o_view);        
+        //nVPanel.removeCredits();
+        //nVpanel.removeInstructions();
+        nVpanel.addOptions(o_view);   
     }
     
     public void switchToMainPanel(MainView m_view)
     {
         nVpanel.removeSplash();
         nVpanel.removeOptions();
+        //nVpanel.removeCredits();
+        //nVpanel.removeInstructions();
         nVpanel.addMain(m_view);        
+    }
+    
+    public void switchToCreditsPanel()
+    {
+        nVpanel.removeSplash();
+        nVpanel.removeMain();
+        nVpanel.removeOptions();
+        //nVpanel.removeInstructions();
+        //nVpanel.addCredits();
+    }
+    
+    public void swtichToInstructionsPanel()
+    {
+        nVpanel.removeSplash();
+        nVpanel.removeMain();
+        nVpanel.removeOptions();
+        //nVPanel.removeCredits();
+        //nVpanel.addInstructions();
     }
     
     
