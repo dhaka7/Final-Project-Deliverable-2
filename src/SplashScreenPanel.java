@@ -10,11 +10,11 @@ public class SplashScreenPanel extends JPanel {
     JLabel optionsLabel;
     SplashScreenPanel()
     {
-         splashButton = new JButton(new ImageIcon("file:/Users/RamsonDhaka/Desktop/final pic.png"));            
+         splashButton = new JButton(new ImageIcon("/Users/RamsonDhaka/NetBeansProjects/Final Project Deliverable #2/final pic.png"));            
             add(splashButton);
+            setSize(900, 700);
             
-            optionsLabel = new JLabel("No options selected yet.");
-            add(optionsLabel);
+
     }
     
 }
