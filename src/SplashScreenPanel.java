@@ -10,7 +10,7 @@ public class SplashScreenPanel extends JPanel {
     JLabel optionsLabel;
     SplashScreenPanel()
     {
-         splashButton = new JButton(new ImageIcon("/Users/RamsonDhaka/NetBeansProjects/Final Project Deliverable #2/final pic.png"));            
+         splashButton = new JButton(new ImageIcon("src/pkgfinal/Image/final pic.png"));            
             add(splashButton);
             setSize(900, 700);
             
