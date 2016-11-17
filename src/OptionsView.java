@@ -25,7 +25,7 @@ public class OptionsView extends JPanel{
             difficulty.setPaintLabels(true);
             difficulty.setPaintTicks(true);
 
-            EnterDiff = new JLabel("  Enter Difficulty:");
+            EnterDiff = new JLabel(" Enter Difficulty:");
 
             // It may be useful to have a Save & Return button
             
