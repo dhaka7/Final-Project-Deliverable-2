@@ -11,7 +11,7 @@ public class NavView extends JFrame{
     
     NavView(NavModel model)
     {
-        super("Primary View");
+        super("Welcome to TRIvia Game Home Page");
         this.model = model;
                           
         setSize(700, 500);
