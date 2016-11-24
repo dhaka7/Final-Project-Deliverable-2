@@ -1,10 +1,13 @@
 
 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
-public class NavViewBottomMenuPanel extends JPanel {
+public class NavViewBottomMenuPanel extends JPanel{
 
     JButton mainButton;
     JButton optionsButton;
