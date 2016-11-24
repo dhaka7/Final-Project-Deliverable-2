@@ -5,36 +5,32 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JTextField;
 
+public class OptionsView extends JPanel {
 
-public class OptionsView extends JPanel{
-        JButton retButton;
-        JTextField playerName;
-        JLabel EnterDiff;
-        JSlider difficulty;
-        
-        OptionsModel o_model;
-        
-        OptionsView(OptionsModel o_model)
-        {
-            this.o_model = o_model;
-                   
-            
-            playerName = new JTextField("--Enter Player Name--");
-            difficulty = new JSlider(JSlider.HORIZONTAL, 1,10,5);
-            difficulty.setMajorTickSpacing(1);
-            difficulty.setPaintLabels(true);
-            difficulty.setPaintTicks(true);
+    JButton retButton;
+    JTextField playerName;
+    JLabel EnterDiff;
+    JSlider difficulty;
 
-            EnterDiff = new JLabel(" Enter Difficulty:");
+    OptionsModel o_model;
 
-            // It may be useful to have a Save & Return button
-            
-            //retButton = new JButton("Save and Return");
+    OptionsView(OptionsModel o_model) {
+        this.o_model = o_model;
 
-            add(playerName);
-            add(EnterDiff);
-            add(difficulty);
+        playerName = new JTextField("--Enter Player Name--");
+        difficulty = new JSlider(JSlider.HORIZONTAL, 1, 10, 5);
+        difficulty.setMajorTickSpacing(1);
+        difficulty.setPaintLabels(true);
+        difficulty.setPaintTicks(true);
 
-            //add(retButton);               
-        }
+        EnterDiff = new JLabel(" Enter Difficulty:");
+
+        // It may be useful to have a Save & Return button
+        //retButton = new JButton("Save and Return");
+        add(playerName);
+        add(EnterDiff);
+        add(difficulty);
+
+        //add(retButton);               
+    }
 }

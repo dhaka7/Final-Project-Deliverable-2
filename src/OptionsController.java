@@ -4,11 +4,9 @@
  * and open the template in the editor.
  */
 
-
 public class OptionsController {
-    
-    OptionsController(OptionsModel o_model, OptionsView o_view)
-    {
-        
-    }    
+
+    OptionsController(OptionsModel o_model, OptionsView o_view) {
+
+    }
 }

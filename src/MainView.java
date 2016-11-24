@@ -1,13 +1,13 @@
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
+public class MainView extends JPanel {
 
-public class MainView extends JPanel{
-     MainView()
-    {
-        JButton welcomeButton = new JButton("Welcome to TRIvia!");
-        add(welcomeButton);
-    
+    JTextField textField;
+    MainView() {
+        textField = new JTextField("Please Set Your Settings");
+        
     }
 }
