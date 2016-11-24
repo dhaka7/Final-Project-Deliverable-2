@@ -5,12 +5,12 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 
-public class Instructions extends JPanel{
+public class InstructionView extends JPanel{
     
     JTextArea instructions;
     JButton back;
     
-    Instructions()
+    InstructionView()
     {
         setLayout(new FlowLayout());
         

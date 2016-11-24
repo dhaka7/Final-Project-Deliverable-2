@@ -12,9 +12,9 @@ public class NavController {
     OptionsView o_view;
     OptionsController o_Controller;  
     
-    Instructions i_view;
+    InstructionView i_view;
     
-    Credits c_view;
+    CreditView c_view;
            
     // TODO: Create instances of your MainModel and MainController once you implement them
     MainView m_view;
@@ -28,9 +28,9 @@ public class NavController {
         
         m_view = new MainView();
         
-        i_view = new Instructions();
+        i_view = new InstructionView();
         
-        c_view = new Credits();
+        c_view = new CreditView();
                 
         n_view.addOptionsButtonListener(new OptionsButtonListener());
         n_view.addMainButtonListener(new MainButtonListener());     

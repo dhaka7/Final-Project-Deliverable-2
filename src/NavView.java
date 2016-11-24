@@ -40,7 +40,7 @@ public class NavView extends JFrame{
         nVpanel.addMain(m_view);        
     }
     
-    public void switchToCreditsPanel(Credits c_view)
+    public void switchToCreditsPanel(CreditView c_view)
     {
         nVpanel.removeSplash();
         nVpanel.removeMain();
@@ -49,7 +49,7 @@ public class NavView extends JFrame{
         nVpanel.addCredits(c_view);
     }
     
-    public void swtichToInstructionsPanel(Instructions i_view)
+    public void swtichToInstructionsPanel(InstructionView i_view)
     {
         nVpanel.removeSplash();
         nVpanel.removeMain();

@@ -4,11 +4,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 
-public class Credits extends JPanel {
+public class CreditView extends JPanel {
     JButton goBack;
     JTextArea text;
     
-    Credits(){
+    CreditView(){
         text = new JTextArea("Credits: \n Dhaka Kharel \n Oscar Sanjuan \n Andy Lam ");
         goBack = new JButton("Return");
         
