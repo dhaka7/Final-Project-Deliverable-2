@@ -28,6 +28,7 @@ public class NavController {
         n_view.addMainButtonListener(new MainButtonListener());
         n_view.addInstructionsButtonListener(new InstructionButtonListener());
         n_view.addCreditsButtonLIstener(new CreditButtonListener());
+        o_view.addSaveButtonListener(new OptionSaveButtonListener());
     }
 
     class OptionsButtonListener implements ActionListener {
@@ -59,6 +60,17 @@ public class NavController {
         public void actionPerformed(ActionEvent e) {
             //Pass a Main View object to our Navigation View
             n_view.switchToCreditsPanel(c_view);
+        }
+    }
+
+    class OptionSaveButtonListener implements ActionListener {
+
+        public void actionPerformed(ActionEvent ae) {
+            o_view.getSettingSaveState().setText("Saved");
+            m_view.getDifficulty().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
+            m_view.getUserName().setText("Username: " + o_view.getUserName().getText());
+            o_view.getUserNameLabel().setText("Username: " + o_view.getUserName().getText());
+            o_view.getDifficultyLabel().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
         }
     }
 }

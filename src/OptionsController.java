@@ -14,20 +14,13 @@ public class OptionsController {
 
     OptionsModel o_model;
     OptionsView o_view;
+    NavView n_view;
     MainView m_view;
 
     OptionsController(OptionsModel o_model, OptionsView o_view) {
-        m_view = new MainView();
         this.o_model = o_model;
         this.o_view = o_view;
-        o_view.addSaveSettingButtonListener(new ButtonListener());
     }
 
-    class ButtonListener implements ActionListener {
-
-        public void actionPerformed(ActionEvent ae) {
-            o_view.getSettingSaveState().setText("Saved");
-            m_view.getDifficulty().setText("1");
-        }
-    }
+    
 }

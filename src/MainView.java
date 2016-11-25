@@ -1,4 +1,5 @@
 
+import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -10,12 +11,20 @@ public class MainView extends JPanel {
     JLabel textField;
     JLabel difficulty;
     JLabel userName;
-    
+    GridLayout grid;
+    JButton playGame;
+
     MainView() {
-        difficulty = new JLabel("Current Difficulty");
+        grid = new GridLayout(10,1);
+        setLayout(grid);
+        difficulty = new JLabel("Difficulty Not Set!");
         textField = new JLabel("Please Set Your Settings");
+        userName = new JLabel("Username Not Set!");
+        playGame = new JButton ("Play Game!");
         add(textField);
         add(difficulty);
+        add(userName);
+        add(playGame);
     }
 
     public JLabel getTextField() {
@@ -30,8 +39,8 @@ public class MainView extends JPanel {
         return difficulty;
     }
 
-    public void setDifficulty(String difficulty) {
-        this.difficulty.setText(difficulty);
+    public void setDifficulty(JLabel difficulty) {
+        this.difficulty = difficulty;
     }
 
     public JLabel getUserName() {
