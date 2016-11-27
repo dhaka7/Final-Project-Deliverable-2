@@ -10,7 +10,7 @@ public class InstructionView extends JPanel {
 
     InstructionView() {
         setLayout(new FlowLayout());
-        instructions = new JTextArea("Please Do Stuff");
+        instructions = new JTextArea("You Will Be Quized On Three Different Subjects. \nFirst Set You UserName, Difficulty, and Subject in Options. \nThen Click Save Settings. \nFinally Go Back To The Main Menu and Press Play Game!. ENJOY!");
         add(instructions);
     }
 }
