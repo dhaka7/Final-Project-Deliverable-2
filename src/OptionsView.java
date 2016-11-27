@@ -16,9 +16,11 @@ public class OptionsView extends JPanel {
     JSlider difficulty;
     JButton saveSetting;
     JLabel settingSaveState;
+    JLabel subjectSaveState;
     
     JLabel difficultyLabel;
     JLabel userNameLabel;
+    JTextField subject;
 
     OptionsModel o_model;
     MainView m_view;
@@ -34,22 +36,41 @@ public class OptionsView extends JPanel {
         difficulty.setPaintTicks(true);
 
         EnterDiff = new JLabel(" Enter Difficulty:");
-
+        subject = new JTextField("Please Choose A Subject");
         saveSetting = new JButton("Save Settings");
         // It may be useful to have a Save & Return button
         //retButton = new JButton("Save and Return");
         settingSaveState = new JLabel("Settings Not Saved");
         difficultyLabel = new JLabel("Difficulty Not Set!");
         userNameLabel = new JLabel("Username Not Set!");
+        subjectSaveState = new JLabel("Subject Not Set!");
         add(userName);
         add(EnterDiff);
+        add(subject);
         add(difficulty);
+        add(new JLabel());
         add(saveSetting);
         add(settingSaveState);
-        add(new JLabel());
         add(difficultyLabel);
         add(userNameLabel);
+        add(subjectSaveState);
         //add(retButton);               
+    }
+
+    public JLabel getSubjectSaveState() {
+        return subjectSaveState;
+    }
+
+    public void setSubjectSaveState(JLabel subjectSaveState) {
+        this.subjectSaveState = subjectSaveState;
+    }
+
+    public JTextField getSubject() {
+        return subject;
+    }
+
+    public void setSubject(JTextField subject) {
+        this.subject = subject;
     }
 
     public void addSaveButtonListener(ActionListener al) {

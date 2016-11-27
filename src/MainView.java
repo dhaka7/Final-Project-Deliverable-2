@@ -13,10 +13,12 @@ public class MainView extends JPanel {
     JLabel userName;
     GridLayout grid;
     JButton playGame;
+    JLabel subject;
 
     MainView() {
         grid = new GridLayout(10,1);
         setLayout(grid);
+        subject = new JLabel("Subject Not Set!");
         difficulty = new JLabel("Difficulty Not Set!");
         textField = new JLabel("Please Set Your Settings");
         userName = new JLabel("Username Not Set!");
@@ -24,7 +26,16 @@ public class MainView extends JPanel {
         add(textField);
         add(difficulty);
         add(userName);
+        add(subject);
         add(playGame);
+    }
+
+    public JLabel getSubject() {
+        return subject;
+    }
+
+    public void setSubject(JLabel subject) {
+        this.subject = subject;
     }
 
     public JLabel getTextField() {
