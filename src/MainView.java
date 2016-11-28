@@ -1,5 +1,6 @@
 
 import java.awt.GridLayout;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -28,6 +29,14 @@ public class MainView extends JPanel {
         add(userName);
         add(subject);
         add(playGame);
+    }
+
+    public JButton getPlayGame() {
+        return playGame;
+    }
+
+    public void setPlayGame(JButton playGame) {
+        this.playGame = playGame;
     }
 
     public JLabel getSubject() {
@@ -60,5 +69,9 @@ public class MainView extends JPanel {
 
     public void setUserName(JLabel userName) {
         this.userName = userName;
+    }
+    
+     public void addPlayGameButtonListener(ActionListener al) {
+        this.playGame.addActionListener(al);
     }
 }

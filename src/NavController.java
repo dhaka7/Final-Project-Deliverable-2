@@ -14,6 +14,7 @@ public class NavController {
     CreditView c_view;
     // TODO: Create instances of your MainModel and MainController once you implement them
     MainView m_view;
+    GameView g_view;
 
     public NavController(NavModel n_model, NavView n_view) {
         this.n_model = n_model;
@@ -24,11 +25,15 @@ public class NavController {
         m_view = new MainView();
         i_view = new InstructionView();
         c_view = new CreditView();
+        g_view = new GameView();
+
         n_view.addOptionsButtonListener(new OptionsButtonListener());
         n_view.addMainButtonListener(new MainButtonListener());
         n_view.addInstructionsButtonListener(new InstructionButtonListener());
         n_view.addCreditsButtonLIstener(new CreditButtonListener());
         o_view.addSaveButtonListener(new OptionSaveButtonListener());
+        m_view.addPlayGameButtonListener(new PlayGameButtonListener());
+
     }
 
     class OptionsButtonListener implements ActionListener {
@@ -69,10 +74,19 @@ public class NavController {
             o_view.getSettingSaveState().setText("Saved");
             m_view.getDifficulty().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
             m_view.getUserName().setText("Username: " + o_view.getUserName().getText());
-            m_view.getSubject().setText("Subect: "+ o_view.getSubject().getText());
+            m_view.getSubject().setText("Subect: " + o_view.getSubject().getText());
             o_view.getUserNameLabel().setText("Username: " + o_view.getUserName().getText());
             o_view.getDifficultyLabel().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
-            o_view.getSubjectSaveState().setText("Subect: "+ o_view.getSubject().getText());
+            o_view.getSubjectSaveState().setText("Subect: " + o_view.getSubject().getText());
         }
+    }
+
+    class PlayGameButtonListener implements ActionListener {
+
+        public void actionPerformed(ActionEvent ae) {
+
+            n_view.switchToPlayGamePanel(g_view);
+        }
+
     }
 }
