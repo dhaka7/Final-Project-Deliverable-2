@@ -29,21 +29,22 @@ public class OptionsView extends JPanel {
         grid = new GridLayout(10,3);
         setLayout(grid);
         this.o_model = o_model;
-        userName = new JTextField("--Enter Player Name--");
+        userName = new JTextField(" --Enter Player Name-- ");
         difficulty = new JSlider(JSlider.HORIZONTAL, 1, 10, 5);
         difficulty.setMajorTickSpacing(1);
         difficulty.setPaintLabels(true);
         difficulty.setPaintTicks(true);
 
-        EnterDiff = new JLabel(" Enter Difficulty:");
-        subject = new JTextField("Please Choose A Subject");
-        saveSetting = new JButton("Save Settings");
+        
+        subject = new JTextField(" Please Choose A Subject ");
+        EnterDiff = new JLabel(" Enter Difficulty: ");
+        saveSetting = new JButton(" Save Settings ");
         // It may be useful to have a Save & Return button
         //retButton = new JButton("Save and Return");
-        settingSaveState = new JLabel("Settings Not Saved");
-        difficultyLabel = new JLabel("Difficulty Not Set!");
-        userNameLabel = new JLabel("Username Not Set!");
-        subjectSaveState = new JLabel("Subject Not Set!");
+        settingSaveState = new JLabel(" Settings Not Saved ");
+        difficultyLabel = new JLabel(" Difficulty level Not Set! ");
+        userNameLabel = new JLabel(" Username Not Set! ");
+        subjectSaveState = new JLabel(" Subject Not Set! ");
         add(userName);
         add(EnterDiff);
         add(subject);

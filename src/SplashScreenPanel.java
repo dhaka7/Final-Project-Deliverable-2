@@ -15,8 +15,8 @@ public class SplashScreenPanel extends JPanel {
     SplashScreenPanel() {
         setLayout(new BorderLayout());
         splashButton = new JButton(new ImageIcon("src/pkgfinal/Image/final pic.png"));
-        welcomeButton = new JButton("Welcome to TRIvia!");
-        hint = new JLabel("Where we test your cranium!");
+        welcomeButton = new JButton(" Welcome to TRIvia! ");
+        hint = new JLabel(" Where we test your cranium! ");
         add(welcomeButton, BorderLayout.NORTH);
         add(splashButton, BorderLayout.CENTER);
         add(hint, BorderLayout.SOUTH);

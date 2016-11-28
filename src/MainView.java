@@ -18,11 +18,11 @@ public class MainView extends JPanel {
     MainView() {
         grid = new GridLayout(10,1);
         setLayout(grid);
-        subject = new JLabel("Subject Not Set!");
-        difficulty = new JLabel("Difficulty Not Set!");
-        textField = new JLabel("Please Set Your Settings");
-        userName = new JLabel("Username Not Set!");
-        playGame = new JButton ("Play Game!");
+        subject = new JLabel(" Subject Not Set! ");
+        difficulty = new JLabel(" Difficulty Level Not Set! ");
+        textField = new JLabel(" Please, Set Your Settings ");
+        userName = new JLabel(" Username Not Set! ");
+        playGame = new JButton (" Play Game! ");
         add(textField);
         add(difficulty);
         add(userName);

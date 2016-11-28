@@ -8,7 +8,7 @@ public class CreditView extends JPanel {
     JTextArea text;
 
     CreditView() {
-        text = new JTextArea("Credits:\n Dhaka Kharel \n Oscar Sanjuan \n Andy Lam ");
+        text = new JTextArea("Credits:\n\n * Dhaka Kharel \n\n * Oscar Sanjuan \n\n * Andy Lam ");
         add(text);
     }
 }
