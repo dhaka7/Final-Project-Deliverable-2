@@ -69,10 +69,10 @@ public class NavController {
             o_view.getSettingSaveState().setText("Saved");
             m_view.getDifficulty().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
             m_view.getUserName().setText("Username: " + o_view.getUserName().getText());
-            m_view.getSubject().setText("Subect: "+ String.valueOf(o_view.getSubject().getText()));
+            m_view.getSubject().setText("Subect: "+ o_view.getSubject().getText());
             o_view.getUserNameLabel().setText("Username: " + o_view.getUserName().getText());
             o_view.getDifficultyLabel().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
-            o_view.getSubjectSaveState().setText("Subect: "+ String.valueOf(o_view.getSubject().getText()));
+            o_view.getSubjectSaveState().setText("Subect: "+ o_view.getSubject().getText());
         }
     }
 }
