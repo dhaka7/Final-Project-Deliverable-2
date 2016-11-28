@@ -22,5 +22,4 @@ public class OptionsController {
         this.o_view = o_view;
     }
 
-    
 }

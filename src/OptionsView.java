@@ -46,8 +46,8 @@ public class OptionsView extends JPanel {
         userNameLabel = new JLabel(" Username Not Set! ");
         subjectSaveState = new JLabel(" Subject Not Set! ");
         add(userName);
-        add(EnterDiff);
         add(subject);
+        add(EnterDiff);
         add(difficulty);
         add(new JLabel());
         add(saveSetting);
