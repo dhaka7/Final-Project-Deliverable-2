@@ -24,6 +24,7 @@ public class NavView extends JFrame {
         nVpanel.removeMain();
         nVpanel.removeCredits();
         nVpanel.removeInstructions();
+        nVpanel.removeGame();
         nVpanel.addOptions(o_view);
     }
 
@@ -31,6 +32,7 @@ public class NavView extends JFrame {
         nVpanel.removeSplash();
         nVpanel.removeOptions();
         nVpanel.removeCredits();
+        nVpanel.removeGame();
         nVpanel.removeInstructions();
         nVpanel.addMain(m_view);
     }
@@ -40,6 +42,7 @@ public class NavView extends JFrame {
         nVpanel.removeMain();
         nVpanel.removeOptions();
         nVpanel.removeInstructions();
+        nVpanel.removeGame();
         nVpanel.addCredits(c_view);
     }
 
@@ -48,6 +51,7 @@ public class NavView extends JFrame {
         nVpanel.removeMain();
         nVpanel.removeOptions();
         nVpanel.removeCredits();
+        nVpanel.removeGame();
         nVpanel.addInstructions(i_view);
     }
     
