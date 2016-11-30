@@ -34,9 +34,12 @@ public class OptionsView extends JPanel {
         difficulty.setMajorTickSpacing(1);
         difficulty.setPaintLabels(true);
         difficulty.setPaintTicks(true);
+        
 
         
         subject = new JTextField(" Please Choose A Subject ");
+        
+        
         EnterDiff = new JLabel(" Enter Difficulty: ");
         saveSetting = new JButton(" Save Settings ");
         // It may be useful to have a Save & Return button
