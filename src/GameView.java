@@ -49,7 +49,7 @@ public class GameView extends JPanel {
         correctAnswerList.add("     Octagon");
         
     setLayout(grid);
-    label = new JLabel("Math Question");
+    label = new JLabel("    Math Question");
     next = new JButton("Next");
     questionLabel = new JLabel(questionList.get(0));
     answerOneLabel = new JLabel(answerList.get(0));

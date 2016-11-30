@@ -25,7 +25,7 @@ public class GameController {
     class TestButtonListener implements ActionListener {
         
         public void actionPerformed(ActionEvent ae) {
-            g_view.getLabel().setText("Works");
+            g_view.getLabel().setText("Excellent");
             g_view.getCorrectAnswerLabel().setText("The Correct Answer is " + g_view.getCorrectAnswerList().get(0));
         }
     }
