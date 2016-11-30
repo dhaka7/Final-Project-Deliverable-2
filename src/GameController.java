@@ -15,6 +15,7 @@ public class GameController {
     
     GameView g_view;
     
+    
     GameController(GameView g_view) {
         this.g_view = g_view;
         g_view.addTestButtonListener(new TestButtonListener());
@@ -24,7 +25,8 @@ public class GameController {
     class TestButtonListener implements ActionListener {
         
         public void actionPerformed(ActionEvent ae) {
-            g_view.getLabel().setText("Works!");
+            g_view.getLabel().setText("Works");
+            g_view.getCorrectAnswerLabel().setText("The Correct Answer is " + g_view.getCorrectAnswerList().get(0));
         }
     }
     

@@ -15,7 +15,8 @@ public class NavController {
     // TODO: Create instances of your MainModel and MainController once you implement them
     MainView m_view;
     GameView g_view;
-
+    GameController g_controller;
+    
     public NavController(NavModel n_model, NavView n_view) {
         this.n_model = n_model;
         this.n_view = n_view;
@@ -26,6 +27,7 @@ public class NavController {
         i_view = new InstructionView();
         c_view = new CreditView();
         g_view = new GameView();
+        g_controller = new GameController(g_view);
 
         n_view.addOptionsButtonListener(new OptionsButtonListener());
         n_view.addMainButtonListener(new MainButtonListener());
@@ -33,6 +35,7 @@ public class NavController {
         n_view.addCreditsButtonLIstener(new CreditButtonListener());
         o_view.addSaveButtonListener(new OptionSaveButtonListener());
         m_view.addPlayGameButtonListener(new PlayGameButtonListener());
+   
 
     }
 
