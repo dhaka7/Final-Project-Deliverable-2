@@ -37,19 +37,19 @@ public class GameView extends JPanel {
 
 
     GameView(){
-        questionList.add("A normal stop sign has the shape of what geometrical figure?");
-        answerList.add("Octagon");
+        questionList.add("  A normal stop sign has the shape of what geometrical figure?");
+        answerList.add("    Octagon");
         
-        answerList.add("Pentagon");
+        answerList.add("    Pentagon");
         
-        answerList.add("Square");
+        answerList.add("    Square");
         
-        answerList.add("Rectangle");
+        answerList.add("    Rectangle");
         
-        correctAnswerList.add("Octagon");
+        correctAnswerList.add("     Octagon");
         
     setLayout(grid);
-    label = new JLabel("Math");
+    label = new JLabel("Math Question");
     next = new JButton("Next");
     questionLabel = new JLabel(questionList.get(0));
     answerOneLabel = new JLabel(answerList.get(0));
