@@ -45,26 +45,30 @@ public class GameView extends JPanel {
         answerList.add(answerThreeList);
         answerList.add(answerFourList);
 
-        questionList.add("What is my name?");
-        answerList.get(0).add("Willy");
+        questionList.add("A normal stop sign has the shape of what geometrical figure?");
+        answerList.get(1).add("Octagon");
+        answerList.get(2).add("Pentagon");
+        answerList.get(3).add("Square");
+        correctAnswerList.add("Octagon");
   //      [[a],[a]]
     //    [[b],[b]]
       //  [[c],[c]]
         //[[d],[d]]
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
        
+        questionList.add("What number must a year be divisible by to qualify as a leap year?");
+        answerList.get(1).add("5");
+        answerList.get(2).add("4");
+        answerList.get(3).add("3");
+        correctAnswerList.add("3");
         
-        answerList.get(1).add("Nilly");
-        answerList.get(2).add("Silly");
-        answerList.get(3).add("Rilly");
-        correctAnswerList.add("Timmy");
 
-        questionList.add("What is your name?");
-        answerList.get(0).add("Baby");
-        answerList.get(1).add("Child");
-        answerList.get(2).add("Haily");
-        answerList.get(3).add("Tommy");
-        correctAnswerList.add("You Have None.");
+        questionList.add("How many total degrees are there among all the angles of a hexagon?");
+        answerList.get(0).add("700");
+        answerList.get(1).add("720");
+        answerList.get(2).add("730");
+        answerList.get(3).add("701");
+        correctAnswerList.add("720");
 
         questionList.add("What is my name?");
         answerList.get(0).add("Willy");

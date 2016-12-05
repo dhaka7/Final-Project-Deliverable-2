@@ -8,7 +8,7 @@ public class NavView extends JFrame {
     NavViewPanel nVpanel;
 
     NavView(NavModel model) {
-        super("Welcome to TRIvia Game Home Page");
+        super("Welcome to TRIvia Home Page");
         this.model = model;
 
         setSize(700, 500);

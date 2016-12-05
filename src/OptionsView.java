@@ -37,7 +37,7 @@ public class OptionsView extends JPanel {
         
 
         
-        subject = new JTextField(" Please Choose A Subject ");
+        subject = new JTextField(" Please Choose Math, Geography, or Science ");
         
         
         EnterDiff = new JLabel(" Enter Difficulty: ");
