@@ -70,19 +70,19 @@ public class GameView extends JPanel {
         answerList.get(3).add("701");
         correctAnswerList.add("720");
 
-        questionList.add("What is my name?");
-        answerList.get(0).add("Willy");
-        answerList.get(1).add("Nilly");
-        answerList.get(2).add("Silly");
-        answerList.get(3).add("Rilly");
-        correctAnswerList.add("Timmy");
+        questionList.add("What is mymjkmlml name?");
+        answerList.get(0).add("Wikjlly");
+        answerList.get(1).add("Nillnky");
+        answerList.get(2).add("Silljhnky");
+        answerList.get(3).add("Rilljhiy");
+        correctAnswerList.add("huuhmmy");
 
         generateQuestion();
         
         
         setLayout(grid);
         label = new JLabel("Working");
-        next = new JButton("Next");
+        next = new JButton("Start");
         questionLabel = new JLabel();
         answerOneLabel = new JLabel();
         answerTwoLabel = new JLabel();
@@ -144,10 +144,10 @@ public class GameView extends JPanel {
     public void generateQuestion() {
 
         for (int i = 0; i < questionList.size(); i++) {
+        
         }
-        currentQuestionNumber = 1;
-        totalQuestionNumber = questionList.size() + 1;
-
+        this.totalQuestionNumber = questionList.size();
+        this.currentQuestionNumber = 1;
     }
 
     public void setQuestion(int questionNumber) {
@@ -157,6 +157,11 @@ public class GameView extends JPanel {
         answerTwoLabel.setText((String) answerList.get(1).get(i));
         answerThreeLabel.setText((String) answerList.get(2).get(i));
         answerFourLabel.setText((String) answerList.get(3).get(i));
+    }
+    
+    public void setAnswer(int questionNumber){
+        int i = questionNumber - 1;
+correctAnswerLabel.setText("The Correct Answer is " + correctAnswerList.get(i));
     }
 
     public int getCurrentQuestionNumber() {
@@ -173,6 +178,10 @@ public class GameView extends JPanel {
 
     public void setTotalQuestionNumber(int totalQuestionNumber) {
         this.totalQuestionNumber = totalQuestionNumber;
+    }
+    public void increaseCurrentQuestionNumber(){
+    
+    this.currentQuestionNumber += 1;
     }
 
 }

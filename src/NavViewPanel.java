@@ -13,6 +13,7 @@ public class NavViewPanel extends JPanel {
     InstructionView i_view;
     GameView g_view;
 
+    
     public NavViewPanel() {
         super();
         setLayout(new BorderLayout());

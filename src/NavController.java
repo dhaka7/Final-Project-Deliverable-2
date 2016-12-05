@@ -16,7 +16,8 @@ public class NavController {
     MainView m_view;
     GameView g_view;
     GameController g_controller;
-    
+    int gameCounter = 2;
+
     public NavController(NavModel n_model, NavView n_view) {
         this.n_model = n_model;
         this.n_view = n_view;
@@ -35,7 +36,7 @@ public class NavController {
         n_view.addCreditsButtonLIstener(new CreditButtonListener());
         o_view.addSaveButtonListener(new OptionSaveButtonListener());
         m_view.addPlayGameButtonListener(new PlayGameButtonListener());
-   
+        g_view.addTestButtonListener(new NextButtonListener());
 
     }
 
@@ -81,6 +82,37 @@ public class NavController {
             o_view.getUserNameLabel().setText("Username: " + o_view.getUserName().getText());
             o_view.getDifficultyLabel().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
             o_view.getSubjectSaveState().setText("Subect: " + o_view.getSubject().getText());
+        }
+    }
+
+    class NextButtonListener implements ActionListener {
+
+        public void actionPerformed(ActionEvent ae) {
+            if ((g_view.getTotalQuestionNumber() + 2) > ((gameCounter + 2) / 2)) {
+
+                System.out.println("First If total question and game counter" + g_view.getTotalQuestionNumber() + gameCounter);
+                if (gameCounter % 2 != 0) {
+                    g_view.setAnswer(g_view.getCurrentQuestionNumber());
+                    System.out.println("current question number for answer" + g_view.getCurrentQuestionNumber());
+                    g_view.increaseCurrentQuestionNumber();
+                    System.out.println("Counter " + gameCounter);
+                    System.out.println("total q " + g_view.getTotalQuestionNumber());
+                } else if (gameCounter % 2 == 0) {
+                    g_view.getNext().setText("Next");
+
+                    g_view.getCorrectAnswerLabel().setText("");
+                    g_view.setQuestion(g_view.getCurrentQuestionNumber());
+                    System.out.println(g_view.getCurrentQuestionNumber());
+
+                    System.out.println("Counter " + gameCounter);
+                }
+            } else {
+                System.out.println("Counter " + gameCounter);
+                System.out.println("done");
+
+            }
+
+            gameCounter++;
         }
     }
 
