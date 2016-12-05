@@ -45,8 +45,8 @@ public class GameView extends JPanel {
         answerList.add(answerThreeList);
         answerList.add(answerFourList);
 
-        questionList.add("A normal stop sign has the shape of what geometrical figure?");
-                answerList.get(0).add("Pentarino");
+        questionList.add("  A normal stop sign has the shape of what geometrical figure?");
+        answerList.get(0).add("Pentarino");
         answerList.get(1).add("Octagon");
         answerList.get(2).add("Pentagon");
         answerList.get(3).add("Square");
@@ -57,7 +57,7 @@ public class GameView extends JPanel {
         //[[d],[d]]
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
        
-        questionList.add("What number must a year be divisible by to qualify as a leap year?");
+        questionList.add("  What number must a year be divisible by to qualify as a leap year?");
         answerList.get(0).add("5");
         answerList.get(1).add("6");
         answerList.get(2).add("4");
@@ -65,49 +65,49 @@ public class GameView extends JPanel {
         correctAnswerList.add("4");
         
 
-        questionList.add("How many total degrees are there among all the angles of a hexagon?");
+        questionList.add("  How many total degrees are there among all the angles of a hexagon?");
         answerList.get(0).add("700");
         answerList.get(1).add("720");
         answerList.get(2).add("730");
         answerList.get(3).add("701");
         correctAnswerList.add("720");
 
-        questionList.add("What is the largest island in the United States?");
+        questionList.add("  What is the largest island in the United States?");
         answerList.get(0).add("Big Island of Hawaii");
         answerList.get(1).add("Long island");
         answerList.get(2).add("Don’t Know");
         answerList.get(3).add("Non of the Above");
         correctAnswerList.add("Big Island of Hawaii");
 
-        questionList.add("What is the height of Niagara Falls?");
+        questionList.add("  What is the height of Niagara Falls?");
         answerList.get(0).add("176 ft");
         answerList.get(1).add("170 ft");
         answerList.get(2).add("160 ft");
         answerList.get(3).add("180 ft");
         correctAnswerList.add("170 ft");
         
-        questionList.add("The imaginary line dividing the world into the Northern & Southern Hemisphere is called the");
+        questionList.add("  The imaginary line dividing the world into the Northern & Southern Hemisphere is called the");
         answerList.get(0).add("prime meridian");
         answerList.get(1).add("0 degrees longitude");
         answerList.get(2).add("0 degrees latitude");
         answerList.get(3).add("equator");
         correctAnswerList.add("equator");
         
-        questionList.add("There is a three digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number? ");
+        questionList.add("  There is a three digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number? ");
         answerList.get(0).add("141");
         answerList.get(1).add("144");
         answerList.get(2).add("414");
         answerList.get(3).add("441");
         correctAnswerList.add("141");
         
-        questionList.add("There are 8 people on the Trivia team, and each person shakes hands with each other person once. How many handshakes take place?");
+        questionList.add("  There are 8 people on the Trivia team, and each person shakes hands with each other person once. How many handshakes take place?");
         answerList.get(0).add("27 ");
         answerList.get(1).add("28 ");
         answerList.get(2).add("29 ");
         answerList.get(3).add("30 ");
         correctAnswerList.add("28 ");
         
-        questionList.add("What is the term for a line segment with one endpoint at the center of a circle and the other endpoint on the circle?");
+        questionList.add("  What is the term for a line segment with one endpoint at the center of a circle and the other endpoint on the circle?");
         answerList.get(0).add("Radius");
         answerList.get(1).add("Diameter");
         answerList.get(2).add("Perimeter");
@@ -118,7 +118,7 @@ public class GameView extends JPanel {
         
         
         setLayout(grid);
-        label = new JLabel("Press Start to Begain the Game. First Three is Math, Second three is Geography, Third three is Science");
+        label = new JLabel("    Press Start to Begain the Game. First Three Questions are Math. Second three Questions are Geography,Third three Questions are Science");
         next = new JButton("Start");
         questionLabel = new JLabel();
         answerOneLabel = new JLabel();
