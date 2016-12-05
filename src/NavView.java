@@ -23,6 +23,7 @@ public class NavView extends JFrame {
         nVpanel.removeSplash();
         nVpanel.removeMain();
         nVpanel.removeCredits();
+        nVpanel.removeGame();
         nVpanel.removeInstructions();
         nVpanel.removeGame();
         nVpanel.addOptions(o_view);
