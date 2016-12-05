@@ -60,6 +60,7 @@ public class NavViewPanel extends JPanel {
     }
 
     public void addPlayGame(GameView g_view) {
+        this.g_view = g_view;
         add(g_view, BorderLayout.CENTER);
         revalidate();
         repaint();

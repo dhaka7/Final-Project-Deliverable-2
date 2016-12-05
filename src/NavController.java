@@ -90,7 +90,7 @@ public class NavController {
         public void actionPerformed(ActionEvent ae) {
             if ((g_view.getTotalQuestionNumber() + 2) > ((gameCounter + 2) / 2)) {
 
-                System.out.println("First If total question and game counter" + g_view.getTotalQuestionNumber() + gameCounter);
+                System.out.println("First If total question and game counter" + g_view.getTotalQuestionNumber() + " " + gameCounter);
                 if (gameCounter % 2 != 0) {
                     g_view.setAnswer(g_view.getCurrentQuestionNumber());
                     System.out.println("current question number for answer" + g_view.getCurrentQuestionNumber());
@@ -99,7 +99,7 @@ public class NavController {
                     System.out.println("total q " + g_view.getTotalQuestionNumber());
                 } else if (gameCounter % 2 == 0) {
                     g_view.getNext().setText("Next");
-
+                    g_view.getLabel().setText("Question " + g_view.getCurrentQuestionNumber());
                     g_view.getCorrectAnswerLabel().setText("");
                     g_view.setQuestion(g_view.getCurrentQuestionNumber());
                     System.out.println(g_view.getCurrentQuestionNumber());
@@ -107,9 +107,11 @@ public class NavController {
                     System.out.println("Counter " + gameCounter);
                 }
             } else {
-                System.out.println("Counter " + gameCounter);
-                System.out.println("done");
-
+                n_view.switchToMainPanel(m_view);
+                // reset current g_view. 
+                gameCounter = 2;
+                g_view = new GameView();
+                g_view.addTestButtonListener(new NextButtonListener());
             }
 
             gameCounter++;
