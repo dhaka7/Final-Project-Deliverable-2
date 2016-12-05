@@ -16,6 +16,7 @@ public class NavController {
     MainView m_view;
     GameView g_view;
     GameController g_controller;
+    HighScoreView hs_view;
     int gameCounter = 2;
 
     public NavController(NavModel n_model, NavView n_view) {
@@ -29,7 +30,8 @@ public class NavController {
         c_view = new CreditView();
         g_view = new GameView();
         g_controller = new GameController(g_view);
-
+        hs_view = new HighScoreView(hs_view);
+        
         n_view.addOptionsButtonListener(new OptionsButtonListener());
         n_view.addMainButtonListener(new MainButtonListener());
         n_view.addInstructionsButtonListener(new InstructionButtonListener());
@@ -37,7 +39,7 @@ public class NavController {
         o_view.addSaveButtonListener(new OptionSaveButtonListener());
         m_view.addPlayGameButtonListener(new PlayGameButtonListener());
         g_view.addTestButtonListener(new NextButtonListener());
-
+        n_view.addHighScoreButtonListener(new HighScoreButtonListener());
     }
 
     class OptionsButtonListener implements ActionListener {
@@ -45,6 +47,15 @@ public class NavController {
         public void actionPerformed(ActionEvent e) {
             //Pass an Options View object to our Navigation View
             n_view.switchToOptionsPanel(o_view);
+        }
+    }
+    
+    
+    class HighScoreButtonListener implements ActionListener {
+
+        public void actionPerformed(ActionEvent e) {
+            //Pass an Options View object to our Navigation View
+            n_view.switchHighScorePanel(hs_view);
         }
     }
 

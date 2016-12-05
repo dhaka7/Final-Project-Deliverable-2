@@ -26,6 +26,7 @@ public class NavView extends JFrame {
         nVpanel.removeGame();
         nVpanel.removeInstructions();
         nVpanel.removeGame();
+        nVpanel.removeHighScore();
         nVpanel.addOptions(o_view);
     }
 
@@ -35,6 +36,7 @@ public class NavView extends JFrame {
         nVpanel.removeCredits();
         nVpanel.removeGame();
         nVpanel.removeInstructions();
+        nVpanel.removeHighScore();
         nVpanel.addMain(m_view);
     }
 
@@ -45,6 +47,7 @@ public class NavView extends JFrame {
         nVpanel.removeInstructions();
         nVpanel.removeGame();
         nVpanel.addCredits(c_view);
+        nVpanel.removeHighScore();
     }
 
     public void swtichToInstructionsPanel(InstructionView i_view) {
@@ -53,6 +56,7 @@ public class NavView extends JFrame {
         nVpanel.removeOptions();
         nVpanel.removeCredits();
         nVpanel.removeGame();
+        nVpanel.removeHighScore();
         nVpanel.addInstructions(i_view);
     }
     
@@ -62,11 +66,28 @@ public class NavView extends JFrame {
         nVpanel.removeOptions();
         nVpanel.removeCredits();
         nVpanel.removeInstructions();
+        nVpanel.removeHighScore();
         nVpanel.addPlayGame(g_view);
+    }
+    
+    
+    public void switchHighScorePanel(HighScoreView hs_view) {
+        nVpanel.removeSplash();
+        nVpanel.removeMain();
+        nVpanel.removeOptions();
+        nVpanel.removeCredits();
+        nVpanel.removeInstructions();
+        nVpanel.removeHighScore();
+        nVpanel.addHighScore(hs_view);
     }
 
     public void addOptionsButtonListener(ActionListener al) {
         nVpanel.menu.optionsButton.addActionListener(al);
+    }
+    
+    
+    public void addHighScoreButtonListener(ActionListener al) {
+        nVpanel.menu.highScoreButton.addActionListener(al);
     }
 
     public void addMainButtonListener(ActionListener al) {

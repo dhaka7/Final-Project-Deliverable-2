@@ -12,7 +12,7 @@ public class NavViewPanel extends JPanel {
     CreditView c_view;
     InstructionView i_view;
     GameView g_view;
-
+    HighScoreView hs_view;
     
     public NavViewPanel() {
         super();
@@ -35,6 +35,14 @@ public class NavViewPanel extends JPanel {
     public void addMain(MainView m_view) {
         this.m_view = m_view;  //maintain handle to this view so we can remove it
         add(m_view, BorderLayout.CENTER);
+        revalidate();
+        repaint();
+    }
+    
+    
+    public void addHighScore(HighScoreView hs_view) {
+        this.hs_view = hs_view;  //maintain handle to this view so we can remove it
+        add(hs_view, BorderLayout.CENTER);
         revalidate();
         repaint();
     }
@@ -72,6 +80,13 @@ public class NavViewPanel extends JPanel {
         }
     }
 
+    
+    public void removeHighScore() {
+        if (this.hs_view != null) {
+            remove(this.hs_view);
+        }
+    }
+    
     public void removeMain() {
         if (this.m_view != null) {
             remove(this.m_view);
