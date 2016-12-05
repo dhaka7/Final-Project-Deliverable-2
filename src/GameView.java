@@ -46,6 +46,7 @@ public class GameView extends JPanel {
         answerList.add(answerFourList);
 
         questionList.add("A normal stop sign has the shape of what geometrical figure?");
+                answerList.get(0).add("Pentarino");
         answerList.get(1).add("Octagon");
         answerList.get(2).add("Pentagon");
         answerList.get(3).add("Square");
@@ -57,6 +58,7 @@ public class GameView extends JPanel {
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
        
         questionList.add("What number must a year be divisible by to qualify as a leap year?");
+        answerList.get(0).add("5");
         answerList.get(1).add("5");
         answerList.get(2).add("4");
         answerList.get(3).add("3");
@@ -77,6 +79,7 @@ public class GameView extends JPanel {
         answerList.get(3).add("Rilljhiy");
         correctAnswerList.add("huuhmmy");
 
+        
         generateQuestion();
         
         
