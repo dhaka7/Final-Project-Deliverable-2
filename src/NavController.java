@@ -1,6 +1,11 @@
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class NavController {
 
@@ -30,8 +35,8 @@ public class NavController {
         c_view = new CreditView();
         g_view = new GameView();
         g_controller = new GameController(g_view);
-        hs_view = new HighScoreView(hs_view);
-        
+        hs_view = new HighScoreView(hs_view); 
+
         n_view.addOptionsButtonListener(new OptionsButtonListener());
         n_view.addMainButtonListener(new MainButtonListener());
         n_view.addInstructionsButtonListener(new InstructionButtonListener());
@@ -49,13 +54,33 @@ public class NavController {
             n_view.switchToOptionsPanel(o_view);
         }
     }
-    
-    
+
     class HighScoreButtonListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
             //Pass an Options View object to our Navigation View
             n_view.switchHighScorePanel(hs_view);
+            try {
+                FileReader fin = new FileReader("src/Highscores.txt");
+                Scanner scan = new Scanner(fin);
+                String line;
+                boolean isInputInt = true;
+                while (scan.hasNextLine()) {
+                    if (isInputInt == true){
+                    line = scan.next();
+                    hs_view.setP1Name((line));
+                    isInputInt = false;
+                    }
+                    else {
+                        line = scan.nextLine();
+                        hs_view.setP1Score(1);
+                
+                
+                }}
+            } catch (FileNotFoundException ex) {
+                System.out.println("HighScore Data Base Not Found");
+            }
+
         }
     }
 
@@ -135,6 +160,5 @@ public class NavController {
 
             n_view.switchToPlayGamePanel(g_view);
         }
-
     }
 }
