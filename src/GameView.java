@@ -59,10 +59,10 @@ public class GameView extends JPanel {
        
         questionList.add("What number must a year be divisible by to qualify as a leap year?");
         answerList.get(0).add("5");
-        answerList.get(1).add("5");
+        answerList.get(1).add("6");
         answerList.get(2).add("4");
         answerList.get(3).add("3");
-        correctAnswerList.add("3");
+        correctAnswerList.add("4");
         
 
         questionList.add("How many total degrees are there among all the angles of a hexagon?");
@@ -72,19 +72,53 @@ public class GameView extends JPanel {
         answerList.get(3).add("701");
         correctAnswerList.add("720");
 
-        questionList.add("What is mymjkmlml name?");
-        answerList.get(0).add("Wikjlly");
-        answerList.get(1).add("Nillnky");
-        answerList.get(2).add("Silljhnky");
-        answerList.get(3).add("Rilljhiy");
-        correctAnswerList.add("huuhmmy");
+        questionList.add("What is the largest island in the United States?");
+        answerList.get(0).add("Big Island of Hawaii");
+        answerList.get(1).add("Long island");
+        answerList.get(2).add("Don’t Know");
+        answerList.get(3).add("Non of the Above");
+        correctAnswerList.add("Big Island of Hawaii");
 
+        questionList.add("What is the height of Niagara Falls?");
+        answerList.get(0).add("176 ft");
+        answerList.get(1).add("170 ft");
+        answerList.get(2).add("160 ft");
+        answerList.get(3).add("180 ft");
+        correctAnswerList.add("170 ft");
+        
+        questionList.add("The imaginary line dividing the world into the Northern & Southern Hemisphere is called the");
+        answerList.get(0).add("prime meridian");
+        answerList.get(1).add("0 degrees longitude");
+        answerList.get(2).add("0 degrees latitude");
+        answerList.get(3).add("equator");
+        correctAnswerList.add("equator");
+        
+        questionList.add("There is a three digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number? ");
+        answerList.get(0).add("141");
+        answerList.get(1).add("144");
+        answerList.get(2).add("414");
+        answerList.get(3).add("441");
+        correctAnswerList.add("141");
+        
+        questionList.add("There are 8 people on the Trivia team, and each person shakes hands with each other person once. How many handshakes take place?");
+        answerList.get(0).add("27 ");
+        answerList.get(1).add("28 ");
+        answerList.get(2).add("29 ");
+        answerList.get(3).add("30 ");
+        correctAnswerList.add("28 ");
+        
+        questionList.add("What is the term for a line segment with one endpoint at the center of a circle and the other endpoint on the circle?");
+        answerList.get(0).add("Radius");
+        answerList.get(1).add("Diameter");
+        answerList.get(2).add("Perimeter");
+        answerList.get(3).add("NONE");
+        correctAnswerList.add("Radius");
         
         generateQuestion();
         
         
         setLayout(grid);
-        label = new JLabel("Working");
+        label = new JLabel("Press Start to Begain the Game. First Three is Math, Second three is Geography, Third three is Science");
         next = new JButton("Start");
         questionLabel = new JLabel();
         answerOneLabel = new JLabel();
