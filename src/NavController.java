@@ -135,7 +135,7 @@ public class NavController {
                 n_view.switchToMainPanel(m_view);
 
                 // reset current g_view.
-                addNewScore(o_view.getUserNameLabel().getText(), 3280);
+                addNewScore(o_view.getUserName().getText(), 3280);
                 hs_view.updateHighScore();
                 saveHighScoreArray();
                 loadHighScoreArray();
