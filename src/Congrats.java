@@ -1,4 +1,6 @@
 
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
@@ -14,9 +16,12 @@ import javax.swing.JTextArea;
  */
 public class Congrats extends JPanel {
       JTextArea text;
+      JButton CongratsButton;
 
     Congrats() {
         text = new JTextArea("Congradulations! \n\n * You have mastered every subject!");
+        CongratsButton = new JButton(new ImageIcon("src/pkgfinal/Image/congrats.png"));
+
         add(text);
     }
 

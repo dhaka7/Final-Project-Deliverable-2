@@ -238,7 +238,7 @@ public class GameView extends JPanel {
         answerList.get(3).add("2%");
         correctAnswerList.add("3.5%");
         
-//level 3 Difficulty Science          
+//level 3 Difficulty Science    
         questionList.add(" The inert gas which is substituted for nitrogen in the air used by deep sea divers for breathing, is");
         answerList.get(0).add("Argon");
         answerList.get(1).add("Xenon");
