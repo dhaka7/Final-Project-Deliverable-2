@@ -44,7 +44,32 @@ public class GameView extends JPanel {
         answerList.add(answerTwoList);
         answerList.add(answerThreeList);
         answerList.add(answerFourList);
-
+        
+    /*
+//level 1 difficulty MATH
+        questionList.add("  Which number comes next: 42, 43, 44?");
+        answerList.get(0).add("45");
+        answerList.get(1).add("47");
+        answerList.get(2).add("20");
+        answerList.get(3).add("1");
+        correctAnswerList.add("45");
+        
+        questionList.add("  One quarter is equal to how many nickels?");
+        answerList.get(0).add("20");
+        answerList.get(1).add("10");
+        answerList.get(2).add("5");
+        answerList.get(3).add("25");
+        correctAnswerList.add("5");
+        
+        questionList.add("  Oscar had 17 pencils and gave 8 to Emily?");
+        answerList.get(0).add("17");
+        answerList.get(1).add("8");
+        answerList.get(2).add("25");
+        answerList.get(3).add("9");
+        correctAnswerList.add("9");
+    */
+        
+//level 2 difficulty MATH
         questionList.add("  A normal stop sign has the shape of what geometrical figure?");
         answerList.get(0).add("Pentarino");
         answerList.get(1).add("Octagon");
@@ -56,7 +81,7 @@ public class GameView extends JPanel {
       //  [[c],[c]]
         //[[d],[d]]
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
-       
+                      
         questionList.add("  What number must a year be divisible by to qualify as a leap year?");
         answerList.get(0).add("5");
         answerList.get(1).add("6");
@@ -72,11 +97,38 @@ public class GameView extends JPanel {
         answerList.get(3).add("701");
         correctAnswerList.add("720");
 
+    /*
+// level 3 difficulty MATH
+        questionList.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
+        answerList.get(0).add("25");
+        answerList.get(1).add("123");
+        answerList.get(2).add("3075");
+        answerList.get(3).add("148");
+        correctAnswerList.add("3075");
+        
+        questionList.add("  There are 175 cards in a deck and four players. How many cards does each person get?");
+        answerList.get(0).add("45 with 2 cards left");
+        answerList.get(1).add("44 with 5 cards left");
+        answerList.get(2).add("43 with 3 cards left");
+        answerList.get(3).add("43 with 2 cards left");
+        correctAnswerList.add("43 with 3 cards left");
+        
+        questionList.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
+        answerList.get(0).add("$15.50");
+        answerList.get(1).add("$6.50");
+        answerList.get(2).add("16.50");
+        answerList.get(3).add("15.00");
+        correctAnswerList.add("$15.50");
+        
+    */
+    
+ 
+//level 1 difficulty GEOGRAPHY
         questionList.add("  What is the largest island in the United States?");
         answerList.get(0).add("Big Island of Hawaii");
         answerList.get(1).add("Long island");
-        answerList.get(2).add("Don’t Know");
-        answerList.get(3).add("Non of the Above");
+        answerList.get(2).add("Moana");
+        answerList.get(3).add("None of the Above");
         correctAnswerList.add("Big Island of Hawaii");
 
         questionList.add("  What is the height of Niagara Falls?");
@@ -92,6 +144,56 @@ public class GameView extends JPanel {
         answerList.get(2).add("0 degrees latitude");
         answerList.get(3).add("equator");
         correctAnswerList.add("equator");
+        
+// level 2 difficulty GEOGRAPHY
+        /*
+        questionList.add("  What is the largest state in the United States?");
+        answerList.get(0).add("Texas");
+        answerList.get(1).add("California");
+        answerList.get(2).add("Alaska");
+        answerList.get(3).add("Canada");
+        correctAnswerList.add("Alaska");
+        
+        questionList.add("  Which of the five 'great lakes' starts with an O?");
+        answerList.get(0).add("Ohio");
+        answerList.get(1).add("Ontario");
+        answerList.get(2).add("Osmond");
+        answerList.get(3).add("Oklahoma");
+        correctAnswerList.add("Ontario");
+        
+        questionList.add("  Texas has which of the following mountain ranges?");
+        answerList.get(0).add("Himalayas Mountain Range");
+        answerList.get(1).add("Andes Mountain Range");
+        answerList.get(2).add("Chisos Mountain Range");
+        answerList.get(3).add("None of the above");
+        correctAnswerList.add("Chisos Mountain Range");
+        
+        */
+        
+//level 3 difficulty GEOGRAPHY
+       /*
+        questionList.add("  A chain of islands is known as");
+        answerList.get(0).add("Archipelago");
+        answerList.get(1).add("Peninsula");
+        answerList.get(2).add("Volcano");
+        answerList.get(3).add("Prairie");
+        correctAnswerList.add("Archipelago");
+        
+        questionList.add("  How many countries are in North America?");
+        answerList.get(0).add("18");
+        answerList.get(1).add("23");
+        answerList.get(2).add("10");
+        answerList.get(3).add("3");
+        correctAnswerList.add("23");
+        
+        questionList.add(" What is the name of Mountain Range that runs along the West Coast of the North America?");
+        answerList.get(0).add("Grizzly Bear Mountain Range");
+        answerList.get(1).add("California Mountain Range");
+        answerList.get(2).add("West Coast Ranges");
+        answerList.get(3).add("Pacific Coast Ranges");
+        correctAnswerList.add("Pacific Coast Ranges");
+        
+        */
         
         questionList.add("  There is a three digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number? ");
         answerList.get(0).add("141");

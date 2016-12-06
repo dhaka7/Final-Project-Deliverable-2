@@ -16,7 +16,7 @@ public class Congrats extends JPanel {
       JTextArea text;
 
     Congrats() {
-        text = new JTextArea("Congradulations! \n\n * You have completed the subject.");
+        text = new JTextArea("Congradulations! \n\n * You have mastered every subject!");
         add(text);
     }
 

@@ -10,11 +10,11 @@ Username: Test 11
 3280
 Sammmmmmy
 3280
+ --Enter Player Name-- 
+3280
+Emilia
+3280
  Username Not Set! 
 380
 Username: john summo
-380
-Username: john summo
-380
-Username: fefeqf
 380
