@@ -45,7 +45,7 @@ public class GameView extends JPanel {
         answerList.add(answerThreeList);
         answerList.add(answerFourList);
         
-    /*
+    
 //level 1 difficulty MATH
         questionList.add("  Which number comes next: 42, 43, 44?");
         answerList.get(0).add("45");
@@ -67,7 +67,7 @@ public class GameView extends JPanel {
         answerList.get(2).add("25");
         answerList.get(3).add("9");
         correctAnswerList.add("9");
-    */
+    
         
 //level 2 difficulty MATH
         questionList.add("  A normal stop sign has the shape of what geometrical figure?");
@@ -97,7 +97,7 @@ public class GameView extends JPanel {
         answerList.get(3).add("701");
         correctAnswerList.add("720");
 
-    /*
+    
 // level 3 difficulty MATH
         questionList.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
         answerList.get(0).add("25");
@@ -120,7 +120,7 @@ public class GameView extends JPanel {
         answerList.get(3).add("15.00");
         correctAnswerList.add("$15.50");
         
-    */
+    
     
  
 //level 1 difficulty GEOGRAPHY
@@ -146,7 +146,7 @@ public class GameView extends JPanel {
         correctAnswerList.add("equator");
         
 // level 2 difficulty GEOGRAPHY
-        /*
+        
         questionList.add("  What is the largest state in the United States?");
         answerList.get(0).add("Texas");
         answerList.get(1).add("California");
@@ -168,10 +168,10 @@ public class GameView extends JPanel {
         answerList.get(3).add("None of the above");
         correctAnswerList.add("Chisos Mountain Range");
         
-        */
+        
         
 //level 3 difficulty GEOGRAPHY
-       /*
+       
         questionList.add("  A chain of islands is known as");
         answerList.get(0).add("Archipelago");
         answerList.get(1).add("Peninsula");
@@ -193,7 +193,7 @@ public class GameView extends JPanel {
         answerList.get(3).add("Pacific Coast Ranges");
         correctAnswerList.add("Pacific Coast Ranges");
         
-        */
+        
 //level 1 Difficulty Science         
         questionList.add("   Which of the following is used in pencils? ");
         answerList.get(0).add("Graphite");
