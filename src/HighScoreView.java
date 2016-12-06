@@ -1,5 +1,8 @@
 
 import java.awt.FlowLayout;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
@@ -16,29 +19,31 @@ public class HighScoreView extends JPanel {
 
     JTextArea highScore;
 
-            String p1Name;
-        String p2Name;
-        String p3Name;
-        String p4Name;
-        String p5Name;
-        String p6Name;
-        String p7Name;
-        String p8Name;
-        String p9Name;
-        String p10Name;
-        int p1Score;
-        int p2Score;
-        int p3Score;
-        int p4Score;
-        int p5Score;
-        int p6Score;
-        int p7Score;
-        int p8Score;
-        int p9Score;
-        int p10Score;
-
-        
-    HighScoreView(HighScoreView hs_view) {
+    String p1Name;
+    String p2Name;
+    String p3Name;
+    String p4Name;
+    String p5Name;
+    String p6Name;
+    String p7Name;
+    String p8Name;
+    String p9Name;
+    String p10Name;
+    int p1Score;
+    int p2Score;
+    int p3Score;
+    int p4Score;
+    int p5Score;
+    int p6Score;
+    int p7Score;
+    int p8Score;
+    int p9Score;
+    int p10Score;
+    ArrayList<String> nameArray = new ArrayList();
+    ArrayList<Integer> scoreArray = new ArrayList();
+    ArrayList<ArrayList> nameAndScoreArray = new ArrayList();
+    
+    HighScoreView() {
         setLayout(new FlowLayout());
         p1Name = "N/A";
         p2Name = "N/A";
@@ -61,16 +66,41 @@ public class HighScoreView extends JPanel {
         p9Score = 0;
         p10Score = 0;
 
-        highScore = new JTextArea("Top 10 Scores\n 1. " + p1Name + "   " + p1Score + "\n 2. " +p2Name + "   " + p2Score + "\n 3. " +
-                p3Name + "   " + p3Score + "\n 4. " +p4Name + "   " + p4Score + "\n 4. " +p4Name + "   " + p4Score + "\n 5. " +p5Name +
-     
-                "   " + p5Score + "\n 6. " +p6Name + "   " + p6Score + "\n 7. " +p7Name + "   " + p7Score + "\n 8. " +p8Name + "   " + p8Score
-                + "\n 9. " +p9Name + "   " + p9Score + "\n 10. " + p10Name + "   " + p10Score );
+        
+        
+        highScore = new JTextArea("Top 10 Scores\n 1. " + p1Name + "   " + p1Score + "\n 2. " + p2Name + "   " + p2Score + "\n 3. "
+                + p3Name + "   " + p3Score + "\n 4. " + p4Name + "   " + p4Score + "\n 4. " + p4Name + "   " + p4Score + "\n 5. " + p5Name
+                + "   " + p5Score + "\n 6. " + p6Name + "   " + p6Score + "\n 7. " + p7Name + "   " + p7Score + "\n 8. " + p8Name + "   " + p8Score
+                + "\n 9. " + p9Name + "   " + p9Score + "\n 10. " + p10Name + "   " + p10Score);
         add(highScore);
     }
 
     public String getP1Name() {
         return p1Name;
+    }
+
+    public JTextArea getHighScore() {
+        return highScore;
+    }
+
+    public void setHighScore(JTextArea highScore) {
+        this.highScore = highScore;
+    }
+
+    public ArrayList<String> getNameArray() {
+        return nameArray;
+    }
+
+    public void setNameArray(ArrayList<String> nameArray) {
+        this.nameArray = nameArray;
+    }
+
+    public ArrayList<ArrayList> getNameAndScoreArray() {
+        return nameAndScoreArray;
+    }
+
+    public void setNameAndScoreArray(ArrayList<ArrayList> nameAndScoreArray) {
+        this.nameAndScoreArray = nameAndScoreArray;
     }
 
     public void setP1Name(String p1Name) {
@@ -228,4 +258,19 @@ public class HighScoreView extends JPanel {
     public void setP10Score(int p10Score) {
         this.p10Score = p10Score;
     }
+
+    public void updateHighScore() {
+        this.highScore.setText("Top 10 Scores\n 1. " + p1Name + "   " + p1Score + "\n 2. " + p2Name + "   " + p2Score + "\n 3. "
+                + p3Name + "   " + p3Score + "\n 4. " + p4Name + "   " + p4Score + "\n 5. " + p5Name
+                + "   " + p5Score + "\n 6. " + p6Name + "   " + p6Score + "\n 7. " + p7Name + "   " + p7Score + "\n 8. " + p8Name + "   " + p8Score
+                + "\n 9. " + p9Name + "   " + p9Score + "\n 10. " + p10Name + "   " + p10Score);
+    }
+
+
+    public ArrayList<Integer> getScoreArray() {
+        return scoreArray;
+    }
+
+
+    
 }
