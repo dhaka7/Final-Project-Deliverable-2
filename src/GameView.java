@@ -194,25 +194,69 @@ public class GameView extends JPanel {
         correctAnswerList.add("Pacific Coast Ranges");
         
         */
+//level 1 Difficulty Science         
+        questionList.add("   Which of the following is used in pencils? ");
+        answerList.get(0).add("Graphite");
+        answerList.get(1).add("Silicon");
+        answerList.get(2).add("Charcoal");
+        answerList.get(3).add("None");
+        correctAnswerList.add("Graphite");
         
-        questionList.add("  There is a three digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number? ");
-        answerList.get(0).add("141");
-        answerList.get(1).add("144");
-        answerList.get(2).add("414");
-        answerList.get(3).add("441");
-        correctAnswerList.add("141");
+        questionList.add("   Which of the following metals forms an amalgam with other metals?");
+        answerList.get(0).add("Tin ");
+        answerList.get(1).add("Mercury ");
+        answerList.get(2).add("Lead ");
+        answerList.get(3).add("Zinc ");
+        correctAnswerList.add("Mercury ");
         
-        questionList.add("  There are 8 people on the Trivia team, and each person shakes hands with each other person once. How many handshakes take place?");
-        answerList.get(0).add("27 ");
-        answerList.get(1).add("28 ");
-        answerList.get(2).add("29 ");
-        answerList.get(3).add("30 ");
-        correctAnswerList.add("28 ");
+        questionList.add(" Chemical formula for water is ");
+        answerList.get(0).add("NaAlO2");
+        answerList.get(1).add("H2O");
+        answerList.get(2).add("Al2O3");
+        answerList.get(3).add("CaSiO3");
+        correctAnswerList.add("H2O");
         
-        questionList.add("  What is the term for a line segment with one endpoint at the center of a circle and the other endpoint on the circle?");
-        answerList.get(0).add("Radius");
-        answerList.get(1).add("Diameter");
-        answerList.get(2).add("Perimeter");
+//level 2 Difficulty Science  
+        questionList.add("  Which of the gas is not known as green house gas? ");
+        answerList.get(0).add("Methane");
+        answerList.get(1).add("Nitrous");
+        answerList.get(2).add("Carbon");
+        answerList.get(3).add("Hydrogen");
+        correctAnswerList.add("Hydrogen");
+        
+        questionList.add(" The hardest substance available on earth is ");
+        answerList.get(0).add("Diamond");
+        answerList.get(1).add("Gold");
+        answerList.get(2).add("Iron");
+        answerList.get(3).add("NONE");
+        correctAnswerList.add("Diamond");
+        
+        questionList.add(" The average salinity of sea water is");
+        answerList.get(0).add("3%");
+        answerList.get(1).add("3.5%");
+        answerList.get(2).add("2.5%");
+        answerList.get(3).add("2%");
+        correctAnswerList.add("3.5%");
+        
+//level 3 Difficulty Science          
+        questionList.add(" The inert gas which is substituted for nitrogen in the air used by deep sea divers for breathing, is");
+        answerList.get(0).add("Argon");
+        answerList.get(1).add("Xenon");
+        answerList.get(2).add("Helium");
+        answerList.get(3).add("Krypton");
+        correctAnswerList.add("Helium");
+        
+        questionList.add(" Heavy water is");
+        answerList.get(0).add("deuterium oxide");
+        answerList.get(1).add("PH7");
+        answerList.get(2).add("rain water");
+        answerList.get(3).add("tritium oxide");
+        correctAnswerList.add("deuterium oxide");
+        
+        questionList.add(" The element common to all acids is");
+        answerList.get(0).add("hydrogen");
+        answerList.get(1).add("carbon");
+        answerList.get(2).add("sulphur");
         answerList.get(3).add("NONE");
         correctAnswerList.add("Radius");
         
