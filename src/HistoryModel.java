@@ -1,16 +1,18 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Lapper
  */
-public class MathModel {
+public class HistoryModel {
+
 
     ArrayList<String> questionListOne = new ArrayList();
     ArrayList<String> answerOneListOne = new ArrayList();
@@ -39,12 +41,12 @@ public class MathModel {
     ArrayList<ArrayList> answerListThree = new ArrayList();
 
     
-    ArrayList<ArrayList> mathLevelOne = new ArrayList();
-    ArrayList<ArrayList> mathLevelTwo = new ArrayList();
-    ArrayList<ArrayList> mathLevelThree = new ArrayList();
+    ArrayList<ArrayList> histLevelOne = new ArrayList();
+    ArrayList<ArrayList> histLevelTwo = new ArrayList();
+    ArrayList<ArrayList> histLevelThree = new ArrayList();
 
-     MathModel() {
-         System.out.println("math models made");
+     HistoryModel() {
+
         answerListOne.add(answerOneListOne);
         answerListOne.add(answerTwoListOne);
         answerListOne.add(answerThreeListOne);
@@ -60,7 +62,7 @@ public class MathModel {
         answerListThree.add(answerThreeListThree);
         answerListThree.add(answerFourListThree);
 
-//level 1 difficulty MATH
+//level 1 difficulty History
         questionListOne.add("  Which number comes next: 42, 43, 44?");
         answerListOne.get(0).add("45");
         answerListOne.get(1).add("47");
@@ -82,11 +84,11 @@ public class MathModel {
         answerListOne.get(3).add("9");
         correctAnswerListOne.add("9");
 
-        mathLevelOne.add(questionListOne);
-        mathLevelOne.add(answerListOne);
-        mathLevelOne.add(correctAnswerListOne);
+        histLevelOne.add(questionListOne);
+        histLevelOne.add(answerListOne);
+        histLevelOne.add(correctAnswerListOne);
 
-//level 2 difficulty MATH
+//level 2 difficulty Hist
         questionListTwo.add("  A normal stop sign has the shape of what geometrical figure?");
         answerListTwo.get(0).add("Pentarino");
         answerListTwo.get(1).add("Octagon");
@@ -113,11 +115,11 @@ public class MathModel {
         answerListTwo.get(3).add("701");
         correctAnswerListTwo.add("720");
 
-        mathLevelTwo.add(questionListTwo);
-        mathLevelTwo.add(answerListTwo);
-        mathLevelTwo.add(correctAnswerListTwo);
+        histLevelTwo.add(questionListTwo);
+        histLevelTwo.add(answerListTwo);
+        histLevelTwo.add(correctAnswerListTwo);
 
-// level 3 difficulty MATH
+// level 3 difficulty Hist
 
 
         questionListThree.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
@@ -141,33 +143,33 @@ public class MathModel {
         answerListThree.get(3).add("15.00");
         correctAnswerListThree.add("$15.50");
 
-        mathLevelThree.add(questionListThree);
-        mathLevelThree.add(answerListThree);
-        mathLevelThree.add(correctAnswerListThree);
+        histLevelThree.add(questionListThree);
+        histLevelThree.add(answerListThree);
+        histLevelThree.add(correctAnswerListThree);
 
     }
 
-    public ArrayList<ArrayList> getMathLevelOne() {
-        return mathLevelOne;
+    public ArrayList<ArrayList> getHistLevelOne() {
+        return histLevelOne;
     }
 
-    public void setMathLevelOne(ArrayList<ArrayList> mathLevelOne) {
-        this.mathLevelOne = mathLevelOne;
+    public void setHistLevelOne(ArrayList<ArrayList> histLevelOne) {
+        this.histLevelOne = histLevelOne;
     }
 
-    public ArrayList<ArrayList> getMathLevelTwo() {
-        return mathLevelTwo;
+    public ArrayList<ArrayList> getHistLevelTwo() {
+        return histLevelTwo;
     }
 
-    public void setMathLevelTwo(ArrayList<ArrayList> mathLevelTwo) {
-        this.mathLevelTwo = mathLevelTwo;
+    public void setHistLevelTwo(ArrayList<ArrayList> histLevelTwo) {
+        this.histLevelTwo = histLevelTwo;
     }
 
-    public ArrayList<ArrayList> getMathLevelThree() {
-        return mathLevelThree;
+    public ArrayList<ArrayList> getHistLevelThree() {
+        return histLevelThree;
     }
 
-    public void setMathLevelThree(ArrayList<ArrayList> mathLevelThree) {
-        this.mathLevelThree = mathLevelThree;
+    public void setHistLevelThree(ArrayList<ArrayList> histLevelThree) {
+        this.histLevelThree = histLevelThree;
     }
 }
