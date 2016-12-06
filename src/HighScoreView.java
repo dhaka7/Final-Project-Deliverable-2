@@ -1,7 +1,5 @@
 
 import java.awt.FlowLayout;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
@@ -269,6 +267,10 @@ public class HighScoreView extends JPanel {
 
     public ArrayList<Integer> getScoreArray() {
         return scoreArray;
+    }
+
+    public void setScoreArray(ArrayList<Integer> scoreArray) {
+        this.scoreArray = scoreArray;
     }
 
 

@@ -135,8 +135,8 @@ public class NavController {
                 n_view.switchToMainPanel(m_view);
 
                 // reset current g_view.
-            //    addNewScore("Timmy", 20202);
-                        
+                addNewScore(o_view.getUserNameLabel().getText(), 3280);
+                hs_view.updateHighScore();
                 saveHighScoreArray();
                 loadHighScoreArray();
                 System.out.println(hs_view.getScoreArray());
@@ -277,41 +277,26 @@ public class NavController {
 
         hs_view.getScoreArray().add(hs_view.getP10Score());
 
+        hs_view.getNameAndScoreArray().add(hs_view.getNameArray());
+        hs_view.getNameAndScoreArray().add(hs_view.getScoreArray());
     }
 
     public void saveHighScoreArray() {
-
         try {
             FileWriter fout = new FileWriter("src/Highscores.txt");
-
-            fout.write(hs_view.getP1Name() + "\n");
-            fout.write(hs_view.getP1Score() + "\n");
-            fout.write(hs_view.getP2Name() + "\n");
-            fout.write(hs_view.getP2Score() + "\n");
-            fout.write(hs_view.getP3Name() + "\n");
-            fout.write(hs_view.getP3Score() + "\n");
-            fout.write(hs_view.getP4Name() + "\n");
-            fout.write(hs_view.getP4Score() + "\n");
-            fout.write(hs_view.getP5Name() + "\n");
-            fout.write(hs_view.getP5Score() + "\n");
-            fout.write(hs_view.getP6Name() + "\n");
-            fout.write(hs_view.getP6Score() + "\n");
-            fout.write(hs_view.getP7Name() + "\n");
-            fout.write(hs_view.getP7Score() + "\n");
-            fout.write(hs_view.getP8Name() + "\n");
-            fout.write(hs_view.getP8Score() + "\n");
-            fout.write(hs_view.getP9Name() + "\n");
-            fout.write(hs_view.getP9Score() + "\n");
-            fout.write(hs_view.getP10Name() + "\n");
-            fout.write(hs_view.getP10Score() + "\n");
-
+            System.out.println("hs save" + hs_view.getNameAndScoreArray().get(0));
+            System.out.println("hs save" + hs_view.getNameAndScoreArray().get(1));
+            for (int i = 0; i < 10; i++) {
+                fout.write(hs_view.getNameAndScoreArray().get(0).get(i) + "\n");
+                fout.write(hs_view.getNameAndScoreArray().get(1).get(i) + "\n");
+            }
             fout.close();
             fout.flush();
         } catch (IOException ex) {
         }
 
     }
-/*
+
     public void addNewScore(String name, int score) {
         hs_view.getNameArray().add(name);
         hs_view.getScoreArray().add(score);
@@ -323,22 +308,26 @@ public class NavController {
             sorted = true;
             for (int i = 0; i < 10; i++) {
 
-                if (hs_view.getNameAndScoreArray().get(1).get(i)  < hs_view.getNameAndScoreArray().get(1).get(i+)) {
+                if ((int) hs_view.getNameAndScoreArray().get(1).get(i) < (int) hs_view.getNameAndScoreArray().get(1).get(i + 1)) {
                     String tempName
-                            = hs_view.getScoreArray().get(i);
+                            = hs_view.getNameAndScoreArray().get(0).get(i).toString();
                     int tempScore
-                            = Integer.parseInt(hs_view.getScoreArray().get(i + 1));
+                            = (int) hs_view.getNameAndScoreArray().get(1).get(i);
 
-                    hs_view.getScoreArray().set(i, hs_view.getScoreArray().get(i + 2));
-                    hs_view.getScoreArray().set(i + 1, hs_view.getScoreArray().get(i + 3));
-                    hs_view.getScoreArray().set(i + 2, tempName);
-                    hs_view.getScoreArray().set(i + 3 + 1, String.valueOf(tempScore));
+                    hs_view.getNameAndScoreArray().get(0).set(i, hs_view.getNameAndScoreArray().get(0).get(i + 1));
+                    hs_view.getNameAndScoreArray().get(1).set(i, hs_view.getNameAndScoreArray().get(1).get(i + 1));
+                    hs_view.getNameAndScoreArray().get(0).set(i + 1, tempName);
+                    hs_view.getNameAndScoreArray().get(1).set(i + 1, tempScore);
                     sorted = false;
                 }
 
             }
         } while (sorted == false);
-        System.out.println("new array " + hs_view.getScoreArray());
+        hs_view.setNameArray(hs_view.getNameAndScoreArray().get(0));
+        hs_view.setScoreArray(hs_view.getNameAndScoreArray().get(1));
+        System.out.println("new array  sorted" + hs_view.getNameAndScoreArray());
+        System.out.println(hs_view.getNameArray());
+        System.out.println(hs_view.getScoreArray());
     }
-*/
+
 }
