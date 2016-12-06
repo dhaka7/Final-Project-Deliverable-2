@@ -47,7 +47,7 @@ public class GameView extends JPanel {
         
     
 //level 1 difficulty MATH
-        questionList.add("  Which number comes next: 42, 43, 44?");
+        questionList.add("  Which number comes next: 42, 43, 44, ?");
         answerList.get(0).add("45");
         answerList.get(1).add("47");
         answerList.get(2).add("20");
@@ -61,7 +61,7 @@ public class GameView extends JPanel {
         answerList.get(3).add("25");
         correctAnswerList.add("5");
         
-        questionList.add("  Oscar had 17 pencils and gave 8 to Emily?");
+        questionList.add("  Oscar had 17 pencils and gave 8 to Emily. How many pencils does Oscar have now?");
         answerList.get(0).add("17");
         answerList.get(1).add("8");
         answerList.get(2).add("25");
@@ -264,7 +264,7 @@ public class GameView extends JPanel {
         
         
         setLayout(grid);
-        label = new JLabel("    Press Start to Begain the Game. First Three Questions are Math. Second three Questions are Geography,Third three Questions are Science");
+        label = new JLabel("    Press Start to Play. First Questions are on Math. Second Questions are on Geography, Third Questions are on Science.");
         next = new JButton("Start");
         questionLabel = new JLabel();
         answerOneLabel = new JLabel();
