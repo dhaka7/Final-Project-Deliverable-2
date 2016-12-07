@@ -1,16 +1,18 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Lapper
  */
-public class MathModel {
+public class GeographyModel {
+ 
 
     ArrayList<String> questionListOne = new ArrayList();
     ArrayList<String> answerOneListOne = new ArrayList();
@@ -39,12 +41,12 @@ public class MathModel {
     ArrayList<ArrayList> answerListThree = new ArrayList();
 
     
-    ArrayList<ArrayList> mathLevelOne = new ArrayList();
-    ArrayList<ArrayList> mathLevelTwo = new ArrayList();
-    ArrayList<ArrayList> mathLevelThree = new ArrayList();
+    ArrayList<ArrayList> geoLevelOne = new ArrayList();
+    ArrayList<ArrayList> geoLevelTwo = new ArrayList();
+    ArrayList<ArrayList> geoLevelThree = new ArrayList();
 
-     MathModel() {
-         System.out.println("math models made");
+     GeographyModel() {
+
         answerListOne.add(answerOneListOne);
         answerListOne.add(answerTwoListOne);
         answerListOne.add(answerThreeListOne);
@@ -60,7 +62,7 @@ public class MathModel {
         answerListThree.add(answerThreeListThree);
         answerListThree.add(answerFourListThree);
 
-//level 1 difficulty MATH
+//level 1 difficulty Geo
         questionListOne.add("  Which number comes next: 42, 43, 44?");
         answerListOne.get(0).add("45");
         answerListOne.get(1).add("47");
@@ -82,11 +84,11 @@ public class MathModel {
         answerListOne.get(3).add("9");
         correctAnswerListOne.add("9");
 
-        mathLevelOne.add(questionListOne);
-        mathLevelOne.add(answerListOne);
-        mathLevelOne.add(correctAnswerListOne);
+        geoLevelOne.add(questionListOne);
+        geoLevelOne.add(answerListOne);
+        geoLevelOne.add(correctAnswerListOne);
 
-//level 2 difficulty MATH
+//level 2 difficulty geo
         questionListTwo.add("  A normal stop sign has the shape of what geometrical figure?");
         answerListTwo.get(0).add("Pentarino");
         answerListTwo.get(1).add("Octagon");
@@ -113,11 +115,11 @@ public class MathModel {
         answerListTwo.get(3).add("701");
         correctAnswerListTwo.add("720");
 
-        mathLevelTwo.add(questionListTwo);
-        mathLevelTwo.add(answerListTwo);
-        mathLevelTwo.add(correctAnswerListTwo);
+        geoLevelTwo.add(questionListTwo);
+        geoLevelTwo.add(answerListTwo);
+        geoLevelTwo.add(correctAnswerListTwo);
 
-// level 3 difficulty MATH
+// level 3 difficulty Geo
 
 
         questionListThree.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
@@ -141,33 +143,34 @@ public class MathModel {
         answerListThree.get(3).add("15.00");
         correctAnswerListThree.add("$15.50");
 
-        mathLevelThree.add(questionListThree);
-        mathLevelThree.add(answerListThree);
-        mathLevelThree.add(correctAnswerListThree);
+        geoLevelThree.add(questionListThree);
+        geoLevelThree.add(answerListThree);
+        geoLevelThree.add(correctAnswerListThree);
 
     }
 
-    public ArrayList<ArrayList> getMathLevelOne() {
-        return mathLevelOne;
+    public ArrayList<ArrayList> getGeoLevelOne() {
+        return geoLevelOne;
     }
 
-    public void setMathLevelOne(ArrayList<ArrayList> mathLevelOne) {
-        this.mathLevelOne = mathLevelOne;
+    public void setGeoLevelOne(ArrayList<ArrayList> geoLevelOne) {
+        this.geoLevelOne = geoLevelOne;
     }
 
-    public ArrayList<ArrayList> getMathLevelTwo() {
-        return mathLevelTwo;
+    public ArrayList<ArrayList> getGeoLevelTwo() {
+        return geoLevelTwo;
     }
 
-    public void setMathLevelTwo(ArrayList<ArrayList> mathLevelTwo) {
-        this.mathLevelTwo = mathLevelTwo;
+    public void setGeoLevelTwo(ArrayList<ArrayList> geoLevelTwo) {
+        this.geoLevelTwo = geoLevelTwo;
     }
 
-    public ArrayList<ArrayList> getMathLevelThree() {
-        return mathLevelThree;
+    public ArrayList<ArrayList> getGeoLevelThree() {
+        return geoLevelThree;
     }
 
-    public void setMathLevelThree(ArrayList<ArrayList> mathLevelThree) {
-        this.mathLevelThree = mathLevelThree;
+    public void setGeoLevelThree(ArrayList<ArrayList> geoLevelThree) {
+        this.geoLevelThree = geoLevelThree;
     }
 }
+ 

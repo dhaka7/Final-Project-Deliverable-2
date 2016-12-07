@@ -39,13 +39,17 @@ public class GameView extends JPanel {
     ArrayList<String> correctAnswerList = new ArrayList();
     ArrayList<ArrayList> answerList = new ArrayList();
 
-    GameView() {
+    MathModel math_model = new MathModel();
+    HistoryModel hist_model = new HistoryModel();
+    GeographyModel geo_model = new GeographyModel();
+    GameModel game_model = new GameModel();
+
+    GameView(String subject, int difficulty) {
         answerList.add(answerOneList);
         answerList.add(answerTwoList);
         answerList.add(answerThreeList);
         answerList.add(answerFourList);
-        
-    
+        /*
 //level 1 difficulty MATH
         questionList.add("  Which number comes next: 42, 43, 44, ?");
         answerList.get(0).add("45");
@@ -68,6 +72,8 @@ public class GameView extends JPanel {
         answerList.get(3).add("9");
         correctAnswerList.add("9");
     
+=======
+    *//*
         
 //level 2 difficulty MATH
         questionList.add("  A normal stop sign has the shape of what geometrical figure?");
@@ -169,9 +175,6 @@ public class GameView extends JPanel {
         correctAnswerList.add("Chisos Mountain Range");
         
         
-        
-//level 3 difficulty GEOGRAPHY
-       
         questionList.add("  A chain of islands is known as");
         answerList.get(0).add("Archipelago");
         answerList.get(1).add("Peninsula");
@@ -201,6 +204,14 @@ public class GameView extends JPanel {
         answerList.get(2).add("Charcoal");
         answerList.get(3).add("None");
         correctAnswerList.add("Graphite");
+         */
+ /*     
+        questionList.add("  There is a three digit number. The second digit is four times as big as the third digit, while the first digit is three less than the second digit. What is the number? ");
+        answerList.get(0).add("141");
+        answerList.get(1).add("144");
+        answerList.get(2).add("414");
+        answerList.get(3).add("441");
+        correctAnswerList.add("141");
         
         questionList.add("   Which of the following metals forms an amalgam with other metals?");
         answerList.get(0).add("Tin ");
@@ -259,10 +270,37 @@ public class GameView extends JPanel {
         answerList.get(2).add("sulphur");
         answerList.get(3).add("NONE");
         correctAnswerList.add("Radius");
-        
-        generateQuestion();
-        
-        
+         */
+        if (subject.equalsIgnoreCase("math")) {
+            if (difficulty == 1) {
+                generateQuestion(math_model.getMathLevelOne());
+
+            } else if (difficulty == 2) {
+                generateQuestion(math_model.getMathLevelTwo());
+            } else {
+                generateQuestion(math_model.getMathLevelThree());
+            }
+
+        } else if (subject.equalsIgnoreCase("geography")) {
+            if (difficulty == 1) {
+                generateQuestion(geo_model.getGeoLevelOne());
+            } else if (difficulty == 2) {
+                generateQuestion(geo_model.getGeoLevelTwo());
+            } else {
+                generateQuestion(geo_model.getGeoLevelThree());
+            }
+
+        } else if (subject.equalsIgnoreCase("history")) {
+            if (difficulty == 1) {
+                generateQuestion(hist_model.getHistLevelOne());
+            } else if (difficulty == 2) {
+                generateQuestion(hist_model.getHistLevelTwo());
+            } else {
+                generateQuestion(hist_model.getHistLevelThree());
+            }
+        } else {
+            game_model = new GameModel();
+        }
         setLayout(grid);
         label = new JLabel("    Press Start to Play. First Questions are on Math. Second Questions are on Geography, Third Questions are on Science.");
         next = new JButton("Start");
@@ -324,11 +362,15 @@ public class GameView extends JPanel {
         this.next.addActionListener(al);
     }
 
-    public void generateQuestion() {
+    public void generateQuestion(ArrayList<ArrayList> subjectLevelArray) {
+        this.questionList.clear();
+        this.answerList.clear();
+        this.correctAnswerList.clear();
 
-        for (int i = 0; i < questionList.size(); i++) {
-        
-        }
+        this.questionList = subjectLevelArray.get(0);
+        this.answerList = subjectLevelArray.get(1);
+        this.correctAnswerList = subjectLevelArray.get(2);
+
         this.totalQuestionNumber = questionList.size();
         this.currentQuestionNumber = 1;
     }
@@ -341,10 +383,10 @@ public class GameView extends JPanel {
         answerThreeLabel.setText((String) answerList.get(2).get(i));
         answerFourLabel.setText((String) answerList.get(3).get(i));
     }
-    
-    public void setAnswer(int questionNumber){
+
+    public void setAnswer(int questionNumber) {
         int i = questionNumber - 1;
-correctAnswerLabel.setText("The Correct Answer is " + correctAnswerList.get(i));
+        correctAnswerLabel.setText("The Correct Answer is " + correctAnswerList.get(i));
     }
 
     public int getCurrentQuestionNumber() {
@@ -362,9 +404,10 @@ correctAnswerLabel.setText("The Correct Answer is " + correctAnswerList.get(i));
     public void setTotalQuestionNumber(int totalQuestionNumber) {
         this.totalQuestionNumber = totalQuestionNumber;
     }
-    public void increaseCurrentQuestionNumber(){
-    
-    this.currentQuestionNumber += 1;
+
+    public void increaseCurrentQuestionNumber() {
+
+        this.currentQuestionNumber += 1;
     }
 
 }

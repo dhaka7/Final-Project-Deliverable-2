@@ -37,7 +37,7 @@ public class NavController {
         m_view = new MainView();
         i_view = new InstructionView();
         c_view = new CreditView();
-        g_view = new GameView();
+        g_view = new GameView("null", 0);
         g_controller = new GameController(g_view);
         hs_view = new HighScoreView();
 
@@ -114,7 +114,7 @@ public class NavController {
 
         public void actionPerformed(ActionEvent ae) {
             if ((g_view.getTotalQuestionNumber() + 2) > ((gameCounter + 2) / 2)) {
-
+                System.out.println("if 1");
                 System.out.println("First If total question and game counter" + g_view.getTotalQuestionNumber() + " " + gameCounter);
                 if (gameCounter % 2 != 0) {
                     g_view.setAnswer(g_view.getCurrentQuestionNumber());
@@ -128,21 +128,17 @@ public class NavController {
                     g_view.getCorrectAnswerLabel().setText("");
                     g_view.setQuestion(g_view.getCurrentQuestionNumber());
                     System.out.println(g_view.getCurrentQuestionNumber());
-
+                    System.out.println("else 2");
                     System.out.println("Counter " + gameCounter);
                 }
             } else {
                 n_view.switchToMainPanel(m_view);
-
+                System.out.println("end of game");
                 // reset current g_view.
                 addNewScore(o_view.getUserName().getText(), 3280);
                 hs_view.updateHighScore();
                 saveHighScoreArray();
                 loadHighScoreArray();
-                System.out.println(hs_view.getScoreArray());
-                gameCounter = 2;
-                g_view = new GameView();
-                g_view.addTestButtonListener(new NextButtonListener());
             }
 
             gameCounter++;
@@ -152,8 +148,19 @@ public class NavController {
     class PlayGameButtonListener implements ActionListener {
 
         public void actionPerformed(ActionEvent ae) {
+            String subject = o_view.getSubject().getText();
+            System.out.println(o_view.getSubject().getText());
+            int difficulty = o_view.getDifficulty().getValue();
+            System.out.println(o_view.getDifficulty().getValue());
+
+
+            g_view = new GameView(subject, difficulty);
+            g_view.addTestButtonListener(new NextButtonListener());
+            System.out.println(hs_view.getScoreArray());
+            gameCounter = 2;
 
             n_view.switchToPlayGamePanel(g_view);
+
         }
 
     }
