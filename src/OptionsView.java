@@ -3,6 +3,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
@@ -20,11 +21,17 @@ public class OptionsView extends JPanel {
     
     JLabel difficultyLabel;
     JLabel userNameLabel;
-    JTextField subject;
+   // JTextField subject;
 
     OptionsModel o_model;
     MainView m_view;
     GridLayout grid;
+    
+    
+    
+        String[] subjects = new String[] {"Math", "Geography", "Science"};
+        JComboBox<String> subjectList = new JComboBox<>(subjects);
+        
     OptionsView(OptionsModel o_model) {
         grid = new GridLayout(10,3);
         setLayout(grid);
@@ -37,7 +44,7 @@ public class OptionsView extends JPanel {
         
 
         
-        subject = new JTextField(" Please Choose Math, Geography, History or Science ");
+      //  subject = new JTextField(" Please Choose Math, Geography, History or Science ");
         
         
         EnterDiff = new JLabel(" Enter Difficulty: ");
@@ -49,7 +56,9 @@ public class OptionsView extends JPanel {
         userNameLabel = new JLabel(" Username Not Set! ");
         subjectSaveState = new JLabel(" Subject Not Set! ");
         add(userName);
-        add(subject);
+        //add(subject);
+        
+        add(subjectList);
         add(EnterDiff);
         add(difficulty);
         add(new JLabel());
@@ -69,13 +78,13 @@ public class OptionsView extends JPanel {
         this.subjectSaveState = subjectSaveState;
     }
 
-    public JTextField getSubject() {
-        return subject;
-    }
+//    public JTextField getSubject() {
+  //      return subject;
+    //}
 
-    public void setSubject(JTextField subject) {
-        this.subject = subject;
-    }
+//    public void setSubject(JTextField subject) {
+  //      this.subject = subject;
+    //}
 
     public void addSaveButtonListener(ActionListener al) {
         this.saveSetting.addActionListener(al);
@@ -144,5 +153,14 @@ public class OptionsView extends JPanel {
     public void setSaveSetting(JButton saveSetting) {
         this.saveSetting = saveSetting;
     }
+
+    public JComboBox<String> getSubjectList() {
+        return subjectList;
+    }
+
+    public void setSubjectList(JComboBox<String> subjectList) {
+        this.subjectList = subjectList;
+    }
+    
 
 }

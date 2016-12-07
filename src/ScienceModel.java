@@ -64,11 +64,11 @@ public class ScienceModel {
         correctAnswerListOne.add("Graphite");
 
         questionListOne.add("   Which of the following metals forms an amalgam with other metals?");
-        answerListOne.get(0).add("Tin ");
-        answerListOne.get(1).add("Mercury ");
-        answerListOne.get(2).add("Lead ");
-        answerListOne.get(3).add("Zinc ");
-        correctAnswerListOne.add("Mercury ");
+        answerListOne.get(0).add("Tin");
+        answerListOne.get(1).add("Mercury");
+        answerListOne.get(2).add("Lead");
+        answerListOne.get(3).add("Zinc");
+        correctAnswerListOne.add("Mercury");
 
         questionListOne.add(" Chemical formula for water is ");
         answerListOne.get(0).add("NaAlO2");

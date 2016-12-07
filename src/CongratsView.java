@@ -1,5 +1,6 @@
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
@@ -27,7 +28,6 @@ public class CongratsView extends JPanel {
     CongratsView(String name, int score) {
         
         congratsBottom = new CongratsViewBottomPanel(name, score);
-        
         picture = new JTextArea("Congradulations! \n\n * All questions on this level are finished!");
         congratsButton = new JButton(new ImageIcon("src/pkgfinal/Image/congrats.png"));
 

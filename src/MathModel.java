@@ -137,8 +137,8 @@ public class MathModel {
         questionListThree.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
         answerListThree.get(0).add("$15.50");
         answerListThree.get(1).add("$6.50");
-        answerListThree.get(2).add("16.50");
-        answerListThree.get(3).add("15.00");
+        answerListThree.get(2).add("$16.50");
+        answerListThree.get(3).add("$15.00");
         correctAnswerListThree.add("$15.50");
 
         mathLevelThree.add(questionListThree);

@@ -115,10 +115,10 @@ public class NavController {
             o_view.getSettingSaveState().setText("Saved");
             m_view.getDifficulty().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
             m_view.getUserName().setText("Username: " + o_view.getUserName().getText());
-            m_view.getSubject().setText("Subect: " + o_view.getSubject().getText());
+            m_view.getSubject().setText("Subect: " + o_view.getSubjectList().getSelectedItem());
             o_view.getUserNameLabel().setText("Username: " + o_view.getUserName().getText());
             o_view.getDifficultyLabel().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
-            o_view.getSubjectSaveState().setText("Subect: " + o_view.getSubject().getText());
+            o_view.getSubjectSaveState().setText("Subect: " + o_view.getSubjectList().getSelectedItem());
         }
     }
 
@@ -146,12 +146,15 @@ public class NavController {
                     System.out.println("else 2");
                     System.out.println("Counter " + gameCounter);
                 }
+
+                //End of game//
             } else {
                 congrats_view = new CongratsView(o_view.getUserName().getText(), userScore);
                 n_view.switchToCongrats(congrats_view);
                 System.out.println("end of game");
                 // reset current g_view.
                 addNewScore(o_view.getUserName().getText(), userScore);
+
                 hs_view.updateHighScore();
                 saveHighScoreArray();
                 loadHighScoreArray();
@@ -165,18 +168,20 @@ public class NavController {
     class PlayGameButtonListener implements ActionListener {
 
         public void actionPerformed(ActionEvent ae) {
-            String subject = o_view.getSubject().getText();
-            System.out.println(o_view.getSubject().getText());
+            String subject = (String) o_view.getSubjectList().getSelectedItem();
+            System.out.println(o_view.getSubjectList().getSelectedItem());
             int difficulty = o_view.getDifficulty().getValue();
             System.out.println(o_view.getDifficulty().getValue());
+            if (o_view.getSettingSaveState().getText().equalsIgnoreCase("Saved")) {
+                g_view = new GameView(subject, difficulty);
+                g_view.addTestButtonListener(new NextButtonListener());
+                System.out.println(hs_view.getScoreArray());
+                gameCounter = 2;
 
-            g_view = new GameView(subject, difficulty);
-            g_view.addTestButtonListener(new NextButtonListener());
-            System.out.println(hs_view.getScoreArray());
-            gameCounter = 2;
-
-            n_view.switchToPlayGamePanel(g_view);
-
+                n_view.switchToPlayGamePanel(g_view);
+            } else {
+                m_view.getPlayGame().setText("You Cannot Play This Game Until Your Settings Is Set");
+            }
         }
 
     }
@@ -317,7 +322,6 @@ public class NavController {
             fout.flush();
         } catch (IOException ex) {
         }
-
     }
 
     public void addNewScore(String name, int score) {
