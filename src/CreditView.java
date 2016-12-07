@@ -17,6 +17,6 @@ public class CreditView extends JPanel {
         
         add(subjectList);
         String selectSubject = (String)subjectList.getSelectedItem();
-        System.out.println("Subject selected: " + selectSubject);
+        System.out.println("Subject selected:  " + selectSubject);
     }
 }
