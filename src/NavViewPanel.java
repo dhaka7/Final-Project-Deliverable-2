@@ -13,6 +13,7 @@ public class NavViewPanel extends JPanel {
     InstructionView i_view;
     GameView g_view;
     HighScoreView hs_view;
+    CongratsView congrats_view;
     
     public NavViewPanel() {
         super();

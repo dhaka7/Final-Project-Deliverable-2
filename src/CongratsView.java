@@ -14,11 +14,11 @@ import javax.swing.JTextArea;
  *
  * @author ohs5008
  */
-public class Congrats extends JPanel {
+public class CongratsView extends JPanel {
       JTextArea text;
       JButton CongratsButton;
 
-    Congrats() {
+    CongratsView() {
         text = new JTextArea("Congradulations! \n\n * You have mastered every subject!");
         CongratsButton = new JButton(new ImageIcon("src/pkgfinal/Image/congrats.png"));
 
