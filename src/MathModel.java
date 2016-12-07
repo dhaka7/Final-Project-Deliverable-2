@@ -5,6 +5,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -12,55 +13,43 @@ import java.util.ArrayList;
  */
 public class MathModel {
 
+    Random rand = new Random();
+    
     ArrayList<String> questionListOne = new ArrayList();
     ArrayList<String> answerOneListOne = new ArrayList();
     ArrayList<String> answerTwoListOne = new ArrayList();
     ArrayList<String> answerThreeListOne = new ArrayList();
     ArrayList<String> answerFourListOne = new ArrayList();
     ArrayList<String> correctAnswerListOne = new ArrayList();
+
+    
+    ArrayList<String> questionListGen = new ArrayList();
+    ArrayList<String> answerOneListGen = new ArrayList();
+    ArrayList<String> answerTwoListGen = new ArrayList();
+    ArrayList<String> answerThreeListGen = new ArrayList();
+    ArrayList<String> answerFourListGen = new ArrayList();
+    ArrayList<String> correctAnswerListGen = new ArrayList();
+
+    
     ArrayList<ArrayList> answerListOne = new ArrayList();
-
-    
-    ArrayList<String> questionListTwo = new ArrayList();
-    ArrayList<String> answerOneListTwo = new ArrayList();
-    ArrayList<String> answerTwoListTwo = new ArrayList();
-    ArrayList<String> answerThreeListTwo = new ArrayList();
-    ArrayList<String> answerFourListTwo = new ArrayList();
-    ArrayList<String> correctAnswerListTwo = new ArrayList();
-    ArrayList<ArrayList> answerListTwo = new ArrayList();
-
-    
-    ArrayList<String> questionListThree = new ArrayList();
-    ArrayList<String> answerOneListThree = new ArrayList();
-    ArrayList<String> answerTwoListThree = new ArrayList();
-    ArrayList<String> answerThreeListThree = new ArrayList();
-    ArrayList<String> answerFourListThree = new ArrayList();
-    ArrayList<String> correctAnswerListThree = new ArrayList();
-    ArrayList<ArrayList> answerListThree = new ArrayList();
+    ArrayList<ArrayList> answerListGen = new ArrayList();
 
     
     ArrayList<ArrayList> mathLevelOne = new ArrayList();
-    ArrayList<ArrayList> mathLevelTwo = new ArrayList();
-    ArrayList<ArrayList> mathLevelThree = new ArrayList();
+    ArrayList<ArrayList> mathLevelGen = new ArrayList();
 
-     MathModel() {
-         System.out.println("math models made");
+    MathModel() {
+
         answerListOne.add(answerOneListOne);
         answerListOne.add(answerTwoListOne);
         answerListOne.add(answerThreeListOne);
         answerListOne.add(answerFourListOne);
 
-        answerListTwo.add(answerOneListTwo);
-        answerListTwo.add(answerTwoListTwo);
-        answerListTwo.add(answerThreeListTwo);
-        answerListTwo.add(answerFourListTwo);
+        answerListGen.add(answerOneListGen);
+        answerListGen.add(answerTwoListGen);
+        answerListGen.add(answerThreeListGen);
+        answerListGen.add(answerFourListGen);
 
-        answerListThree.add(answerOneListThree);
-        answerListThree.add(answerTwoListThree);
-        answerListThree.add(answerThreeListThree);
-        answerListThree.add(answerFourListThree);
-
-//level 1 difficulty MATH
         questionListOne.add("  Which number comes next: 42, 43, 44?");
         answerListOne.get(0).add("45");
         answerListOne.get(1).add("47");
@@ -75,6 +64,7 @@ public class MathModel {
         answerListOne.get(3).add("25");
         correctAnswerListOne.add("5");
 
+    
         questionListOne.add("  Oscar had 17 pencils and gave 8 to Emily?");
         answerListOne.get(0).add("17");
         answerListOne.get(1).add("8");
@@ -82,69 +72,83 @@ public class MathModel {
         answerListOne.get(3).add("9");
         correctAnswerListOne.add("9");
 
+        questionListOne.add("  A normal stop sign has the shape of what geometrical figure?");
+        answerListOne.get(0).add("Pentarino");
+        answerListOne.get(1).add("Octagon");
+        answerListOne.get(2).add("Pentagon");
+        answerListOne.get(3).add("Square");
+        correctAnswerListOne.add("Octagon");
+
+        questionListOne.add("  What number must a year be divisible by to qualify as a leap year?");
+        answerListOne.get(0).add("5");
+        answerListOne.get(1).add("6");
+        answerListOne.get(2).add("4");
+        answerListOne.get(3).add("3");
+        correctAnswerListOne.add("4");
+
+        questionListOne.add("  How many total degrees are there among all the angles of a hexagon?");
+        answerListOne.get(0).add("700");
+        answerListOne.get(1).add("720");
+        answerListOne.get(2).add("730");
+        answerListOne.get(3).add("701");
+        correctAnswerListOne.add("720");
+
+        questionListOne.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
+        answerListOne.get(0).add("25");
+        answerListOne.get(1).add("123");
+        answerListOne.get(2).add("3075");
+        answerListOne.get(3).add("148");
+        correctAnswerListOne.add("3075");
+
+        questionListOne.add("  There are 175 cards in a deck and four players. How many cards does each person get?");
+        answerListOne.get(0).add("45 with 2 cards left");
+        answerListOne.get(1).add("44 with 5 cards left");
+        answerListOne.get(2).add("43 with 3 cards left");
+        answerListOne.get(3).add("43 with 2 cards left");
+        correctAnswerListOne.add("43 with 3 cards left");
+
+        questionListOne.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
+        answerListOne.get(0).add("$15.50");
+        answerListOne.get(1).add("$6.50");
+        answerListOne.get(2).add("$16.50");
+        answerListOne.get(3).add("$15.00");
+        correctAnswerListOne.add("$15.50");
+
+        questionListOne.add("  What is 20/5?");
+        answerListOne.get(0).add("1");
+        answerListOne.get(1).add("2");
+        answerListOne.get(2).add("3");
+        answerListOne.get(3).add("4");
+        correctAnswerListOne.add("4");
+
         mathLevelOne.add(questionListOne);
         mathLevelOne.add(answerListOne);
         mathLevelOne.add(correctAnswerListOne);
 
-//level 2 difficulty MATH
-        questionListTwo.add("  A normal stop sign has the shape of what geometrical figure?");
-        answerListTwo.get(0).add("Pentarino");
-        answerListTwo.get(1).add("Octagon");
-        answerListTwo.get(2).add("Pentagon");
-        answerListTwo.get(3).add("Square");
-        correctAnswerListTwo.add("Octagon");
-        //      [[a],[a]]
-        //    [[b],[b]]
-        //  [[c],[c]]
-        //[[d],[d]]
-        //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
+        for (int i = 0; i < 5; i++) {
+            int randIndex = rand.nextInt(questionListOne.size());
+            questionListGen.add(questionListOne.get(randIndex));
+            answerListGen.get(0).add(answerListOne.get(0).get(randIndex));
+            answerListGen.get(1).add(answerListOne.get(1).get(randIndex));
+            answerListGen.get(2).add(answerListOne.get(2).get(randIndex));
+            answerListGen.get(3).add(answerListOne.get(3).get(randIndex));
+            correctAnswerListGen.add(correctAnswerListOne.get(randIndex));
+        }
 
-        questionListTwo.add("  What number must a year be divisible by to qualify as a leap year?");
-        answerListTwo.get(0).add("5");
-        answerListTwo.get(1).add("6");
-        answerListTwo.get(2).add("4");
-        answerListTwo.get(3).add("3");
-        correctAnswerListTwo.add("4");
+        mathLevelGen.add(questionListGen);
+        mathLevelGen.add(answerListGen);
+        mathLevelGen.add(correctAnswerListGen);
 
-        questionListTwo.add("  How many total degrees are there among all the angles of a hexagon?");
-        answerListTwo.get(0).add("700");
-        answerListTwo.get(1).add("720");
-        answerListTwo.get(2).add("730");
-        answerListTwo.get(3).add("701");
-        correctAnswerListTwo.add("720");
+        //     for(int i = 0; i < 5; i++){
+        //   mathLevelGen.add(mathLevelOne.get(rand.nextInt(4) + 1));
+    }
 
-        mathLevelTwo.add(questionListTwo);
-        mathLevelTwo.add(answerListTwo);
-        mathLevelTwo.add(correctAnswerListTwo);
+    public ArrayList<ArrayList> getMathLevelGen() {
+        return mathLevelGen;
+    }
 
-// level 3 difficulty MATH
-
-
-        questionListThree.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
-        answerListThree.get(0).add("25");
-        answerListThree.get(1).add("123");
-        answerListThree.get(2).add("3075");
-        answerListThree.get(3).add("148");
-        correctAnswerListThree.add("3075");
-
-        questionListThree.add("  There are 175 cards in a deck and four players. How many cards does each person get?");
-        answerListThree.get(0).add("45 with 2 cards left");
-        answerListThree.get(1).add("44 with 5 cards left");
-        answerListThree.get(2).add("43 with 3 cards left");
-        answerListThree.get(3).add("43 with 2 cards left");
-        correctAnswerListThree.add("43 with 3 cards left");
-
-        questionListThree.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
-        answerListThree.get(0).add("$15.50");
-        answerListThree.get(1).add("$6.50");
-        answerListThree.get(2).add("$16.50");
-        answerListThree.get(3).add("$15.00");
-        correctAnswerListThree.add("$15.50");
-
-        mathLevelThree.add(questionListThree);
-        mathLevelThree.add(answerListThree);
-        mathLevelThree.add(correctAnswerListThree);
-
+    public void setMathLevelGen(ArrayList<ArrayList> mathLevelGen) {
+        this.mathLevelGen = mathLevelGen;
     }
 
     public ArrayList<ArrayList> getMathLevelOne() {
@@ -153,21 +157,5 @@ public class MathModel {
 
     public void setMathLevelOne(ArrayList<ArrayList> mathLevelOne) {
         this.mathLevelOne = mathLevelOne;
-    }
-
-    public ArrayList<ArrayList> getMathLevelTwo() {
-        return mathLevelTwo;
-    }
-
-    public void setMathLevelTwo(ArrayList<ArrayList> mathLevelTwo) {
-        this.mathLevelTwo = mathLevelTwo;
-    }
-
-    public ArrayList<ArrayList> getMathLevelThree() {
-        return mathLevelThree;
-    }
-
-    public void setMathLevelThree(ArrayList<ArrayList> mathLevelThree) {
-        this.mathLevelThree = mathLevelThree;
     }
 }

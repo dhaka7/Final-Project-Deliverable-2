@@ -53,14 +53,8 @@ public class GameView extends JPanel {
         
 
         if (subject.equalsIgnoreCase("math")) {
-            if (difficulty == 1) {
-                generateQuestion(math_model.getMathLevelOne());
+                generateQuestion(math_model.getMathLevelGen());
 
-            } else if (difficulty == 2) {
-                generateQuestion(math_model.getMathLevelTwo());
-            } else {
-                generateQuestion(math_model.getMathLevelThree());
-            }
 
         } else if (subject.equalsIgnoreCase("geography")) {
             if (difficulty == 1) {
