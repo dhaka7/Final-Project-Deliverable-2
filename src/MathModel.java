@@ -130,7 +130,7 @@ public class MathModel {
         
         questionListOne.add("  The perimeter of a perimeter is also known as what  ");
         answerListOne.get(0).add("perimeter");
-        answerListOne.get(1).add("SKIP");
+        answerListOne.get(1).add("SKIP ");
         answerListOne.get(2).add("perimeter");
         answerListOne.get(3).add("NO");
         correctAnswerListOne.add("circumference");

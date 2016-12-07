@@ -15,6 +15,7 @@ public class ScienceModel {
     ArrayList<String> correctAnswerListOne = new ArrayList();
     ArrayList<ArrayList> answerListOne = new ArrayList();
 
+    ArrayList<ArrayList> geoLevelOne = new ArrayList();
     
     ArrayList<ArrayList> sciLevelOne = new ArrayList();
     ArrayList<ArrayList> sciLevelTwo = new ArrayList();
@@ -22,6 +23,10 @@ public class ScienceModel {
 
     ScienceModel() {
 
+        answerListOne.add(answerOneListOne);
+        answerListOne.add(answerTwoListOne);
+        answerListOne.add(answerThreeListOne);
+        answerListOne.add(answerFourListOne);
 
         
         questionListOne.add(" Which of the following is used in pencils? ");
@@ -151,10 +156,9 @@ public class ScienceModel {
         answerListOne.get(3).add("Lsunami");
         correctAnswerListOne.add("Tsunami");
 
-        answerListOne.add(answerOneListOne);
-        answerListOne.add(answerTwoListOne);
-        answerListOne.add(answerThreeListOne);
-        answerListOne.add(answerFourListOne);
+        geoLevelOne.add(questionListOne);
+        geoLevelOne.add(answerListOne);
+        geoLevelOne.add(correctAnswerListOne);
     }
 
     public ArrayList<ArrayList> getSciLevelOne() {
