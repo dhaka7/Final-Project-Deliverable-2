@@ -29,7 +29,7 @@ public class OptionsView extends JPanel {
     
     
     
-        String[] subjects = new String[] {"Math", "Geography", "Science"};
+        String[] subjects = new String[] {"Math", "Geography", "Science", "History"};
         JComboBox<String> subjectList = new JComboBox<>(subjects);
         
     OptionsView(OptionsModel o_model) {
