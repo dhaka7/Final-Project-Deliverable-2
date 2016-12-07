@@ -28,7 +28,7 @@ public class CongratsView extends JPanel {
         
         congratsBottom = new CongratsViewBottomPanel(name, score);
         
-        picture = new JTextArea("Congradulations! \n\n * You have mastered every subject!");
+        picture = new JTextArea("Congradulations! \n\n * All questions on this level are finished!");
         congratsButton = new JButton(new ImageIcon("src/pkgfinal/Image/congrats.png"));
 
         setLayout(new BorderLayout());
