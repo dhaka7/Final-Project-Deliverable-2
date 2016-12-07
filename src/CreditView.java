@@ -12,11 +12,13 @@ public class CreditView extends JPanel {
         text = new JTextArea("Credits:\n\n * Dhaka Kharel \n\n * Oscar Sanjuan \n\n * Andy Lam ");
         add(text);
         
+        /*JComboBox
         String[] subjects = new String[] {"Math", "Geography", "Science"};
         JComboBox<String> subjectList = new JComboBox<>(subjects);
         
         add(subjectList);
         String selectSubject = (String)subjectList.getSelectedItem();
         System.out.println("Subject selected:  " + selectSubject);
+*/
     }
 }
