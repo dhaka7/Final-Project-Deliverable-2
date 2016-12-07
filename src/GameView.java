@@ -57,31 +57,33 @@ public class GameView extends JPanel {
 
 
         } else if (subject.equalsIgnoreCase("geography")) {
-            if (difficulty == 1) {
-                generateQuestion(geo_model.getGeoLevelOne());
-            } else if (difficulty == 2) {
-                generateQuestion(geo_model.getGeoLevelTwo());
-            } else {
-                generateQuestion(geo_model.getGeoLevelThree());
-            }
+           // if (difficulty == 1) {
+                generateQuestion(geo_model.getGeoLevelGen());
+            //}
+            
+            //else if (difficulty == 2) {
+              //  generateQuestion(geo_model.getGeoLevelTwo());
+           // } else {
+            //    generateQuestion(geo_model.getGeoLevelThree());
+            //}
 
         } else if (subject.equalsIgnoreCase("history")) {
-            if (difficulty == 1) {
-                generateQuestion(hist_model.getHistLevelOne());
-            } else if (difficulty == 2) {
-                generateQuestion(hist_model.getHistLevelTwo());
-            } else {
-                generateQuestion(hist_model.getHistLevelThree());
+       //     if (difficulty == 1) {
+                generateQuestion(hist_model.getHistLevelGen());
+         //   } else if (difficulty == 2) {
+           //     generateQuestion(hist_model.getHistLevelTwo());
+            //} else {
+             //   generateQuestion(hist_model.getHistLevelThree());
             }
             
-        } else if (subject.equalsIgnoreCase("science")) {
-            if(difficulty == 1) {
-                generateQuestion(sci_model.getSciLevelOne());
-            } else if(difficulty == 2) {
-                generateQuestion(sci_model.getSciLevelTwo());
-            } else {
-                generateQuestion(sci_model.getSciLevelThree());
-            }
+         else if (subject.equalsIgnoreCase("science")) {
+       //     if(difficulty == 1) {
+                generateQuestion(sci_model.getSciLevelGen());
+         //   } else if(difficulty == 2) {
+           //     generateQuestion(sci_model.getSciLevelTwo());
+           // } else {
+             //   generateQuestion(sci_model.getSciLevelThree());
+          //  }
             
         } else {
             game_model = new GameModel();

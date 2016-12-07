@@ -119,6 +119,7 @@ public class NavController {
             o_view.getUserNameLabel().setText("Username: " + o_view.getUserName().getText());
             o_view.getDifficultyLabel().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
             o_view.getSubjectSaveState().setText("Subect: " + o_view.getSubjectList().getSelectedItem());
+            m_view.getPlayGame().setText("Play Game!");
         }
     }
 

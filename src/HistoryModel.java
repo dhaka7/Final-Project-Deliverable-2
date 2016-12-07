@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -27,6 +28,23 @@ public class HistoryModel {
     ArrayList<ArrayList> histLevelTwo = new ArrayList();
     ArrayList<ArrayList> histLevelThree = new ArrayList();
 
+    
+    
+    
+    
+    ArrayList<String> questionListGen = new ArrayList();
+    ArrayList<String> answerOneListGen = new ArrayList();
+    ArrayList<String> answerTwoListGen = new ArrayList();
+    ArrayList<String> answerThreeListGen = new ArrayList();
+    ArrayList<String> answerFourListGen = new ArrayList();
+    ArrayList<String> correctAnswerListGen = new ArrayList();
+    ArrayList<ArrayList> answerListGen = new ArrayList();
+    ArrayList<ArrayList> histLevelGen = new ArrayList();
+
+    
+    
+    
+    
      HistoryModel() {
 
         answerListOne.add(answerOneListOne);
@@ -34,6 +52,13 @@ public class HistoryModel {
         answerListOne.add(answerThreeListOne);
         answerListOne.add(answerFourListOne);
 
+        
+                answerListGen.add(answerOneListGen);
+        answerListGen.add(answerTwoListGen);
+        answerListGen.add(answerThreeListGen);
+        answerListGen.add(answerFourListGen);
+
+        
 
 //level 1 difficulty History
         questionListOne.add("  How many state in the United States? ");
@@ -229,10 +254,38 @@ public class HistoryModel {
         histLevelOne.add(answerListOne);
         histLevelOne.add(correctAnswerListOne);
 
+        
+        Random rand = new Random();
+
+        for (int i = 0; i < 5; i++) {
+            int randIndex = rand.nextInt(questionListOne.size());
+            questionListGen.add(questionListOne.get(randIndex));
+            answerListGen.get(0).add(answerListOne.get(0).get(randIndex));
+            answerListGen.get(1).add(answerListOne.get(1).get(randIndex));
+            answerListGen.get(2).add(answerListOne.get(2).get(randIndex));
+            answerListGen.get(3).add(answerListOne.get(3).get(randIndex));
+            correctAnswerListGen.add(correctAnswerListOne.get(randIndex));
+        }
+
+        histLevelGen.add(questionListGen);
+        histLevelGen.add(answerListGen);
+        histLevelGen.add(correctAnswerListGen);
+
+    
+        
+        
     }
 
     public ArrayList<ArrayList> getHistLevelOne() {
         return histLevelOne;
+    }
+
+    public ArrayList<ArrayList> getHistLevelGen() {
+        return histLevelGen;
+    }
+
+    public void setHistLevelGen(ArrayList<ArrayList> histLevelGen) {
+        this.histLevelGen = histLevelGen;
     }
 
     public void setHistLevelOne(ArrayList<ArrayList> histLevelOne) {
