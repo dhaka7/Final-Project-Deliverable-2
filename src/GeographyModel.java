@@ -23,27 +23,11 @@ public class GeographyModel {
     ArrayList<ArrayList> answerListOne = new ArrayList();
 
     
-    ArrayList<String> questionListTwo = new ArrayList();
-    ArrayList<String> answerOneListTwo = new ArrayList();
-    ArrayList<String> answerTwoListTwo = new ArrayList();
-    ArrayList<String> answerThreeListTwo = new ArrayList();
-    ArrayList<String> answerFourListTwo = new ArrayList();
-    ArrayList<String> correctAnswerListTwo = new ArrayList();
-    ArrayList<ArrayList> answerListTwo = new ArrayList();
-
-    
-    ArrayList<String> questionListThree = new ArrayList();
-    ArrayList<String> answerOneListThree = new ArrayList();
-    ArrayList<String> answerTwoListThree = new ArrayList();
-    ArrayList<String> answerThreeListThree = new ArrayList();
-    ArrayList<String> answerFourListThree = new ArrayList();
-    ArrayList<String> correctAnswerListThree = new ArrayList();
-    ArrayList<ArrayList> answerListThree = new ArrayList();
+ 
 
     
     ArrayList<ArrayList> geoLevelOne = new ArrayList();
-    ArrayList<ArrayList> geoLevelTwo = new ArrayList();
-    ArrayList<ArrayList> geoLevelThree = new ArrayList();
+    
 
      GeographyModel() {
 
@@ -52,15 +36,7 @@ public class GeographyModel {
         answerListOne.add(answerThreeListOne);
         answerListOne.add(answerFourListOne);
 
-        answerListTwo.add(answerOneListTwo);
-        answerListTwo.add(answerTwoListTwo);
-        answerListTwo.add(answerThreeListTwo);
-        answerListTwo.add(answerFourListTwo);
 
-        answerListThree.add(answerOneListThree);
-        answerListThree.add(answerTwoListThree);
-        answerListThree.add(answerThreeListThree);
-        answerListThree.add(answerFourListThree);
 
 //level 1 difficulty Geo
         questionListOne.add("  What is the name of the biggest ocean on Earth?");
@@ -83,69 +59,207 @@ public class GeographyModel {
         answerListOne.get(2).add("America");
         answerListOne.get(3).add("canada height");
         correctAnswerListOne.add("Mt Everest");
+        
+        questionListOne.add("  True or False: Iceland is covered in ice");
+        answerListOne.get(0).add("True");
+        answerListOne.get(1).add("False");
+        answerListOne.get(2).add("I dont know");
+        answerListOne.get(3).add("skip");
+        correctAnswerListOne.add("False ");
+        
+        questionListOne.add(" which ocean lies on the east coast of the United States ");
+        answerListOne.get(0).add("Pacific ");
+        answerListOne.get(1).add("Atlantic ");
+        answerListOne.get(2).add("Nile ");
+        answerListOne.get(3).add("Indian ");
+        correctAnswerListOne.add("Atlantic ");
+        
+        questionListOne.add("  How many Great Lakes are there");
+        answerListOne.get(0).add("5");
+        answerListOne.get(1).add("4");
+        answerListOne.get(2).add("3");
+        answerListOne.get(3).add("2");
+        correctAnswerListOne.add("5");
+        
+        questionListOne.add("  which is the longest river in the U.S.");
+        answerListOne.get(0).add("Missouri");
+        answerListOne.get(1).add("Yukon ");
+        answerListOne.get(2).add("colorado ");
+        answerListOne.get(3).add("Indian ");
+        correctAnswerListOne.add("Missouri ");
+        
+        questionListOne.add("  which of these cities is not in Europe? ");
+        answerListOne.get(0).add("real Madrid ");
+        answerListOne.get(1).add("Barcelona ");
+        answerListOne.get(2).add("pargue ");
+        answerListOne.get(3).add("moscow ");
+        correctAnswerListOne.add("moscow ");
+        
+        questionListOne.add("   The location distance north or south of the equator is");
+        answerListOne.get(0).add("longitude ");
+        answerListOne.get(1).add("latitude ");
+        answerListOne.get(2).add("skip ");
+        answerListOne.get(3).add("I dont know ");
+        correctAnswerListOne.add("latitude ");
+        
 
-        geoLevelOne.add(questionListOne);
-        geoLevelOne.add(answerListOne);
-        geoLevelOne.add(correctAnswerListOne);
+      
 
 //level 2 difficulty geo
-        questionListTwo.add("  What is the largest continent?");
-        answerListTwo.get(0).add("Asia");
-        answerListTwo.get(1).add("America");
-        answerListTwo.get(2).add("India");
-        answerListTwo.get(3).add("Nepal");
-        correctAnswerListTwo.add("Asia");
+        questionListOne.add("  What is the largest continent?");
+        answerListOne.get(0).add("Asia");
+        answerListOne.get(1).add("America");
+        answerListOne.get(2).add("India");
+        answerListOne.get(3).add("Nepal");
+        correctAnswerListOne.add("Asia");
         //      [[a],[a]]
         //    [[b],[b]]
         //  [[c],[c]]
         //[[d],[d]]
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
 
-        questionListTwo.add("   The terms 'breeze' and 'gale' help describe the speed of what?");
-        answerListTwo.get(0).add("wind");
-        answerListTwo.get(1).add("water");
-        answerListTwo.get(2).add("air");
-        answerListTwo.get(3).add("cloud");
-        correctAnswerListTwo.add("wind");
+        questionListOne.add("   The terms 'breeze' and 'gale' help describe the speed of what?");
+        answerListOne.get(0).add("wind");
+        answerListOne.get(1).add("water");
+        answerListOne.get(2).add("air");
+        answerListOne.get(3).add("cloud");
+        correctAnswerListOne.add("wind");
 
-        questionListTwo.add("  What is the largest desert in the world?");
-        answerListTwo.get(0).add("Kali");
-        answerListTwo.get(1).add("Sahara");
-        answerListTwo.get(2).add("hot");
-        answerListTwo.get(3).add("cloudy");
-        correctAnswerListTwo.add("Sahara");
+        questionListOne.add("  What is the largest desert in the world?");
+        answerListOne.get(0).add("Kali");
+        answerListOne.get(1).add("Sahara");
+        answerListOne.get(2).add("hot");
+        answerListOne.get(3).add("cloudy");
+        correctAnswerListOne.add("Sahara");
+        
+        questionListOne.add("  The United kingdom is comparied of hoe many countries? ");
+        answerListOne.get(0).add(" 4 ");
+        answerListOne.get(1).add(" 5 ");
+        answerListOne.get(2).add(" 6 ");
+        answerListOne.get(3).add(" 7 ");
+        correctAnswerListOne.add(" 4 ");
+        
+        questionListOne.add("  which of the following countries do not border France");
+        answerListOne.get(0).add(" Germany ");
+        answerListOne.get(1).add(" Italy ");
+        answerListOne.get(2).add(" Netherland ");
+        answerListOne.get(3).add(" spain ");
+        correctAnswerListOne.add(" Netherland ");
 
-        geoLevelTwo.add(questionListTwo);
-        geoLevelTwo.add(answerListTwo);
-        geoLevelTwo.add(correctAnswerListTwo);
+        questionListOne.add("  What is the imaginary line called that connects the north and south pole?");
+        answerListOne.get(0).add(" Line ");
+        answerListOne.get(1).add(" Meridian ");
+        answerListOne.get(2).add(" Axis ");
+        answerListOne.get(3).add(" skip ");
+        correctAnswerListOne.add(" Meridian ");
+
+        questionListOne.add("  Between which two countries/states is the Bering Strait located?");
+        answerListOne.get(0).add(" Alaska and Russia ");
+        answerListOne.get(1).add("  Usa and India");
+        answerListOne.get(2).add(" France and England ");
+        answerListOne.get(3).add(" Finland and Sweden ");
+        correctAnswerListOne.add(" Alaska and Russia ");
+
+        questionListOne.add(" Which U.S. state is the Grand Canyon located in? ");
+        answerListOne.get(0).add(" Nevada ");
+        answerListOne.get(1).add(" Arizona ");
+        answerListOne.get(2).add(" New Mexico ");
+        answerListOne.get(3).add(" Wyoming  ");
+        correctAnswerListOne.add(" Arizona ");
+
+        questionListOne.add(" Which is the longest river in the world? ");
+        answerListOne.get(0).add(" Nile ");
+        answerListOne.get(1).add(" Amazon ");
+        answerListOne.get(2).add(" Yellow ");
+        answerListOne.get(3).add(" Congo ");
+        correctAnswerListOne.add(" Nile ");
+
+        questionListOne.add(" What is this colored area of land called? ");
+        answerListOne.get(0).add(" Middle East ");
+        answerListOne.get(1).add(" Arbian ");
+        answerListOne.get(2).add(" Iberian ");
+        answerListOne.get(3).add(" Saharan ");
+        correctAnswerListOne.add(" Arbian ");
+
+
+        
 
 // level 3 difficulty Geo
 
 
-        questionListThree.add("   The Kalinigrad Oblast borders which body of water?");
-        answerListThree.get(0).add("Mediterranean Sea");
-        answerListThree.get(1).add("Baltic Sea");
-        answerListThree.get(2).add("Gulf of Mexico");
-        answerListThree.get(3).add("Gulf of Aden");
-        correctAnswerListThree.add("Baltic Sea");
+        questionListOne.add("   The Kalinigrad Oblast borders which body of water?");
+        answerListOne.get(0).add("Mediterranean Sea");
+        answerListOne.get(1).add("Baltic Sea");
+        answerListOne.get(2).add("Gulf of Mexico");
+        answerListOne.get(3).add("Gulf of Aden");
+        correctAnswerListOne.add("Baltic Sea");
 
-        questionListThree.add("  Pick the top two most spoken languages in the world");
-        answerListThree.get(0).add("English and Spanish");
-        answerListThree.get(1).add("English and Hindi");
-        answerListThree.get(2).add("English");
-        answerListThree.get(3).add("(D)English and Madrin Chinese");
-        correctAnswerListThree.add("English and Madrin Chinese");
+        questionListOne.add("  Pick the top two most spoken languages in the world");
+        answerListOne.get(0).add("English and Spanish");
+        answerListOne.get(1).add("English and Hindi");
+        answerListOne.get(2).add("English");
+        answerListOne.get(3).add("(D)English and Madrin Chinese");
+        correctAnswerListOne.add("English and Madrin Chinese");
 
-        questionListThree.add("  The capital of Fiji is_______");
-        answerListThree.get(0).add("Suva");
-        answerListThree.get(1).add("lova");
-        answerListThree.get(2).add("kova");
-        answerListThree.get(3).add("mova");
-        correctAnswerListThree.add("Suva");
+        questionListOne.add(" The capital of Fiji is_______ ");
+        answerListOne.get(0).add("Suva");
+        answerListOne.get(1).add("lova");
+        answerListOne.get(2).add("kova");
+        answerListOne.get(3).add("mova");
+        correctAnswerListOne.add("Suva");
+        
+        questionListOne.add(" Which is the largest body of water? ");
+        answerListOne.get(0).add("Atlantic");
+        answerListOne.get(1).add("Indian");
+        answerListOne.get(2).add("Pacific");
+        answerListOne.get(3).add("skip");
+        correctAnswerListOne.add("Pacific");
+        
+        questionListOne.add(" Which is the smallest country, measured by total land area? ");
+        answerListOne.get(0).add("Maldives");
+        answerListOne.get(1).add("Monaco");
+        answerListOne.get(2).add("vatican");
+        answerListOne.get(3).add("city");
+        correctAnswerListOne.add("vatican");
+        
+        questionListOne.add(" What is the approximate size of Earth's equator? ");
+        answerListOne.get(0).add("40,000 km");
+        answerListOne.get(1).add("30,000 km");
+        answerListOne.get(2).add("20,000 km");
+        answerListOne.get(3).add("50,000 km");
+        correctAnswerListOne.add("40,000 km");
+        
+        questionListOne.add(" The Homolographic projection has the correct representation of ");
+        answerListOne.get(0).add("shape");
+        answerListOne.get(1).add("area");
+        answerListOne.get(2).add("baring");
+        answerListOne.get(3).add("distance");
+        correctAnswerListOne.add("area");
+        
+        questionListOne.add(" The great Victoria Desert is located in ");
+        answerListOne.get(0).add("canada");
+        answerListOne.get(1).add("USA");
+        answerListOne.get(2).add("Australia");
+        answerListOne.get(3).add("North America");
+        correctAnswerListOne.add("Australia");
+        
+        questionListOne.add(" The intersecting lines drawn on maps and globes are ");
+        answerListOne.get(0).add("latitudes");
+        answerListOne.get(1).add("longitudes");
+        answerListOne.get(2).add("geographic grids");
+        answerListOne.get(3).add("Non of the above");
+        correctAnswerListOne.add("geographic grids");
+        
+        questionListOne.add(" The landmass of which of the following continents is the least? ");
+        answerListOne.get(0).add("Africa");
+        answerListOne.get(1).add("Asia");
+        answerListOne.get(2).add("Australia");
+        answerListOne.get(3).add("Europe");
+        correctAnswerListOne.add("Australia");
 
-        geoLevelThree.add(questionListThree);
-        geoLevelThree.add(answerListThree);
-        geoLevelThree.add(correctAnswerListThree);
+       geoLevelOne.add(questionListOne);
+        geoLevelOne.add(answerListOne);
+        geoLevelOne.add(correctAnswerListOne);
 
     }
 
@@ -158,19 +272,18 @@ public class GeographyModel {
     }
 
     public ArrayList<ArrayList> getGeoLevelTwo() {
-        return geoLevelTwo;
+        return geoLevelOne;
     }
 
     public void setGeoLevelTwo(ArrayList<ArrayList> geoLevelTwo) {
-        this.geoLevelTwo = geoLevelTwo;
+        this.geoLevelOne = geoLevelTwo;
     }
 
     public ArrayList<ArrayList> getGeoLevelThree() {
-        return geoLevelThree;
+        return geoLevelOne;
     }
 
     public void setGeoLevelThree(ArrayList<ArrayList> geoLevelThree) {
-        this.geoLevelThree = geoLevelThree;
+        this.geoLevelOne = geoLevelThree;
     }
 }
- 
