@@ -27,6 +27,8 @@ public class NavController {
     HighScoreView hs_view;
     int gameCounter = 2;
     boolean isInputInt = true;
+    CongratsView congrats_view;
+    int userScore;
 
     public NavController(NavModel n_model, NavView n_view) {
         this.n_model = n_model;
@@ -40,6 +42,7 @@ public class NavController {
         g_view = new GameView("null", 0);
         g_controller = new GameController(g_view);
         hs_view = new HighScoreView();
+        congrats_view = new CongratsView("NoName", 0);
 
         loadHighScoreArray();
 
@@ -51,6 +54,7 @@ public class NavController {
         m_view.addPlayGameButtonListener(new PlayGameButtonListener());
         g_view.addTestButtonListener(new NextButtonListener());
         n_view.addHighScoreButtonListener(new HighScoreButtonListener());
+        congrats_view.addCongratsButtonListener(new MainButtonListener());
     }
 
     class OptionsButtonListener implements ActionListener {
@@ -58,6 +62,14 @@ public class NavController {
         public void actionPerformed(ActionEvent e) {
             //Pass an Options View object to our Navigation View
             n_view.switchToOptionsPanel(o_view);
+        }
+    }
+
+    class CongratsButtonListener implements ActionListener {
+
+        public void actionPerformed(ActionEvent e) {
+            //Pass an Options View object to our Navigation View
+            n_view.switchToCongrats(congrats_view);
         }
     }
 
@@ -118,6 +130,9 @@ public class NavController {
                 System.out.println("First If total question and game counter" + g_view.getTotalQuestionNumber() + " " + gameCounter);
                 if (gameCounter % 2 != 0) {
                     g_view.setAnswer(g_view.getCurrentQuestionNumber());
+                    if (g_view.getAnswer(g_view.getCurrentQuestionNumber()).equalsIgnoreCase(g_view.getUserAnswer().getText())) {
+                        userScore++;
+                    }
                     System.out.println("current question number for answer" + g_view.getCurrentQuestionNumber());
                     g_view.increaseCurrentQuestionNumber();
                     System.out.println("Counter " + gameCounter);
@@ -132,13 +147,15 @@ public class NavController {
                     System.out.println("Counter " + gameCounter);
                 }
             } else {
-                n_view.switchToMainPanel(m_view);
+                congrats_view = new CongratsView(o_view.getUserName().getText(), userScore);
+                n_view.switchToCongrats(congrats_view);
                 System.out.println("end of game");
                 // reset current g_view.
-                addNewScore(o_view.getUserName().getText(), 3280);
+                addNewScore(o_view.getUserName().getText(), userScore);
                 hs_view.updateHighScore();
                 saveHighScoreArray();
                 loadHighScoreArray();
+                userScore = 0;
             }
 
             gameCounter++;
@@ -152,7 +169,6 @@ public class NavController {
             System.out.println(o_view.getSubject().getText());
             int difficulty = o_view.getDifficulty().getValue();
             System.out.println(o_view.getDifficulty().getValue());
-
 
             g_view = new GameView(subject, difficulty);
             g_view.addTestButtonListener(new NextButtonListener());

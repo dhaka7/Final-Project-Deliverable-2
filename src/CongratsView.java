@@ -1,6 +1,10 @@
 
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
@@ -9,20 +13,51 @@ import javax.swing.JTextArea;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author ohs5008
  */
 public class CongratsView extends JPanel {
-      JTextArea text;
-      JButton CongratsButton;
 
-    CongratsView() {
-        text = new JTextArea("Congradulations! \n\n * You have mastered every subject!");
-        CongratsButton = new JButton(new ImageIcon("src/pkgfinal/Image/congrats.png"));
+    JTextArea picture;
 
-        add(text);
+    JButton congratsButton;
+    CongratsViewBottomPanel congratsBottom;
+    
+    CongratsView(String name, int score) {
+        
+        congratsBottom = new CongratsViewBottomPanel(name, score);
+        
+        picture = new JTextArea("Congradulations! \n\n * You have mastered every subject!");
+        congratsButton = new JButton(new ImageIcon("src/pkgfinal/Image/congrats.png"));
+
+        setLayout(new BorderLayout());
+
+        add(picture, BorderLayout.NORTH);
+        add(congratsButton, BorderLayout.CENTER);
+        add(congratsBottom, BorderLayout.SOUTH);
+ 
     }
 
+
+    public JButton getCongratsButton() {
+        return congratsButton;
+    }
+
+    
+    public JTextArea getPicture() {
+        return picture;
+    }
+
+    public void setPicture(JTextArea picture) {
+        this.picture = picture;
+    }
+    
+    public void setCongratsButton(JButton CongratsButton) {
+        this.congratsButton = CongratsButton;
+    }
+
+    public void addCongratsButtonListener(ActionListener al) {
+        this.congratsButton.addActionListener(al);
+    }
 }

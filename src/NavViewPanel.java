@@ -14,7 +14,7 @@ public class NavViewPanel extends JPanel {
     GameView g_view;
     HighScoreView hs_view;
     CongratsView congrats_view;
-    
+
     public NavViewPanel() {
         super();
         setLayout(new BorderLayout());
@@ -33,14 +33,20 @@ public class NavViewPanel extends JPanel {
         repaint();
     }
 
+    public void addCongrats(CongratsView congrats_view) {
+        this.congrats_view = congrats_view; //maintain handle to this view so we can remove it
+        add(congrats_view, BorderLayout.CENTER);
+        revalidate();
+        repaint();
+    }
+
     public void addMain(MainView m_view) {
         this.m_view = m_view;  //maintain handle to this view so we can remove it
         add(m_view, BorderLayout.CENTER);
         revalidate();
         repaint();
     }
-    
-    
+
     public void addHighScore(HighScoreView hs_view) {
         this.hs_view = hs_view;  //maintain handle to this view so we can remove it
         add(hs_view, BorderLayout.CENTER);
@@ -81,13 +87,12 @@ public class NavViewPanel extends JPanel {
         }
     }
 
-    
     public void removeHighScore() {
         if (this.hs_view != null) {
             remove(this.hs_view);
         }
     }
-    
+
     public void removeMain() {
         if (this.m_view != null) {
             remove(this.m_view);
@@ -109,6 +114,12 @@ public class NavViewPanel extends JPanel {
     public void removeGame() {
         if (this.g_view != null) {
             remove(this.g_view);
+        }
+    }
+
+    public void removeCongrats() {
+        if (this.congrats_view != null) {
+            remove(this.congrats_view);
         }
     }
 

@@ -23,6 +23,8 @@ public class GameModel {
         answerList = new ArrayList<>();
         correctAnswerList = new ArrayList<>();
 
+        
+        
         text = new JTextArea("There was an error creating question. Please double check your settings.");
         
     }

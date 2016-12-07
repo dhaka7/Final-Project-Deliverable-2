@@ -388,6 +388,12 @@ public class GameView extends JPanel {
         int i = questionNumber - 1;
         correctAnswerLabel.setText("The Correct Answer is " + correctAnswerList.get(i));
     }
+    
+    
+    public String getAnswer(int questionNumber) {
+        int i = questionNumber - 1;
+        return correctAnswerList.get(i);
+    }
 
     public int getCurrentQuestionNumber() {
         return currentQuestionNumber;
@@ -408,6 +414,14 @@ public class GameView extends JPanel {
     public void increaseCurrentQuestionNumber() {
 
         this.currentQuestionNumber += 1;
+    }
+
+    public JTextField getUserAnswer() {
+        return userAnswer;
+    }
+
+    public void setUserAnswer(JTextField userAnswer) {
+        this.userAnswer = userAnswer;
     }
 
 }

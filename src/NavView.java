@@ -27,6 +27,8 @@ public class NavView extends JFrame {
         nVpanel.removeInstructions();
         nVpanel.removeGame();
         nVpanel.removeHighScore();
+        
+        nVpanel.removeCongrats();
         nVpanel.addOptions(o_view);
     }
 
@@ -37,7 +39,23 @@ public class NavView extends JFrame {
         nVpanel.removeGame();
         nVpanel.removeInstructions();
         nVpanel.removeHighScore();
+        
+        nVpanel.removeCongrats();
         nVpanel.addMain(m_view);
+    }
+    
+    
+    public void switchToCongrats(CongratsView congrast_view) {
+        nVpanel.removeSplash();
+        nVpanel.removeOptions();
+        nVpanel.removeCredits();
+        nVpanel.removeGame();
+        nVpanel.removeInstructions();
+        nVpanel.removeHighScore();
+        nVpanel.removeCongrats();
+        
+        nVpanel.removeCongrats();
+        nVpanel.addCongrats(congrast_view);
     }
 
     public void switchToCreditsPanel(CreditView c_view) {
@@ -57,6 +75,8 @@ public class NavView extends JFrame {
         nVpanel.removeCredits();
         nVpanel.removeGame();
         nVpanel.removeHighScore();
+        
+        nVpanel.removeCongrats();
         nVpanel.addInstructions(i_view);
     }
     
@@ -67,6 +87,8 @@ public class NavView extends JFrame {
         nVpanel.removeCredits();
         nVpanel.removeInstructions();
         nVpanel.removeHighScore();
+        
+        nVpanel.removeCongrats();
         nVpanel.addPlayGame(g_view);
     }
     
@@ -78,6 +100,8 @@ public class NavView extends JFrame {
         nVpanel.removeCredits();
         nVpanel.removeInstructions();
         nVpanel.removeHighScore();
+        
+        nVpanel.removeCongrats();
         nVpanel.addHighScore(hs_view);
     }
 
@@ -101,6 +125,8 @@ public class NavView extends JFrame {
     public void addInstructionsButtonListener(ActionListener al) {
         nVpanel.menu.instructionsButton.addActionListener(al);
     }
+    
+    
 
     //TODO: Add listeners to switch to other Panels
 }
