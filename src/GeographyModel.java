@@ -63,57 +63,57 @@ public class GeographyModel {
         answerListThree.add(answerFourListThree);
 
 //level 1 difficulty Geo
-        questionListOne.add("  Which number comes next: 42, 43, 44?");
-        answerListOne.get(0).add("45");
-        answerListOne.get(1).add("47");
-        answerListOne.get(2).add("20");
-        answerListOne.get(3).add("1");
-        correctAnswerListOne.add("45");
+        questionListOne.add("  What is the name of the biggest ocean on Earth?");
+        answerListOne.get(0).add("Pacific Ocean");
+        answerListOne.get(1).add("Atlantic Ocean");
+        answerListOne.get(2).add("Nile River");
+        answerListOne.get(3).add("Indian Ocean");
+        correctAnswerListOne.add("Pacific Ocean");
 
-        questionListOne.add("  One quarter is equal to how many nickels?");
-        answerListOne.get(0).add("20");
-        answerListOne.get(1).add("10");
-        answerListOne.get(2).add("5");
-        answerListOne.get(3).add("25");
-        correctAnswerListOne.add("5");
+        questionListOne.add("  By area, what is the biggest state in the USA?");
+        answerListOne.get(0).add("Texas");
+        answerListOne.get(1).add("Alaska");
+        answerListOne.get(2).add("Main");
+        answerListOne.get(3).add("Arizona");
+        correctAnswerListOne.add("Alaska");
 
-        questionListOne.add("  Oscar had 17 pencils and gave 8 to Emily?");
-        answerListOne.get(0).add("17");
-        answerListOne.get(1).add("8");
-        answerListOne.get(2).add("25");
-        answerListOne.get(3).add("9");
-        correctAnswerListOne.add("9");
+        questionListOne.add("  What is the name of the highest mountain on Earth?");
+        answerListOne.get(0).add("Sagarmatha");
+        answerListOne.get(1).add("Mt Everest");
+        answerListOne.get(2).add("America");
+        answerListOne.get(3).add("canada height");
+        correctAnswerListOne.add("Mt Everest");
 
         geoLevelOne.add(questionListOne);
         geoLevelOne.add(answerListOne);
         geoLevelOne.add(correctAnswerListOne);
 
 //level 2 difficulty geo
-        questionListTwo.add("  A normal stop sign has the shape of what geometrical figure?");
-        answerListTwo.get(0).add("Pentarino");
-        answerListTwo.get(1).add("Octagon");
-        answerListTwo.get(2).add("Pentagon");
-        answerListTwo.get(3).add("Square");
-        correctAnswerListTwo.add("Octagon");
+        questionListTwo.add("  What is the largest continent?");
+        answerListTwo.get(0).add("Asia");
+        answerListTwo.get(1).add("America");
+        answerListTwo.get(2).add("India");
+        answerListTwo.get(3).add("Nepal");
+        correctAnswerListTwo.add("Asia");
         //      [[a],[a]]
         //    [[b],[b]]
         //  [[c],[c]]
         //[[d],[d]]
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
 
-        questionListTwo.add("  What number must a year be divisible by to qualify as a leap year?");
-        answerListTwo.get(0).add("5");
-        answerListTwo.get(1).add("6");
-        answerListTwo.get(2).add("4");
-        answerListTwo.get(3).add("3");
-        correctAnswerListTwo.add("4");
+        questionListTwo.add("   The terms 'breeze' and 'gale' help describe the speed of what?");
+        answerListTwo.get(0).add("wind");
+        answerListTwo.get(1).add("water");
+        answerListTwo.get(2).add("air");
+        answerListTwo.get(3).add("cloud");
+        correctAnswerListTwo.add("wind");
 
-        questionListTwo.add("  How many total degrees are there among all the angles of a hexagon?");
-        answerListTwo.get(0).add("700");
-        answerListTwo.get(1).add("720");
-        answerListTwo.get(2).add("730");
-        answerListTwo.get(3).add("701");
-        correctAnswerListTwo.add("720");
+        questionListTwo.add("  What is the largest desert in the world?");
+        answerListTwo.get(0).add("Kali");
+        answerListTwo.get(1).add("Sahara");
+        answerListTwo.get(2).add("hot");
+        answerListTwo.get(3).add("cloudy");
+        correctAnswerListTwo.add("Sahara");
 
         geoLevelTwo.add(questionListTwo);
         geoLevelTwo.add(answerListTwo);
@@ -122,26 +122,26 @@ public class GeographyModel {
 // level 3 difficulty Geo
 
 
-        questionListThree.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
-        answerListThree.get(0).add("25");
-        answerListThree.get(1).add("123");
-        answerListThree.get(2).add("3075");
-        answerListThree.get(3).add("148");
-        correctAnswerListThree.add("3075");
+        questionListThree.add("   The Kalinigrad Oblast borders which body of water?");
+        answerListThree.get(0).add("Mediterranean Sea");
+        answerListThree.get(1).add("Baltic Sea");
+        answerListThree.get(2).add("Gulf of Mexico");
+        answerListThree.get(3).add("Gulf of Aden");
+        correctAnswerListThree.add("Baltic Sea");
 
-        questionListThree.add("  There are 175 cards in a deck and four players. How many cards does each person get?");
-        answerListThree.get(0).add("45 with 2 cards left");
-        answerListThree.get(1).add("44 with 5 cards left");
-        answerListThree.get(2).add("43 with 3 cards left");
-        answerListThree.get(3).add("43 with 2 cards left");
-        correctAnswerListThree.add("43 with 3 cards left");
+        questionListThree.add("  Pick the top two most spoken languages in the world");
+        answerListThree.get(0).add("English and Spanish");
+        answerListThree.get(1).add("English and Hindi");
+        answerListThree.get(2).add("English");
+        answerListThree.get(3).add("(D)English and Madrin Chinese");
+        correctAnswerListThree.add("English and Madrin Chinese");
 
-        questionListThree.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
-        answerListThree.get(0).add("$15.50");
-        answerListThree.get(1).add("$6.50");
-        answerListThree.get(2).add("16.50");
-        answerListThree.get(3).add("15.00");
-        correctAnswerListThree.add("$15.50");
+        questionListThree.add("  The capital of Fiji is_______");
+        answerListThree.get(0).add("Suva");
+        answerListThree.get(1).add("lova");
+        answerListThree.get(2).add("kova");
+        answerListThree.get(3).add("mova");
+        correctAnswerListThree.add("Suva");
 
         geoLevelThree.add(questionListThree);
         geoLevelThree.add(answerListThree);

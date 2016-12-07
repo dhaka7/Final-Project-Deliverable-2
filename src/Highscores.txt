@@ -1,7 +1,7 @@
  --Enter Player Name-- 
 3280
-N/A
-0
+dr
+3280
 N/A
 0
 N/A

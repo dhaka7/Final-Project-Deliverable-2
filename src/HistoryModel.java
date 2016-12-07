@@ -63,57 +63,57 @@ public class HistoryModel {
         answerListThree.add(answerFourListThree);
 
 //level 1 difficulty History
-        questionListOne.add("  Which number comes next: 42, 43, 44?");
-        answerListOne.get(0).add("45");
-        answerListOne.get(1).add("47");
-        answerListOne.get(2).add("20");
-        answerListOne.get(3).add("1");
-        correctAnswerListOne.add("45");
+        questionListOne.add("  How many state in the United States? ");
+        answerListOne.get(0).add("50");
+        answerListOne.get(1).add("51");
+        answerListOne.get(2).add("52");
+        answerListOne.get(3).add("I dont know");
+        correctAnswerListOne.add("50");
 
-        questionListOne.add("  One quarter is equal to how many nickels?");
-        answerListOne.get(0).add("20");
-        answerListOne.get(1).add("10");
-        answerListOne.get(2).add("5");
-        answerListOne.get(3).add("25");
-        correctAnswerListOne.add("5");
+        questionListOne.add(" World War II began in which year?");
+        answerListOne.get(0).add("1919");
+        answerListOne.get(1).add("1918");
+        answerListOne.get(2).add("1917");
+        answerListOne.get(3).add("1939");
+        correctAnswerListOne.add("1939");
 
-        questionListOne.add("  Oscar had 17 pencils and gave 8 to Emily?");
-        answerListOne.get(0).add("17");
-        answerListOne.get(1).add("8");
-        answerListOne.get(2).add("25");
-        answerListOne.get(3).add("9");
-        correctAnswerListOne.add("9");
+        questionListOne.add("  Adolf Hitler was born in which country?");
+        answerListOne.get(0).add("France");
+        answerListOne.get(1).add("India");
+        answerListOne.get(2).add("Austria");
+        answerListOne.get(3).add("Germany");
+        correctAnswerListOne.add("Austria");
 
         histLevelOne.add(questionListOne);
         histLevelOne.add(answerListOne);
         histLevelOne.add(correctAnswerListOne);
 
 //level 2 difficulty Hist
-        questionListTwo.add("  A normal stop sign has the shape of what geometrical figure?");
-        answerListTwo.get(0).add("Pentarino");
-        answerListTwo.get(1).add("Octagon");
-        answerListTwo.get(2).add("Pentagon");
-        answerListTwo.get(3).add("Square");
-        correctAnswerListTwo.add("Octagon");
+        questionListTwo.add("  The first successful printing press was developed by");
+        answerListTwo.get(0).add("Johannes");
+        answerListTwo.get(1).add("Benjamin");
+        answerListTwo.get(2).add("no");
+        answerListTwo.get(3).add("skip");
+        correctAnswerListTwo.add("Johannes");
         //      [[a],[a]]
         //    [[b],[b]]
         //  [[c],[c]]
         //[[d],[d]]
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
 
-        questionListTwo.add("  What number must a year be divisible by to qualify as a leap year?");
-        answerListTwo.get(0).add("5");
-        answerListTwo.get(1).add("6");
-        answerListTwo.get(2).add("4");
-        answerListTwo.get(3).add("3");
-        correctAnswerListTwo.add("4");
+        questionListTwo.add("  World War I began in which year?");
+        answerListTwo.get(0).add("1914");
+        answerListTwo.get(1).add("1915");
+        answerListTwo.get(2).add("1916");
+        answerListTwo.get(3).add("1917");
+        correctAnswerListTwo.add("1914");
 
-        questionListTwo.add("  How many total degrees are there among all the angles of a hexagon?");
-        answerListTwo.get(0).add("700");
-        answerListTwo.get(1).add("720");
-        answerListTwo.get(2).add("730");
-        answerListTwo.get(3).add("701");
-        correctAnswerListTwo.add("720");
+        questionListTwo.add("  The Khmer Rouge was a regime ruling this nation in the 20th century.");
+        answerListTwo.get(0).add("India");
+        answerListTwo.get(1).add("Canada");
+        answerListTwo.get(2).add("Cambodia");
+        answerListTwo.get(3).add("Nepal");
+        correctAnswerListTwo.add("Cambodia");
 
         histLevelTwo.add(questionListTwo);
         histLevelTwo.add(answerListTwo);
@@ -122,14 +122,14 @@ public class HistoryModel {
 // level 3 difficulty Hist
 
 
-        questionListThree.add("  There are 123 boxes of candy at the warehouse. Each box contains 25 pieces of candy. How many pieces of candy are at the warehouse?");
-        answerListThree.get(0).add("25");
-        answerListThree.get(1).add("123");
-        answerListThree.get(2).add("3075");
-        answerListThree.get(3).add("148");
-        correctAnswerListThree.add("3075");
+        questionListThree.add("  Which general famously stated 'I shall return'?");
+        answerListThree.get(0).add("George Patton");
+        answerListThree.get(1).add("Bull Halsey");
+        answerListThree.get(2).add("Douglas MacArthur");
+        answerListThree.get(3).add("Omar");
+        correctAnswerListThree.add("Douglas MacArthur");
 
-        questionListThree.add("  There are 175 cards in a deck and four players. How many cards does each person get?");
+        questionListThree.add("  The Magna Carta was published by the King of which country?");
         answerListThree.get(0).add("45 with 2 cards left");
         answerListThree.get(1).add("44 with 5 cards left");
         answerListThree.get(2).add("43 with 3 cards left");
@@ -137,11 +137,11 @@ public class HistoryModel {
         correctAnswerListThree.add("43 with 3 cards left");
 
         questionListThree.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
-        answerListThree.get(0).add("$15.50");
-        answerListThree.get(1).add("$6.50");
-        answerListThree.get(2).add("16.50");
-        answerListThree.get(3).add("15.00");
-        correctAnswerListThree.add("$15.50");
+        answerListThree.get(0).add("France");
+        answerListThree.get(1).add("Austria");
+        answerListThree.get(2).add("Italy");
+        answerListThree.get(3).add("England");
+        correctAnswerListThree.add("England");
 
         histLevelThree.add(questionListThree);
         histLevelThree.add(answerListThree);
