@@ -120,6 +120,79 @@ public class MathModel {
         answerListOne.get(2).add("3");
         answerListOne.get(3).add("4");
         correctAnswerListOne.add("4");
+        
+        questionListOne.add("  What is the next prime number after 7  ");
+        answerListOne.get(0).add("11");
+        answerListOne.get(1).add("12");
+        answerListOne.get(2).add("13");
+        answerListOne.get(3).add("14");
+        correctAnswerListOne.add("11");
+        
+        questionListOne.add("  The perimeter of a perimeter is also known as what  ");
+        answerListOne.get(0).add("perimeter");
+        answerListOne.get(1).add("SKIP");
+        answerListOne.get(2).add("perimeter");
+        answerListOne.get(3).add("NO");
+        correctAnswerListOne.add("circumference");
+        
+        questionListOne.add(" What does the square root of 144 equal?   ");
+        answerListOne.get(0).add("12");
+        answerListOne.get(1).add("144");
+        answerListOne.get(2).add("13");
+        answerListOne.get(3).add("14");
+        correctAnswerListOne.add("12");
+        
+        questionListOne.add("  How many sides does a nonagon have?  ");
+        answerListOne.get(0).add("9");
+        answerListOne.get(1).add("6");
+        answerListOne.get(2).add("7");
+        answerListOne.get(3).add("8");
+        correctAnswerListOne.add("9");
+        
+        questionListOne.add("  What is the bigger number, a googol or a billion?  ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add("skip");
+        answerListOne.get(2).add("billion");
+        answerListOne.get(3).add("number");
+        correctAnswerListOne.add("googol");
+        
+        questionListOne.add("  the middle value of an ordered set of values is  ");
+        answerListOne.get(0).add("median");
+        answerListOne.get(1).add("mean");
+        answerListOne.get(2).add("mode");
+        answerListOne.get(3).add("skip");
+        correctAnswerListOne.add("median");
+        
+        questionListOne.add("  The average of first 50 natural numbers is   ");
+        answerListOne.get(0).add("24");
+        answerListOne.get(1).add("25");
+        answerListOne.get(2).add("23");
+        answerListOne.get(3).add("26");
+        correctAnswerListOne.add("25");
+        
+        questionListOne.add("   What is 1004 divided by 2? ");
+        answerListOne.get(0).add("52");
+        answerListOne.get(1).add("502");
+        answerListOne.get(2).add("5002");
+        answerListOne.get(3).add("520");
+        correctAnswerListOne.add("502");
+        
+        questionListOne.add("  A clock strikes once at 1 o’clock, twice at 2 o’clock, thrice at 3 o’clock and so on. How many times will it strike in 24 hours?  ");
+        answerListOne.get(0).add("78");
+        answerListOne.get(1).add("156");
+        answerListOne.get(2).add("136");
+        answerListOne.get(3).add("0");
+        correctAnswerListOne.add("156");
+        
+        questionListOne.add("  The simplest form of 1.5 : 2.5 is ");
+        answerListOne.get(0).add("6:10");
+        answerListOne.get(1).add("3:5");
+        answerListOne.get(2).add("7:8");
+        answerListOne.get(3).add("none");
+        correctAnswerListOne.add("3:5");
+        
+
+        
 
         mathLevelOne.add(questionListOne);
         mathLevelOne.add(answerListOne);

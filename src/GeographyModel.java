@@ -104,8 +104,6 @@ public class GeographyModel {
         
 
       
-
-//level 2 difficulty geo
         questionListOne.add("  What is the largest continent?");
         answerListOne.get(0).add("Asia");
         answerListOne.get(1).add("America");
@@ -180,11 +178,6 @@ public class GeographyModel {
         answerListOne.get(2).add(" Iberian ");
         answerListOne.get(3).add(" Saharan ");
         correctAnswerListOne.add(" Arbian ");
-
-
-        
-
-// level 3 difficulty Geo
 
 
         questionListOne.add("   The Kalinigrad Oblast borders which body of water?");

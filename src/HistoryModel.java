@@ -78,33 +78,27 @@ public class HistoryModel {
         answerListOne.get(3).add("Dhamma");
         correctAnswerListOne.add("Nirvana");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("  The system of competitive examination for civil service was accepted in principle in the year  ");
+        answerListOne.get(0).add("1833");
+        answerListOne.get(1).add("1853");
+        answerListOne.get(2).add("1858");
+        answerListOne.get(3).add("1882");
+        correctAnswerListOne.add("1853");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("   When was the Civil War? ");
+        answerListOne.get(0).add("1850");
+        answerListOne.get(1).add("1900");
+        answerListOne.get(2).add("1950");
+        answerListOne.get(3).add("2000");
+        correctAnswerListOne.add("1850");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("  Who said Give me liberty or give me death?");
+        answerListOne.get(0).add("Patrick");
+        answerListOne.get(1).add("Adams");
+        answerListOne.get(2).add("Samuel");
+        answerListOne.get(3).add("none");
+        correctAnswerListOne.add("Patrick");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
 
         
 
@@ -135,54 +129,47 @@ public class HistoryModel {
         answerListOne.get(3).add("Nepal");
         correctAnswerListOne.add("Cambodia");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("  The term \"Reconstruction\" refers to  ");
+        answerListOne.get(0).add("Payment");
+        answerListOne.get(1).add("Repairing");
+        answerListOne.get(2).add("Readmission");
+        answerListOne.get(3).add("Rebuilding");
+        correctAnswerListOne.add("Readmission");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add(" The Missouri Compromise was the act that:   ");
+        answerListOne.get(0).add("Founded");
+        answerListOne.get(1).add("Granted");
+        answerListOne.get(2).add("Settled");
+        answerListOne.get(3).add("Asmitted");
+        correctAnswerListOne.add("Admitted");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("   On what peninsula in Washington would you find the Olympic Mountains? ");
+        answerListOne.get(0).add("Seattle");
+        answerListOne.get(1).add("Puget");
+        answerListOne.get(2).add("Washington");
+        answerListOne.get(3).add("Olympic");
+        correctAnswerListOne.add("Olympic");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("  What is a nickname for people from Maine?  ");
+        answerListOne.get(0).add("Mainlanders");
+        answerListOne.get(1).add("Southers");
+        answerListOne.get(2).add("Easters");
+        answerListOne.get(3).add("Uplanders");
+        correctAnswerListOne.add("Easters");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("  What is the capital of Illinois?  ");
+        answerListOne.get(0).add("Springfield");
+        answerListOne.get(1).add("Streator");
+        answerListOne.get(2).add("Urbana");
+        answerListOne.get(3).add("Chicago");
+        correctAnswerListOne.add("Springfield");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
-        
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add(" In what American state would you find Denali?   ");
+        answerListOne.get(0).add("Arizona");
+        answerListOne.get(1).add("Alabama");
+        answerListOne.get(2).add("Alaska");
+        answerListOne.get(3).add("Arkansas");
+        correctAnswerListOne.add("Alaska");
 
        
 
@@ -190,18 +177,18 @@ public class HistoryModel {
 
 
         questionListOne.add("  Which general famously stated 'I shall return'?");
-        answerListOne.get(0).add("George Patton");
-        answerListOne.get(1).add("Bull Halsey");
-        answerListOne.get(2).add("Douglas MacArthur");
+        answerListOne.get(0).add("George");
+        answerListOne.get(1).add("Bull");
+        answerListOne.get(2).add("Douglas ");
         answerListOne.get(3).add("Omar");
-        correctAnswerListOne.add("Douglas MacArthur");
+        correctAnswerListOne.add("Douglas");
 
         questionListOne.add("  The Magna Carta was published by the King of which country?");
-        answerListOne.get(0).add("45 with 2 cards left");
-        answerListOne.get(1).add("44 with 5 cards left");
-        answerListOne.get(2).add("43 with 3 cards left");
-        answerListOne.get(3).add("43 with 2 cards left");
-        correctAnswerListOne.add("43 with 3 cards left");
+        answerListOne.get(0).add("45");
+        answerListOne.get(1).add("44");
+        answerListOne.get(2).add("43");
+        answerListOne.get(3).add("48");
+        correctAnswerListOne.add("43");
 
         questionListOne.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
         answerListOne.get(0).add("France");
@@ -210,55 +197,34 @@ public class HistoryModel {
         answerListOne.get(3).add("England");
         correctAnswerListOne.add("England");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add(" n which city would you find the Statue of Liberty?   ");
+        answerListOne.get(0).add("Philadelphia");
+        answerListOne.get(1).add("newyork");
+        answerListOne.get(2).add("Francisco");
+        answerListOne.get(3).add("california");
+        correctAnswerListOne.add("newyork");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("  Through which national park does the Continental Divide not pass?  ");
+        answerListOne.get(0).add("Yellowstone");
+        answerListOne.get(1).add("Glacier");
+        answerListOne.get(2).add("Mountain");
+        answerListOne.get(3).add("Yosemite");
+        correctAnswerListOne.add("Yosemite");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add("  What automobile was named after Henry Ford’s only son?  ");
+        answerListOne.get(0).add("Oldsmobile");
+        answerListOne.get(1).add("Buick");
+        answerListOne.get(2).add("Isuzu");
+        answerListOne.get(3).add("Edsel");
+        correctAnswerListOne.add("Edsel");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
+        questionListOne.add(" Which state seceded from Virginia in 1863?   ");
+        answerListOne.get(0).add("Carolina");
+        answerListOne.get(1).add("Maryland");
+        answerListOne.get(2).add("Virginia");
+        answerListOne.get(3).add("Columbia");
+        correctAnswerListOne.add("Virginia");
         
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
-        
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
-        
-        questionListOne.add("    ");
-        answerListOne.get(0).add(" ");
-        answerListOne.get(1).add(" ");
-        answerListOne.get(2).add(" ");
-        answerListOne.get(3).add(" ");
-        correctAnswerListOne.add(" ");
-
         histLevelOne.add(questionListOne);
         histLevelOne.add(answerListOne);
         histLevelOne.add(correctAnswerListOne);

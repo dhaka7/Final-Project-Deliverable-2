@@ -16,47 +16,15 @@ public class ScienceModel {
     ArrayList<ArrayList> answerListOne = new ArrayList();
 
     
-    ArrayList<String> questionListTwo = new ArrayList();
-    ArrayList<String> answerOneListTwo = new ArrayList();
-    ArrayList<String> answerTwoListTwo = new ArrayList();
-    ArrayList<String> answerThreeListTwo = new ArrayList();
-    ArrayList<String> answerFourListTwo = new ArrayList();
-    ArrayList<String> correctAnswerListTwo = new ArrayList();
-    ArrayList<ArrayList> answerListTwo = new ArrayList();
-
-    
-    ArrayList<String> questionListThree = new ArrayList();
-    ArrayList<String> answerOneListThree = new ArrayList();
-    ArrayList<String> answerTwoListThree = new ArrayList();
-    ArrayList<String> answerThreeListThree = new ArrayList();
-    ArrayList<String> answerFourListThree = new ArrayList();
-    ArrayList<String> correctAnswerListThree = new ArrayList();
-    ArrayList<ArrayList> answerListThree = new ArrayList();
-
-    
     ArrayList<ArrayList> sciLevelOne = new ArrayList();
     ArrayList<ArrayList> sciLevelTwo = new ArrayList();
     ArrayList<ArrayList> sciLevelThree = new ArrayList();       
 
     ScienceModel() {
 
-        answerListOne.add(answerOneListOne);
-        answerListOne.add(answerTwoListOne);
-        answerListOne.add(answerThreeListOne);
-        answerListOne.add(answerFourListOne);
 
-        answerListTwo.add(answerOneListTwo);
-        answerListTwo.add(answerTwoListTwo);
-        answerListTwo.add(answerThreeListTwo);
-        answerListTwo.add(answerFourListTwo);
-
-        answerListThree.add(answerOneListThree);
-        answerListThree.add(answerTwoListThree);
-        answerListThree.add(answerThreeListThree);
-        answerListThree.add(answerFourListThree);
         
-//level 1 Difficulty Science         
-        questionListOne.add("   Which of the following is used in pencils? ");
+        questionListOne.add(" Which of the following is used in pencils? ");
         answerListOne.get(0).add("Graphite");
         answerListOne.get(1).add("Silicon");
         answerListOne.get(2).add("Charcoal");
@@ -77,61 +45,116 @@ public class ScienceModel {
         answerListOne.get(3).add("CaSiO3");
         correctAnswerListOne.add("H2O");
         
-        sciLevelOne.add(questionListOne);
-        sciLevelOne.add(answerListOne);
-        sciLevelOne.add(correctAnswerListOne);
 
-//level 2 Difficulty Science  
-        questionListTwo.add("  Which of the gas is not known as green house gas? ");
-        answerListTwo.get(0).add("Methane");
-        answerListTwo.get(1).add("Nitrous");
-        answerListTwo.get(2).add("Carbon");
-        answerListTwo.get(3).add("Hydrogen");
-        correctAnswerListTwo.add("Hydrogen");
+        questionListOne.add("  Which of the gas is not known as green house gas? ");
+        answerListOne.get(0).add("Methane");
+        answerListOne.get(1).add("Nitrous");
+        answerListOne.get(2).add("Carbon");
+        answerListOne.get(3).add("Hydrogen");
+        correctAnswerListOne.add("Hydrogen");
 
-        questionListTwo.add(" The hardest substance available on earth is ");
-        answerListTwo.get(0).add("Diamond");
-        answerListTwo.get(1).add("Gold");
-        answerListTwo.get(2).add("Iron");
-        answerListTwo.get(3).add("Silver");
-        correctAnswerListTwo.add("Diamond");
+        questionListOne.add(" The hardest substance available on earth is ");
+        answerListOne.get(0).add("Diamond");
+        answerListOne.get(1).add("Gold");
+        answerListOne.get(2).add("Iron");
+        answerListOne.get(3).add("Silver");
+        correctAnswerListOne.add("Diamond");
 
-        questionListTwo.add(" The average salinity of sea water is");
-        answerListTwo.get(0).add("3%");
-        answerListTwo.get(1).add("3.5%");
-        answerListTwo.get(2).add("2.5%");
-        answerListTwo.get(3).add("2%");
-        correctAnswerListTwo.add("3.5%");
+        questionListOne.add(" The average salinity of sea water is");
+        answerListOne.get(0).add("3%");
+        answerListOne.get(1).add("3.5%");
+        answerListOne.get(2).add("2.5%");
+        answerListOne.get(3).add("2%");
+        correctAnswerListOne.add("3.5%");
+  
+        questionListOne.add(" The inert gas which is substituted for nitrogen in the air used by deep sea divers for breathing, is");
+        answerListOne.get(0).add("Argon");
+        answerListOne.get(1).add("Xenon");
+        answerListOne.get(2).add("Helium");
+        answerListOne.get(3).add("Krypton");
+        correctAnswerListOne.add("Helium");
 
-        sciLevelTwo.add(questionListTwo);
-        sciLevelTwo.add(answerListTwo);
-        sciLevelTwo.add(correctAnswerListTwo);
+        questionListOne.add(" Heavy water is");
+        answerListOne.get(0).add("deuterium oxide");
+        answerListOne.get(1).add("PH7");
+        answerListOne.get(2).add("rain water");
+        answerListOne.get(3).add("tritium oxide");
+        correctAnswerListOne.add("deuterium oxide");
+
+        questionListOne.add(" The element common to all acids is");
+        answerListOne.get(0).add("hydrogen");
+        answerListOne.get(1).add("carbon");
+        answerListOne.get(2).add("sulphur");
+        answerListOne.get(3).add("NONE");
+        correctAnswerListOne.add("Radius");
         
-//level 3 Difficulty Science    
-        questionListThree.add(" The inert gas which is substituted for nitrogen in the air used by deep sea divers for breathing, is");
-        answerListThree.get(0).add("Argon");
-        answerListThree.get(1).add("Xenon");
-        answerListThree.get(2).add("Helium");
-        answerListThree.get(3).add("Krypton");
-        correctAnswerListThree.add("Helium");
+        questionListOne.add(" When was the first plastic made of artificial materials patented? ");
+        answerListOne.get(0).add("1909");
+        answerListOne.get(1).add("1945");
+        answerListOne.get(2).add("2003");
+        answerListOne.get(3).add("1920");
+        correctAnswerListOne.add("1909");
+        
+        questionListOne.add("Which of the following technological developments came first? ");
+        answerListOne.get(0).add("telegraph");
+        answerListOne.get(1).add("telescope");
+        answerListOne.get(2).add("teletype");
+        answerListOne.get(3).add("telephone");
+        correctAnswerListOne.add("telescope");
+        
+        questionListOne.add("Who invented the geodesic dome? ");
+        answerListOne.get(0).add("Samuel");
+        answerListOne.get(1).add("Morse");
+        answerListOne.get(2).add("Einstein");
+        answerListOne.get(3).add("Fuller");
+        correctAnswerListOne.add("Fuller");
+        
+        questionListOne.add(" Moths are a member of what order?");
+        answerListOne.get(0).add("optica");
+        answerListOne.get(1).add("lepidoptera");
+        answerListOne.get(2).add("leprosy");
+        answerListOne.get(3).add("octagon");
+        correctAnswerListOne.add("lepidoptera");
+        
+        questionListOne.add(" A baby blue whale drinks this many liters of milk per day:");
+        answerListOne.get(0).add("10");
+        answerListOne.get(1).add("190");
+        answerListOne.get(2).add("50");
+        answerListOne.get(3).add("500");
+        correctAnswerListOne.add("190");
+        
+        questionListOne.add("For what is the Jurassic period named? ");
+        answerListOne.get(0).add("soccer");
+        answerListOne.get(1).add("mountain");
+        answerListOne.get(2).add("kind");
+        answerListOne.get(3).add("word");
+        correctAnswerListOne.add("mountain");
+        
+        questionListOne.add(" What is the biggest planet in our solar system?");
+        answerListOne.get(0).add("Jupiter");
+        answerListOne.get(1).add("pluto");
+        answerListOne.get(2).add("mercury");
+        answerListOne.get(3).add("venus");
+        correctAnswerListOne.add("Jupiter");
+        
+        questionListOne.add("What is the chemical symbol for the element oxygen ");
+        answerListOne.get(0).add("o");
+        answerListOne.get(1).add("z");
+        answerListOne.get(2).add("c");
+        answerListOne.get(3).add("q");
+        correctAnswerListOne.add("o");
+        
+        questionListOne.add("Another name for a tidal wave is a? ");
+        answerListOne.get(0).add("Tsunami");
+        answerListOne.get(1).add("Fsunami");
+        answerListOne.get(2).add("Qsunami");
+        answerListOne.get(3).add("Lsunami");
+        correctAnswerListOne.add("Tsunami");
 
-        questionListThree.add(" Heavy water is");
-        answerListThree.get(0).add("deuterium oxide");
-        answerListThree.get(1).add("PH7");
-        answerListThree.get(2).add("rain water");
-        answerListThree.get(3).add("tritium oxide");
-        correctAnswerListThree.add("deuterium oxide");
-
-        questionListThree.add(" The element common to all acids is");
-        answerListThree.get(0).add("hydrogen");
-        answerListThree.get(1).add("carbon");
-        answerListThree.get(2).add("sulphur");
-        answerListThree.get(3).add("NONE");
-        correctAnswerListThree.add("Radius");
-
-        sciLevelThree.add(questionListThree);
-        sciLevelThree.add(answerListThree);
-        sciLevelThree.add(correctAnswerListThree);
+        answerListOne.add(answerOneListOne);
+        answerListOne.add(answerTwoListOne);
+        answerListOne.add(answerThreeListOne);
+        answerListOne.add(answerFourListOne);
     }
 
     public ArrayList<ArrayList> getSciLevelOne() {
