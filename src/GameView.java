@@ -93,7 +93,7 @@ public class GameView extends JPanel {
             game_model = new GameModel();
         }
         setLayout(grid);
-        label = new JLabel("    Press Start to Play. First Questions are on Math. Second Questions are on Geography, Third Questions are on Science.");
+        label = new JLabel("    Press Start to Play! ");
         next = new JButton("Start");
         questionLabel = new JLabel();
         answerOneLabel = new JLabel();
