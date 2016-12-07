@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 
 /*
@@ -22,23 +21,6 @@ public class HistoryModel {
     ArrayList<String> correctAnswerListOne = new ArrayList();
     ArrayList<ArrayList> answerListOne = new ArrayList();
 
-    
-    ArrayList<String> questionListTwo = new ArrayList();
-    ArrayList<String> answerOneListTwo = new ArrayList();
-    ArrayList<String> answerTwoListTwo = new ArrayList();
-    ArrayList<String> answerThreeListTwo = new ArrayList();
-    ArrayList<String> answerFourListTwo = new ArrayList();
-    ArrayList<String> correctAnswerListTwo = new ArrayList();
-    ArrayList<ArrayList> answerListTwo = new ArrayList();
-
-    
-    ArrayList<String> questionListThree = new ArrayList();
-    ArrayList<String> answerOneListThree = new ArrayList();
-    ArrayList<String> answerTwoListThree = new ArrayList();
-    ArrayList<String> answerThreeListThree = new ArrayList();
-    ArrayList<String> answerFourListThree = new ArrayList();
-    ArrayList<String> correctAnswerListThree = new ArrayList();
-    ArrayList<ArrayList> answerListThree = new ArrayList();
 
     
     ArrayList<ArrayList> histLevelOne = new ArrayList();
@@ -52,15 +34,6 @@ public class HistoryModel {
         answerListOne.add(answerThreeListOne);
         answerListOne.add(answerFourListOne);
 
-        answerListTwo.add(answerOneListTwo);
-        answerListTwo.add(answerTwoListTwo);
-        answerListTwo.add(answerThreeListTwo);
-        answerListTwo.add(answerFourListTwo);
-
-        answerListThree.add(answerOneListThree);
-        answerListThree.add(answerTwoListThree);
-        answerListThree.add(answerThreeListThree);
-        answerListThree.add(answerFourListThree);
 
 //level 1 difficulty History
         questionListOne.add("  How many state in the United States? ");
@@ -83,69 +56,212 @@ public class HistoryModel {
         answerListOne.get(2).add("Austria");
         answerListOne.get(3).add("Germany");
         correctAnswerListOne.add("Austria");
+        
+        questionListOne.add("   The Battle of Plassey was fought in ");
+        answerListOne.get(0).add("1782");
+        answerListOne.get(1).add("1757");
+        answerListOne.get(2).add("1748");
+        answerListOne.get(3).add("1764");
+        correctAnswerListOne.add("1757");
+        
+        questionListOne.add("   ripitakas are sacred books of ");
+        answerListOne.get(0).add("Buddhists");
+        answerListOne.get(1).add("Hindus");
+        answerListOne.get(2).add("Jains");
+        answerListOne.get(3).add("none");
+        correctAnswerListOne.add("Buddhists");
+        
+        questionListOne.add("   The trident-shaped symbol of Buddhism does not represent ");
+        answerListOne.get(0).add("Nirvana");
+        answerListOne.get(1).add("Sangha");
+        answerListOne.get(2).add("Buddha");
+        answerListOne.get(3).add("Dhamma");
+        correctAnswerListOne.add("Nirvana");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
 
-        histLevelOne.add(questionListOne);
-        histLevelOne.add(answerListOne);
-        histLevelOne.add(correctAnswerListOne);
+        
 
 //level 2 difficulty Hist
-        questionListTwo.add("  The first successful printing press was developed by");
-        answerListTwo.get(0).add("Johannes");
-        answerListTwo.get(1).add("Benjamin");
-        answerListTwo.get(2).add("no");
-        answerListTwo.get(3).add("skip");
-        correctAnswerListTwo.add("Johannes");
+        questionListOne.add("  The first successful printing press was developed by");
+        answerListOne.get(0).add("Johannes");
+        answerListOne.get(1).add("Benjamin");
+        answerListOne.get(2).add("no");
+        answerListOne.get(3).add("skip");
+        correctAnswerListOne.add("Johannes");
         //      [[a],[a]]
         //    [[b],[b]]
         //  [[c],[c]]
         //[[d],[d]]
         //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
 
-        questionListTwo.add("  World War I began in which year?");
-        answerListTwo.get(0).add("1914");
-        answerListTwo.get(1).add("1915");
-        answerListTwo.get(2).add("1916");
-        answerListTwo.get(3).add("1917");
-        correctAnswerListTwo.add("1914");
+        questionListOne.add("  World War I began in which year?");
+        answerListOne.get(0).add("1914");
+        answerListOne.get(1).add("1915");
+        answerListOne.get(2).add("1916");
+        answerListOne.get(3).add("1917");
+        correctAnswerListOne.add("1914");
 
-        questionListTwo.add("  The Khmer Rouge was a regime ruling this nation in the 20th century.");
-        answerListTwo.get(0).add("India");
-        answerListTwo.get(1).add("Canada");
-        answerListTwo.get(2).add("Cambodia");
-        answerListTwo.get(3).add("Nepal");
-        correctAnswerListTwo.add("Cambodia");
+        questionListOne.add("  The Khmer Rouge was a regime ruling this nation in the 20th century.");
+        answerListOne.get(0).add("India");
+        answerListOne.get(1).add("Canada");
+        answerListOne.get(2).add("Cambodia");
+        answerListOne.get(3).add("Nepal");
+        correctAnswerListOne.add("Cambodia");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
 
-        histLevelTwo.add(questionListTwo);
-        histLevelTwo.add(answerListTwo);
-        histLevelTwo.add(correctAnswerListTwo);
+       
 
 // level 3 difficulty Hist
 
 
-        questionListThree.add("  Which general famously stated 'I shall return'?");
-        answerListThree.get(0).add("George Patton");
-        answerListThree.get(1).add("Bull Halsey");
-        answerListThree.get(2).add("Douglas MacArthur");
-        answerListThree.get(3).add("Omar");
-        correctAnswerListThree.add("Douglas MacArthur");
+        questionListOne.add("  Which general famously stated 'I shall return'?");
+        answerListOne.get(0).add("George Patton");
+        answerListOne.get(1).add("Bull Halsey");
+        answerListOne.get(2).add("Douglas MacArthur");
+        answerListOne.get(3).add("Omar");
+        correctAnswerListOne.add("Douglas MacArthur");
 
-        questionListThree.add("  The Magna Carta was published by the King of which country?");
-        answerListThree.get(0).add("45 with 2 cards left");
-        answerListThree.get(1).add("44 with 5 cards left");
-        answerListThree.get(2).add("43 with 3 cards left");
-        answerListThree.get(3).add("43 with 2 cards left");
-        correctAnswerListThree.add("43 with 3 cards left");
+        questionListOne.add("  The Magna Carta was published by the King of which country?");
+        answerListOne.get(0).add("45 with 2 cards left");
+        answerListOne.get(1).add("44 with 5 cards left");
+        answerListOne.get(2).add("43 with 3 cards left");
+        answerListOne.get(3).add("43 with 2 cards left");
+        correctAnswerListOne.add("43 with 3 cards left");
 
-        questionListThree.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
-        answerListThree.get(0).add("France");
-        answerListThree.get(1).add("Austria");
-        answerListThree.get(2).add("Italy");
-        answerListThree.get(3).add("England");
-        correctAnswerListThree.add("England");
+        questionListOne.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
+        answerListOne.get(0).add("France");
+        answerListOne.get(1).add("Austria");
+        answerListOne.get(2).add("Italy");
+        answerListOne.get(3).add("England");
+        correctAnswerListOne.add("England");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
+        
+        questionListOne.add("    ");
+        answerListOne.get(0).add(" ");
+        answerListOne.get(1).add(" ");
+        answerListOne.get(2).add(" ");
+        answerListOne.get(3).add(" ");
+        correctAnswerListOne.add(" ");
 
-        histLevelThree.add(questionListThree);
-        histLevelThree.add(answerListThree);
-        histLevelThree.add(correctAnswerListThree);
+        histLevelOne.add(questionListOne);
+        histLevelOne.add(answerListOne);
+        histLevelOne.add(correctAnswerListOne);
 
     }
 
