@@ -128,11 +128,11 @@ public class MathModel {
         answerListOne.get(3).add("14");
         correctAnswerListOne.add("11");
         
-        questionListOne.add("  The perimeter of a perimeter is also known as what  ");
+        questionListOne.add("  The perimeter of a circle is also known as?  ");
         answerListOne.get(0).add("perimeter");
-        answerListOne.get(1).add("SKIP");
-        answerListOne.get(2).add("perimeter");
-        answerListOne.get(3).add("NO");
+        answerListOne.get(1).add("none");
+        answerListOne.get(2).add("radius");
+        answerListOne.get(3).add("circumference");
         correctAnswerListOne.add("circumference");
         
         questionListOne.add(" What does the square root of 144 equal?   ");
@@ -151,7 +151,7 @@ public class MathModel {
         
         questionListOne.add("  What is the bigger number, a googol or a billion?");
         answerListOne.get(0).add("googol");
-        answerListOne.get(1).add("skip");
+        answerListOne.get(1).add("none");
         answerListOne.get(2).add("billion");
         answerListOne.get(3).add("number");
         correctAnswerListOne.add("googol");
@@ -160,7 +160,7 @@ public class MathModel {
         answerListOne.get(0).add("median");
         answerListOne.get(1).add("mean");
         answerListOne.get(2).add("mode");
-        answerListOne.get(3).add("skip");
+        answerListOne.get(3).add("none");
         correctAnswerListOne.add("median");
         
         questionListOne.add("  The average of first 50 natural numbers is   ");

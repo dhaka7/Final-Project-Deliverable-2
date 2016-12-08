@@ -76,8 +76,8 @@ public class GeographyModel {
         questionListOne.add("  True or False: Iceland is covered in ice");
         answerListOne.get(0).add("True");
         answerListOne.get(1).add("False");
-        answerListOne.get(2).add("know");
-        answerListOne.get(3).add("skip");
+        answerListOne.get(2).add("ice");
+        answerListOne.get(3).add("none");
         correctAnswerListOne.add("False ");
 
         questionListOne.add(" which ocean lies on the east coast of the United States ");
@@ -111,7 +111,7 @@ public class GeographyModel {
         questionListOne.add("   The location distance north or south of the equator is");
         answerListOne.get(0).add("longitude");
         answerListOne.get(1).add("latitude");
-        answerListOne.get(2).add("skip");
+        answerListOne.get(2).add("location");
         answerListOne.get(3).add("none");
         correctAnswerListOne.add("latitude");
 
@@ -154,7 +154,7 @@ public class GeographyModel {
         answerListOne.get(0).add("Line");
         answerListOne.get(1).add("Meridian");
         answerListOne.get(2).add("Axis");
-        answerListOne.get(3).add("skip");
+        answerListOne.get(3).add("none");
         correctAnswerListOne.add("Meridian");
 
         questionListOne.add("  Between which is countries/states is the Bering Strait located?");
@@ -210,7 +210,7 @@ public class GeographyModel {
         answerListOne.get(0).add("Atlantic");
         answerListOne.get(1).add("Indian");
         answerListOne.get(2).add("Pacific");
-        answerListOne.get(3).add("skip");
+        answerListOne.get(3).add("American");
         correctAnswerListOne.add("Pacific");
 
         questionListOne.add(" Which is the smallest country, measured by total land area? ");
@@ -238,14 +238,14 @@ public class GeographyModel {
         answerListOne.get(0).add("canada");
         answerListOne.get(1).add("USA");
         answerListOne.get(2).add("Australia");
-        answerListOne.get(3).add("North America");
+        answerListOne.get(3).add("America");
         correctAnswerListOne.add("Australia");
 
         questionListOne.add(" The intersecting lines drawn on maps and globes are ");
         answerListOne.get(0).add("latitudes");
         answerListOne.get(1).add("longitudes");
         answerListOne.get(2).add("geographic");
-        answerListOne.get(3).add("Non");
+        answerListOne.get(3).add("None");
         correctAnswerListOne.add("geographic");
 
         questionListOne.add(" The landmass of which of the following continents is the least? ");

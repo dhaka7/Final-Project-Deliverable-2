@@ -120,8 +120,8 @@ public class HistoryModel {
         questionListOne.add("  The first successful printing press was developed by");
         answerListOne.get(0).add("Johannes");
         answerListOne.get(1).add("Benjamin");
-        answerListOne.get(2).add("no");
-        answerListOne.get(3).add("skip");
+        answerListOne.get(2).add("none");
+        answerListOne.get(3).add("obama");
         correctAnswerListOne.add("Johannes");
         
 

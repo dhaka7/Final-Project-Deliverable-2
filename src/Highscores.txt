@@ -1,3 +1,5 @@
+Dhaka
+4
 Oscar
 2
 007 
@@ -8,8 +10,6 @@ Andy
 1
 Oscar
 1
-N/A
-0
 N/A
 0
 N/A

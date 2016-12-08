@@ -103,7 +103,7 @@ public class ScienceModel {
         answerListOne.get(0).add("hydrogen");
         answerListOne.get(1).add("carbon");
         answerListOne.get(2).add("sulphur");
-        answerListOne.get(3).add("NONE");
+        answerListOne.get(3).add("acid");
         correctAnswerListOne.add("Radius");
 
         questionListOne.add(" When was the first plastic made of artificial materials patented? ");
