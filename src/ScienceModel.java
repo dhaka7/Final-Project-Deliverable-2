@@ -125,7 +125,7 @@ public class ScienceModel {
         answerListOne.get(1).add("Morse");
         answerListOne.get(2).add("Einstein");
         answerListOne.get(3).add("Fuller");
-        correctAnswerListOne.add("Fuller");
+        correctAnswerListOne.add("Fuller"); 
 
         questionListOne.add(" Moths are a member of what order?");
         answerListOne.get(0).add("optica");
