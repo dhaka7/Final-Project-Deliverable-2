@@ -37,7 +37,7 @@ public class GeographyModel {
 
     
     ArrayList<ArrayList> geoLevelOne = new ArrayList();
-    ArrayList<ArrayList> geoLevelGen = new ArrayList();
+    ArrayList<ArrayList> geoLevelGen = new ArrayList(); 
 
     GeographyModel() {
 
