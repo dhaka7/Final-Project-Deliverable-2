@@ -14,11 +14,6 @@ public class ScienceModel {
     ArrayList<String> answerThreeListOne = new ArrayList();
     ArrayList<String> answerFourListOne = new ArrayList();
     ArrayList<String> correctAnswerListOne = new ArrayList();
-    ArrayList<ArrayList> answerListOne = new ArrayList();
-
-    ArrayList<ArrayList> sciLevelOne = new ArrayList();
-    ArrayList<ArrayList> sciLevelTwo = new ArrayList();
-    ArrayList<ArrayList> sciLevelThree = new ArrayList();
 
     ArrayList<String> questionListGen = new ArrayList();
     ArrayList<String> answerOneListGen = new ArrayList();
@@ -26,8 +21,15 @@ public class ScienceModel {
     ArrayList<String> answerThreeListGen = new ArrayList();
     ArrayList<String> answerFourListGen = new ArrayList();
     ArrayList<String> correctAnswerListGen = new ArrayList();
+
+
+     ArrayList<ArrayList> answerListOne = new ArrayList();
     ArrayList<ArrayList> answerListGen = new ArrayList();
+
+    
+    ArrayList<ArrayList> sciLevelOne = new ArrayList();
     ArrayList<ArrayList> sciLevelGen = new ArrayList();
+    
 
     ScienceModel() {
 
@@ -204,22 +206,6 @@ public class ScienceModel {
 
     public void setSciLevelOne(ArrayList<ArrayList> sciLevelOne) {
         this.sciLevelOne = sciLevelOne;
-    }
-
-    public ArrayList<ArrayList> getSciLevelTwo() {
-        return sciLevelTwo;
-    }
-
-    public void setSciLevelTwo(ArrayList<ArrayList> sciLevelTwo) {
-        this.sciLevelTwo = sciLevelTwo;
-    }
-
-    public ArrayList<ArrayList> getSciLevelThree() {
-        return sciLevelThree;
-    }
-
-    public void setSciLevelThree(ArrayList<ArrayList> sciLevelThree) {
-        this.sciLevelThree = sciLevelThree;
     }
 
 }
