@@ -2,7 +2,7 @@
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
@@ -10,26 +10,26 @@ import javax.swing.JTextArea;
 public class CongratsView extends JPanel {
 
     JTextArea picture;
-    JButton congratsButton;
+    JLabel congratsPicture;
     CongratsViewBottomPanel congratsBottom;
     
     CongratsView(String name, int score) {
         
         congratsBottom = new CongratsViewBottomPanel(name, score);
         picture = new JTextArea("Congradulations! \n\n * All questions on this level are finished!");
-        congratsButton = new JButton(new ImageIcon("src/pkgfinal/Image/congrats.png"));
+        congratsPicture = new JLabel(new ImageIcon("src/pkgfinal/Image/congrats.png"));
 
         setLayout(new BorderLayout());
 
         add(picture, BorderLayout.NORTH);
-        add(congratsButton, BorderLayout.CENTER);
+        add(congratsPicture, BorderLayout.CENTER);
         add(congratsBottom, BorderLayout.SOUTH);
  
     }
 
 
-    public JButton getCongratsButton() {
-        return congratsButton;
+    public JLabel getCongratsButton() {
+        return congratsPicture;
     }
 
     
@@ -41,11 +41,8 @@ public class CongratsView extends JPanel {
         this.picture = picture;
     }
     
-    public void setCongratsButton(JButton CongratsButton) {
-        this.congratsButton = CongratsButton;
+    public void setCongratsButton(JLabel CongratsButton) {
+        this.congratsPicture = CongratsButton;
     }
 
-    public void addCongratsButtonListener(ActionListener al) {
-        this.congratsButton.addActionListener(al);
-    }
 }

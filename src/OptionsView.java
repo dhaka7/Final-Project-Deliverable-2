@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -10,9 +11,8 @@ import javax.swing.JTextField;
 
 public class OptionsView extends JPanel {
 
-    JButton retButton;
     JTextField userName;
-    JLabel EnterDiff;
+    JLabel enterDiff;
     JSlider difficulty;
     JButton saveSetting;
     JLabel settingSaveState;
@@ -41,16 +41,25 @@ public class OptionsView extends JPanel {
         difficulty.setPaintLabels(true);
         difficulty.setPaintTicks(true);
         
-        EnterDiff = new JLabel(" Enter Difficulty: ");
+        enterDiff = new JLabel(" Enter Difficulty: ");
         saveSetting = new JButton(" Save Settings ");
         settingSaveState = new JLabel(" Settings Not Saved ");
         difficultyLabel = new JLabel(" Difficulty level Not Set! ");
         userNameLabel = new JLabel(" Username Not Set! ");
         subjectSaveState = new JLabel(" Subject Not Set! ");
-        add(userName);
         
+        settingSaveState.setForeground(Color.RED);
+        saveSetting.setBackground(Color.RED);
+        
+        
+        subjectList.setBackground(Color.yellow);
+        userName.setBackground(Color.CYAN);
+        enterDiff.setBackground(Color.MAGENTA);
+        
+        
+        add(userName);
         add(subjectList);
-        add(EnterDiff);
+        add(enterDiff);
         add(difficulty);
         add(new JLabel());
         add(saveSetting);
@@ -80,14 +89,6 @@ public class OptionsView extends JPanel {
         this.settingSaveState = settingSaveState;
     }
 
-    public JButton getRetButton() {
-        return retButton;
-    }
-
-    public void setRetButton(JButton retButton) {
-        this.retButton = retButton;
-    }
-
     public JTextField getUserName() {
         return userName;
     }
@@ -97,11 +98,11 @@ public class OptionsView extends JPanel {
     }
 
     public JLabel getEnterDiff() {
-        return EnterDiff;
+        return enterDiff;
     }
 
     public void setEnterDiff(JLabel EnterDiff) {
-        this.EnterDiff = EnterDiff;
+        this.enterDiff = enterDiff;
     }
 
     public JSlider getDifficulty() {

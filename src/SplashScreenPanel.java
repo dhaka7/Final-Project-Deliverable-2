@@ -7,14 +7,14 @@ import javax.swing.JPanel;
 
 public class SplashScreenPanel extends JPanel {
 
-    JButton splashButton;
+    JLabel splashButton;
     JLabel optionsLabel;
     JButton welcomeButton;
     JLabel hint;
 
     SplashScreenPanel() {
         setLayout(new BorderLayout());
-        splashButton = new JButton(new ImageIcon("src/pkgfinal/Image/final pic.png"));
+        splashButton = new JLabel(new ImageIcon("src/pkgfinal/Image/final pic.png"));
         welcomeButton = new JButton(" Welcome to TRIvia! ");
         hint = new JLabel(" Where we test your knowledge in Math, Geography, History and Science!");
         add(welcomeButton, BorderLayout.NORTH);

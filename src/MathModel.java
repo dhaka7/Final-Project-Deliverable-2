@@ -14,7 +14,7 @@ import java.util.Random;
 public class MathModel {
 
     Random rand = new Random();
-    
+
     ArrayList<String> questionListOne = new ArrayList();
     ArrayList<String> answerOneListOne = new ArrayList();
     ArrayList<String> answerTwoListOne = new ArrayList();
@@ -22,7 +22,6 @@ public class MathModel {
     ArrayList<String> answerFourListOne = new ArrayList();
     ArrayList<String> correctAnswerListOne = new ArrayList();
 
-    
     ArrayList<String> questionListGen = new ArrayList();
     ArrayList<String> answerOneListGen = new ArrayList();
     ArrayList<String> answerTwoListGen = new ArrayList();
@@ -30,11 +29,9 @@ public class MathModel {
     ArrayList<String> answerFourListGen = new ArrayList();
     ArrayList<String> correctAnswerListGen = new ArrayList();
 
-    
     ArrayList<ArrayList> answerListOne = new ArrayList();
     ArrayList<ArrayList> answerListGen = new ArrayList();
 
-    
     ArrayList<ArrayList> mathLevelOne = new ArrayList();
     ArrayList<ArrayList> mathLevelGen = new ArrayList();
 
@@ -64,7 +61,6 @@ public class MathModel {
         answerListOne.get(3).add("25");
         correctAnswerListOne.add("5");
 
-    
         questionListOne.add("  Oscar had 17 pencils and gave 8 to Emily. How many pencils does Oscar have now?");
         answerListOne.get(0).add("17");
         answerListOne.get(1).add("8");
@@ -120,85 +116,86 @@ public class MathModel {
         answerListOne.get(2).add("3");
         answerListOne.get(3).add("4");
         correctAnswerListOne.add("4");
-        
+
         questionListOne.add("  What is the next prime number after 7  ");
         answerListOne.get(0).add("11");
         answerListOne.get(1).add("12");
         answerListOne.get(2).add("13");
         answerListOne.get(3).add("14");
         correctAnswerListOne.add("11");
-        
+
         questionListOne.add("  The perimeter of a circle is also known as?  ");
         answerListOne.get(0).add("perimeter");
         answerListOne.get(1).add("none");
         answerListOne.get(2).add("radius");
         answerListOne.get(3).add("circumference");
         correctAnswerListOne.add("circumference");
-        
+
         questionListOne.add(" What does the square root of 144 equal?   ");
         answerListOne.get(0).add("12");
         answerListOne.get(1).add("144");
         answerListOne.get(2).add("13");
         answerListOne.get(3).add("14");
         correctAnswerListOne.add("12");
-        
+
         questionListOne.add("  How many sides does a nonagon have?  ");
         answerListOne.get(0).add("9");
         answerListOne.get(1).add("6");
         answerListOne.get(2).add("7");
         answerListOne.get(3).add("8");
         correctAnswerListOne.add("9");
-        
+
         questionListOne.add("  What is the bigger number, a googol or a billion?");
         answerListOne.get(0).add("googol");
         answerListOne.get(1).add("none");
         answerListOne.get(2).add("billion");
         answerListOne.get(3).add("number");
         correctAnswerListOne.add("googol");
-        
+
         questionListOne.add("  The middle value of an ordered set of values is");
         answerListOne.get(0).add("median");
         answerListOne.get(1).add("mean");
         answerListOne.get(2).add("mode");
         answerListOne.get(3).add("none");
         correctAnswerListOne.add("median");
-        
+
         questionListOne.add("  The average of first 50 natural numbers is   ");
         answerListOne.get(0).add("24");
         answerListOne.get(1).add("25");
         answerListOne.get(2).add("23");
         answerListOne.get(3).add("26");
         correctAnswerListOne.add("25");
-        
+
         questionListOne.add("   What is 1004 divided by 2? ");
         answerListOne.get(0).add("52");
         answerListOne.get(1).add("502");
         answerListOne.get(2).add("5002");
         answerListOne.get(3).add("520");
         correctAnswerListOne.add("502");
-        
+
         questionListOne.add("  A clock strikes once at 1 o’clock, twice at 2 o’clock, thrice at 3 o’clock and so on. How many times will it strike in 24 hours?  ");
         answerListOne.get(0).add("78");
         answerListOne.get(1).add("156");
         answerListOne.get(2).add("136");
         answerListOne.get(3).add("0");
         correctAnswerListOne.add("156");
-        
+
         questionListOne.add("  The simplest form of 1.5 : 2.5 is ");
         answerListOne.get(0).add("6:10");
         answerListOne.get(1).add("3:5");
         answerListOne.get(2).add("7:8");
         answerListOne.get(3).add("none");
         correctAnswerListOne.add("3:5");
-        
-
-        
 
         mathLevelOne.add(questionListOne);
         mathLevelOne.add(answerListOne);
         mathLevelOne.add(correctAnswerListOne);
 
-        for (int i = 0; i < 5; i++) {
+    }
+
+    public ArrayList<ArrayList> getMathLevelGen(int genSize) {
+
+        for (int i = 0; i < genSize; i++) {
             int randIndex = rand.nextInt(questionListOne.size());
             questionListGen.add(questionListOne.get(randIndex));
             answerListGen.get(0).add(answerListOne.get(0).get(randIndex));
@@ -212,11 +209,6 @@ public class MathModel {
         mathLevelGen.add(answerListGen);
         mathLevelGen.add(correctAnswerListGen);
 
-        //     for(int i = 0; i < 5; i++){
-        //   mathLevelGen.add(mathLevelOne.get(rand.nextInt(4) + 1));
-    }
-
-    public ArrayList<ArrayList> getMathLevelGen() {
         return mathLevelGen;
     }
 

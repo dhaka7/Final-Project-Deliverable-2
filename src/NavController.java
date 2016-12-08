@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
@@ -51,7 +52,6 @@ public class NavController {
         m_view.addPlayGameButtonListener(new PlayGameButtonListener());
         g_view.addTestButtonListener(new NextButtonListener());
         n_view.addHighScoreButtonListener(new HighScoreButtonListener());
-        congrats_view.addCongratsButtonListener(new MainButtonListener());
     }
 
     class OptionsButtonListener implements ActionListener {
@@ -110,6 +110,7 @@ public class NavController {
 
         public void actionPerformed(ActionEvent ae) {
             o_view.getSettingSaveState().setText("Saved");
+            o_view.getSettingSaveState().setForeground(Color.GREEN);
             m_view.getDifficulty().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
             m_view.getUserName().setText("Username: " + o_view.getUserName().getText());
             m_view.getSubject().setText("Subect: " + o_view.getSubjectList().getSelectedItem());
@@ -117,6 +118,8 @@ public class NavController {
             o_view.getDifficultyLabel().setText("Difficulty: " + String.valueOf(o_view.getDifficulty().getValue()));
             o_view.getSubjectSaveState().setText("Subect: " + o_view.getSubjectList().getSelectedItem());
             m_view.getPlayGame().setText("Play Game!");
+            m_view.getPlayGame().setBackground(Color.GREEN);
+            o_view.getSaveSetting().setBackground(Color.GREEN);
         }
     }
 
@@ -124,10 +127,12 @@ public class NavController {
 
         public void actionPerformed(ActionEvent ae) {
             if ((g_view.getTotalQuestionNumber() + 2) > ((gameCounter + 2) / 2)) {
-               if (gameCounter % 2 != 0) {
-                    g_view.setAnswer(g_view.getCurrentQuestionNumber());
+                if (gameCounter % 2 != 0) {
+                    g_view.setAnswer(g_view.getCurrentQuestionNumber(), g_view.getAnswer(g_view.getCurrentQuestionNumber()).equalsIgnoreCase(g_view.getUserAnswer().getText()));
+                    g_view.getCorrectAnswerLabel().setForeground(Color.RED);
                     if (g_view.getAnswer(g_view.getCurrentQuestionNumber()).equalsIgnoreCase(g_view.getUserAnswer().getText())) {
                         userScore++;
+                        g_view.getCorrectAnswerLabel().setForeground(Color.GREEN);
                     }
                     g_view.increaseCurrentQuestionNumber();
                 } else if (gameCounter % 2 == 0) {
@@ -137,16 +142,16 @@ public class NavController {
                     g_view.setQuestion(g_view.getCurrentQuestionNumber());
                 }
 
-                //End of game//
             } else {
+                //End of game//
                 congrats_view = new CongratsView(o_view.getUserName().getText(), userScore);
                 n_view.switchToCongrats(congrats_view);
-                // reset current g_view.
+                // Storing User Data
                 addNewScore(o_view.getUserName().getText(), userScore);
-
                 hs_view.updateHighScore();
                 saveHighScoreArray();
                 loadHighScoreArray();
+                // reset current g_view.
                 userScore = 0;
             }
 
@@ -167,6 +172,7 @@ public class NavController {
                 n_view.switchToPlayGamePanel(g_view);
             } else {
                 m_view.getPlayGame().setText("You Cannot Play This Game Until Your Settings Is Set");
+                m_view.getPlayGame().setBackground(Color.RED);
             }
         }
 

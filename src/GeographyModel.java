@@ -12,9 +12,8 @@ import java.util.Random;
  * @author Lapper
  */
 public class GeographyModel {
-    
-    Random rand = new Random();
 
+    Random rand = new Random();
 
     ArrayList<String> questionListOne = new ArrayList();
     ArrayList<String> answerOneListOne = new ArrayList();
@@ -23,7 +22,6 @@ public class GeographyModel {
     ArrayList<String> answerFourListOne = new ArrayList();
     ArrayList<String> correctAnswerListOne = new ArrayList();
 
-    
     ArrayList<String> questionListGen = new ArrayList();
     ArrayList<String> answerOneListGen = new ArrayList();
     ArrayList<String> answerTwoListGen = new ArrayList();
@@ -31,13 +29,11 @@ public class GeographyModel {
     ArrayList<String> answerFourListGen = new ArrayList();
     ArrayList<String> correctAnswerListGen = new ArrayList();
 
-    
     ArrayList<ArrayList> answerListOne = new ArrayList();
     ArrayList<ArrayList> answerListGen = new ArrayList();
 
-    
     ArrayList<ArrayList> geoLevelOne = new ArrayList();
-    ArrayList<ArrayList> geoLevelGen = new ArrayList();  
+    ArrayList<ArrayList> geoLevelGen = new ArrayList();
 
     GeographyModel() {
 
@@ -51,7 +47,6 @@ public class GeographyModel {
         answerListGen.add(answerThreeListGen);
         answerListGen.add(answerFourListGen);
 
-        
         questionListOne.add("  What is the name of the biggest ocean on Earth?");
         answerListOne.get(0).add("Pacific");
         answerListOne.get(1).add("Atlantic");
@@ -259,8 +254,11 @@ public class GeographyModel {
         geoLevelOne.add(answerListOne);
         geoLevelOne.add(correctAnswerListOne);
 
+    }
 
-        for (int i = 0; i < 5; i++) {
+    public ArrayList<ArrayList> getGeoLevelGen(int genSize) {
+
+        for (int i = 0; i < genSize; i++) {
             int randIndex = rand.nextInt(questionListOne.size());
             questionListGen.add(questionListOne.get(randIndex));
             answerListGen.get(0).add(answerListOne.get(0).get(randIndex));
@@ -273,10 +271,6 @@ public class GeographyModel {
         geoLevelGen.add(questionListGen);
         geoLevelGen.add(answerListGen);
         geoLevelGen.add(correctAnswerListGen);
-
-    }
-
-    public ArrayList<ArrayList> getGeoLevelGen() {
         return geoLevelGen;
     }
 

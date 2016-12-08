@@ -30,6 +30,7 @@ public class ScienceModel {
     ArrayList<ArrayList> sciLevelOne = new ArrayList();
     ArrayList<ArrayList> sciLevelGen = new ArrayList();
     
+Random rand = new Random();
 
     ScienceModel() {
 
@@ -174,9 +175,13 @@ public class ScienceModel {
         sciLevelOne.add(answerListOne);
         sciLevelOne.add(correctAnswerListOne);
 
-        Random rand = new Random();
+        
+    }
 
-        for (int i = 0; i < 5; i++) {
+    public ArrayList<ArrayList> getSciLevelGen(int genSize) {
+        
+        
+        for (int i = 0; i < genSize; i++) {
             int randIndex = rand.nextInt(questionListOne.size());
             questionListGen.add(questionListOne.get(randIndex));
             answerListGen.get(0).add(answerListOne.get(0).get(randIndex));
@@ -190,9 +195,6 @@ public class ScienceModel {
         sciLevelGen.add(answerListGen);
         sciLevelGen.add(correctAnswerListGen);
 
-    }
-
-    public ArrayList<ArrayList> getSciLevelGen() {
         return sciLevelGen;
     }
 

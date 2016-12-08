@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -23,6 +24,10 @@ public class MainView extends JPanel {
         textField = new JLabel(" Please, Set Your Settings ");
         userName = new JLabel(" Username Not Set! ");
         playGame = new JButton(" Play Game! ");
+        subject.setForeground(Color.RED);
+        difficulty.setForeground(Color.RED);
+        textField.setForeground(Color.RED);
+        userName.setForeground(Color.RED);
         add(textField);
         add(difficulty);
         add(userName);

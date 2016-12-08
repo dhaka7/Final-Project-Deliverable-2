@@ -1,10 +1,12 @@
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 /*
@@ -20,7 +22,7 @@ public class GameView extends JPanel {
 
     JLabel label;
     JButton next;
-    JLabel questionLabel;
+    JTextArea questionLabel;
     JLabel answerOneLabel;
     JLabel answerTwoLabel;
     JLabel answerThreeLabel;
@@ -53,46 +55,45 @@ public class GameView extends JPanel {
 
         if (subject.equalsIgnoreCase("math")) {
             if (difficulty == 1) {
-                generateQuestion(math_model.getMathLevelGen());
+                generateQuestion(math_model.getMathLevelGen(3));
             } else if (difficulty == 2) {
-                generateQuestion(math_model.getMathLevelGen());
+                generateQuestion(math_model.getMathLevelGen(5));
             } else {
-                generateQuestion(math_model.getMathLevelGen());
+                generateQuestion(math_model.getMathLevelGen(8));
             }
         } else if (subject.equalsIgnoreCase("geography")) {
             if (difficulty == 1) {
-                generateQuestion(geo_model.getGeoLevelGen());
+                generateQuestion(geo_model.getGeoLevelGen(3));
             } else if (difficulty == 2) {
-                generateQuestion(geo_model.getGeoLevelGen());
+                generateQuestion(geo_model.getGeoLevelGen(5));
             } else {
-                generateQuestion(geo_model.getGeoLevelGen());
+                generateQuestion(geo_model.getGeoLevelGen(8));
             }
         } else if (subject.equalsIgnoreCase("history")) {
             if (difficulty == 1) {
-                generateQuestion(hist_model.getHistLevelGen());
+                generateQuestion(hist_model.getHistLevelGen(3));
             } else if (difficulty == 2) {
-                generateQuestion(hist_model.getHistLevelGen());
+                generateQuestion(hist_model.getHistLevelGen(5));
             } else {
-                generateQuestion(hist_model.getHistLevelGen());
+                generateQuestion(hist_model.getHistLevelGen(8));
             }
         } else if (subject.equalsIgnoreCase("science")) {
             if (difficulty == 1) {
-                generateQuestion(sci_model.getSciLevelGen());
+                generateQuestion(sci_model.getSciLevelGen(3));
             } else if (difficulty == 2) {
-                generateQuestion(sci_model.getSciLevelGen());
+                generateQuestion(sci_model.getSciLevelGen(5));
             } else {
-                generateQuestion(sci_model.getSciLevelGen());
+                generateQuestion(sci_model.getSciLevelGen(8));
             }
         } else {
             game_model = new GameModel();
         }
-        
-        
-        
+
         setLayout(grid);
         label = new JLabel("    Press Start to Play! ");
         next = new JButton("Start");
-        questionLabel = new JLabel();
+        
+        questionLabel = new JTextArea();
         answerOneLabel = new JLabel();
         answerTwoLabel = new JLabel();
         answerThreeLabel = new JLabel();
@@ -101,6 +102,16 @@ public class GameView extends JPanel {
         userAnswer = new JTextField();
         correctAnswerLabel = new JLabel();
 
+        questionLabel.setForeground(Color.BLUE);
+        userAnswer.setForeground(Color.BLACK);
+        answerOneLabel.setForeground(Color.RED);
+        answerTwoLabel.setForeground(Color.RED);
+        answerThreeLabel.setForeground(Color.RED);
+        answerFourLabel.setForeground(Color.RED);
+        
+        questionLabel.setLineWrap(true);
+        questionLabel.setWrapStyleWord(true);
+        
         add(label);
         add(questionLabel);
         add(answerOneLabel);
@@ -172,9 +183,16 @@ public class GameView extends JPanel {
         answerFourLabel.setText((String) answerList.get(3).get(i));
     }
 
-    public void setAnswer(int questionNumber) {
+    public void setAnswer(int questionNumber, Boolean isCorrect) {
         int i = questionNumber - 1;
-        correctAnswerLabel.setText("The Correct Answer is " + correctAnswerList.get(i));
+        String isCorrectString = "Null";
+        if (isCorrect == true) {
+            isCorrectString = "Right! ";
+        } else {
+            isCorrectString = "Wrong ";
+        }
+
+        correctAnswerLabel.setText(isCorrectString + "The Correct Answer is " + correctAnswerList.get(i));
     }
 
     public String getAnswer(int questionNumber) {
