@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
@@ -9,7 +10,11 @@ public class CreditView extends JPanel {
 
     CreditView() {
         text = new JTextArea("Credits:\n\n * Dhaka Kharel \n\n * Oscar Sanjuan \n\n * Andy Lam ");
-        add(text);    
+        add(text); 
+        text.setForeground(Color.RED);
+        text.setBackground(Color.yellow);
+
+
         
         t = new Timer();
         t.startTimer();
