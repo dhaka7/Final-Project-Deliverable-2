@@ -13,6 +13,7 @@ import java.util.Random;
  */
 public class HistoryModel {
 
+    Random rand = new Random();
 
     ArrayList<String> questionListOne = new ArrayList();
     ArrayList<String> answerOneListOne = new ArrayList();
@@ -20,17 +21,6 @@ public class HistoryModel {
     ArrayList<String> answerThreeListOne = new ArrayList();
     ArrayList<String> answerFourListOne = new ArrayList();
     ArrayList<String> correctAnswerListOne = new ArrayList();
-    ArrayList<ArrayList> answerListOne = new ArrayList();
-
-
-    
-    ArrayList<ArrayList> histLevelOne = new ArrayList();
-    ArrayList<ArrayList> histLevelTwo = new ArrayList();
-    ArrayList<ArrayList> histLevelThree = new ArrayList();
-
-    
-    
-    
     
     ArrayList<String> questionListGen = new ArrayList();
     ArrayList<String> answerOneListGen = new ArrayList();
@@ -38,13 +28,17 @@ public class HistoryModel {
     ArrayList<String> answerThreeListGen = new ArrayList();
     ArrayList<String> answerFourListGen = new ArrayList();
     ArrayList<String> correctAnswerListGen = new ArrayList();
+
+ 
+    ArrayList<ArrayList> answerListOne = new ArrayList();
     ArrayList<ArrayList> answerListGen = new ArrayList();
-    ArrayList<ArrayList> histLevelGen = new ArrayList();
 
     
+    ArrayList<ArrayList> histLevelOne = new ArrayList();
+    ArrayList<ArrayList> histLevelGen = new ArrayList();
     
     
-    
+ 
      HistoryModel() {
 
         answerListOne.add(answerOneListOne);
@@ -53,14 +47,13 @@ public class HistoryModel {
         answerListOne.add(answerFourListOne);
 
         
-                answerListGen.add(answerOneListGen);
+        answerListGen.add(answerOneListGen);
         answerListGen.add(answerTwoListGen);
         answerListGen.add(answerThreeListGen);
         answerListGen.add(answerFourListGen);
 
         
 
-//level 1 difficulty History
         questionListOne.add("  How many state in the United States? ");
         answerListOne.get(0).add("50");
         answerListOne.get(1).add("51");
@@ -124,21 +117,13 @@ public class HistoryModel {
         answerListOne.get(3).add("none");
         correctAnswerListOne.add("Patrick");
         
-
-        
-
-//level 2 difficulty Hist
         questionListOne.add("  The first successful printing press was developed by");
         answerListOne.get(0).add("Johannes");
         answerListOne.get(1).add("Benjamin");
         answerListOne.get(2).add("no");
         answerListOne.get(3).add("skip");
         correctAnswerListOne.add("Johannes");
-        //      [[a],[a]]
-        //    [[b],[b]]
-        //  [[c],[c]]
-        //[[d],[d]]
-        //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
+        
 
         questionListOne.add("  World War I began in which year?");
         answerListOne.get(0).add("1914");
@@ -196,10 +181,6 @@ public class HistoryModel {
         answerListOne.get(3).add("Arkansas");
         correctAnswerListOne.add("Alaska");
 
-       
-
-// level 3 difficulty Hist
-
 
         questionListOne.add("  Which general famously stated 'I shall return'?");
         answerListOne.get(0).add("George");
@@ -255,8 +236,6 @@ public class HistoryModel {
         histLevelOne.add(correctAnswerListOne);
 
         
-        Random rand = new Random();
-
         for (int i = 0; i < 5; i++) {
             int randIndex = rand.nextInt(questionListOne.size());
             questionListGen.add(questionListOne.get(randIndex));
@@ -271,13 +250,7 @@ public class HistoryModel {
         histLevelGen.add(answerListGen);
         histLevelGen.add(correctAnswerListGen);
 
-    
         
-        
-    }
-
-    public ArrayList<ArrayList> getHistLevelOne() {
-        return histLevelOne;
     }
 
     public ArrayList<ArrayList> getHistLevelGen() {
@@ -288,23 +261,11 @@ public class HistoryModel {
         this.histLevelGen = histLevelGen;
     }
 
+    public ArrayList<ArrayList> getHistLevelOne() {
+        return histLevelOne;
+    }
+
     public void setHistLevelOne(ArrayList<ArrayList> histLevelOne) {
         this.histLevelOne = histLevelOne;
-    }
-
-    public ArrayList<ArrayList> getHistLevelTwo() {
-        return histLevelTwo;
-    }
-
-    public void setHistLevelTwo(ArrayList<ArrayList> histLevelTwo) {
-        this.histLevelTwo = histLevelTwo;
-    }
-
-    public ArrayList<ArrayList> getHistLevelThree() {
-        return histLevelThree;
-    }
-
-    public void setHistLevelThree(ArrayList<ArrayList> histLevelThree) {
-        this.histLevelThree = histLevelThree;
     }
 }
