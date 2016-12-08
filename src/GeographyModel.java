@@ -12,6 +12,9 @@ import java.util.Random;
  * @author Lapper
  */
 public class GeographyModel {
+    
+    Random rand = new Random();
+
 
     ArrayList<String> questionListOne = new ArrayList();
     ArrayList<String> answerOneListOne = new ArrayList();
@@ -19,17 +22,21 @@ public class GeographyModel {
     ArrayList<String> answerThreeListOne = new ArrayList();
     ArrayList<String> answerFourListOne = new ArrayList();
     ArrayList<String> correctAnswerListOne = new ArrayList();
-    ArrayList<ArrayList> answerListOne = new ArrayList();
 
-    ArrayList<ArrayList> geoLevelOne = new ArrayList();
-
+    
     ArrayList<String> questionListGen = new ArrayList();
     ArrayList<String> answerOneListGen = new ArrayList();
     ArrayList<String> answerTwoListGen = new ArrayList();
     ArrayList<String> answerThreeListGen = new ArrayList();
     ArrayList<String> answerFourListGen = new ArrayList();
     ArrayList<String> correctAnswerListGen = new ArrayList();
+
+    
+    ArrayList<ArrayList> answerListOne = new ArrayList();
     ArrayList<ArrayList> answerListGen = new ArrayList();
+
+    
+    ArrayList<ArrayList> geoLevelOne = new ArrayList();
     ArrayList<ArrayList> geoLevelGen = new ArrayList();
 
     GeographyModel() {
@@ -39,14 +46,12 @@ public class GeographyModel {
         answerListOne.add(answerThreeListOne);
         answerListOne.add(answerFourListOne);
 
-                answerListGen.add(answerOneListGen);
+        answerListGen.add(answerOneListGen);
         answerListGen.add(answerTwoListGen);
         answerListGen.add(answerThreeListGen);
         answerListGen.add(answerFourListGen);
 
         
-        
-//level 1 difficulty Geo
         questionListOne.add("  What is the name of the biggest ocean on Earth?");
         answerListOne.get(0).add("Pacific Ocean");
         answerListOne.get(1).add("Atlantic Ocean");
@@ -116,11 +121,6 @@ public class GeographyModel {
         answerListOne.get(2).add("India");
         answerListOne.get(3).add("Nepal");
         correctAnswerListOne.add("Asia");
-        //      [[a],[a]]
-        //    [[b],[b]]
-        //  [[c],[c]]
-        //[[d],[d]]
-        //[   [[a],[b],[c],[d]],   [[a],[b],[c],[d]] ,  [[a],[b],[c],[d]] ]
 
         questionListOne.add("   The terms 'breeze' and 'gale' help describe the speed of what?");
         answerListOne.get(0).add("wind");
@@ -259,7 +259,6 @@ public class GeographyModel {
         geoLevelOne.add(answerListOne);
         geoLevelOne.add(correctAnswerListOne);
 
-        Random rand = new Random();
 
         for (int i = 0; i < 5; i++) {
             int randIndex = rand.nextInt(questionListOne.size());
@@ -291,21 +290,5 @@ public class GeographyModel {
 
     public void setGeoLevelOne(ArrayList<ArrayList> geoLevelOne) {
         this.geoLevelOne = geoLevelOne;
-    }
-
-    public ArrayList<ArrayList> getGeoLevelTwo() {
-        return geoLevelOne;
-    }
-
-    public void setGeoLevelTwo(ArrayList<ArrayList> geoLevelTwo) {
-        this.geoLevelOne = geoLevelTwo;
-    }
-
-    public ArrayList<ArrayList> getGeoLevelThree() {
-        return geoLevelOne;
-    }
-
-    public void setGeoLevelThree(ArrayList<ArrayList> geoLevelThree) {
-        this.geoLevelOne = geoLevelThree;
     }
 }
