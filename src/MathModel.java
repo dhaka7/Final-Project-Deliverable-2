@@ -101,11 +101,11 @@ public class MathModel {
         correctAnswerListOne.add("3075");
 
         questionListOne.add("  There are 175 cards in a deck and four players. How many cards does each person get?");
-        answerListOne.get(0).add("45 with 2 cards left");
-        answerListOne.get(1).add("44 with 5 cards left");
-        answerListOne.get(2).add("43 with 3 cards left");
-        answerListOne.get(3).add("43 with 2 cards left");
-        correctAnswerListOne.add("43 with 3 cards left");
+        answerListOne.get(0).add("45");
+        answerListOne.get(1).add("44");
+        answerListOne.get(2).add("48");
+        answerListOne.get(3).add("43");
+        correctAnswerListOne.add("43");
 
         questionListOne.add("  Two friends buy a video game that costs $22 and recieve $6.50 as change?");
         answerListOne.get(0).add("$15.50");
@@ -130,7 +130,7 @@ public class MathModel {
         
         questionListOne.add("  The perimeter of a perimeter is also known as what  ");
         answerListOne.get(0).add("perimeter");
-        answerListOne.get(1).add("SKIP ");
+        answerListOne.get(1).add("SKIP");
         answerListOne.get(2).add("perimeter");
         answerListOne.get(3).add("NO");
         correctAnswerListOne.add("circumference");

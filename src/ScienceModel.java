@@ -93,11 +93,11 @@ public class ScienceModel {
         correctAnswerListOne.add("Helium");
 
         questionListOne.add(" Heavy water is");
-        answerListOne.get(0).add("deuterium oxide");
+        answerListOne.get(0).add("deuterium");
         answerListOne.get(1).add("PH7");
-        answerListOne.get(2).add("rain water");
-        answerListOne.get(3).add("tritium oxide");
-        correctAnswerListOne.add("deuterium oxide");
+        answerListOne.get(2).add("rain");
+        answerListOne.get(3).add("tritium");
+        correctAnswerListOne.add("deuterium");
 
         questionListOne.add(" The element common to all acids is");
         answerListOne.get(0).add("hydrogen");

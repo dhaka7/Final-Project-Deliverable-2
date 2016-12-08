@@ -58,7 +58,7 @@ public class HistoryModel {
         answerListOne.get(0).add("50");
         answerListOne.get(1).add("51");
         answerListOne.get(2).add("52");
-        answerListOne.get(3).add("I dont know");
+        answerListOne.get(3).add("none");
         correctAnswerListOne.add("50");
 
         questionListOne.add(" World War II began in which year?");
@@ -185,7 +185,7 @@ public class HistoryModel {
         questionListOne.add("  Which general famously stated 'I shall return'?");
         answerListOne.get(0).add("George");
         answerListOne.get(1).add("Bull");
-        answerListOne.get(2).add("Douglas ");
+        answerListOne.get(2).add("Douglas");
         answerListOne.get(3).add("Omar");
         correctAnswerListOne.add("Douglas");
 
