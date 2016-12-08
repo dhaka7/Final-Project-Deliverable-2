@@ -40,7 +40,7 @@ public class HighScoreView extends JPanel {
     ArrayList<String> nameArray = new ArrayList();
     ArrayList<Integer> scoreArray = new ArrayList();
     ArrayList<ArrayList> nameAndScoreArray = new ArrayList();
-    
+
     HighScoreView() {
         setLayout(new FlowLayout());
         p1Name = "N/A";
@@ -64,8 +64,6 @@ public class HighScoreView extends JPanel {
         p9Score = 0;
         p10Score = 0;
 
-        
-        
         highScore = new JTextArea("Top 10 Scores\n 1. " + p1Name + "   " + p1Score + "\n 2. " + p2Name + "   " + p2Score + "\n 3. "
                 + p3Name + "   " + p3Score + "\n 4. " + p4Name + "   " + p4Score + "\n 4. " + p4Name + "   " + p4Score + "\n 5. " + p5Name
                 + "   " + p5Score + "\n 6. " + p6Name + "   " + p6Score + "\n 7. " + p7Name + "   " + p7Score + "\n 8. " + p8Name + "   " + p8Score
@@ -264,7 +262,6 @@ public class HighScoreView extends JPanel {
                 + "\n 9. " + p9Name + "   " + p9Score + "\n 10. " + p10Name + "   " + p10Score);
     }
 
-
     public ArrayList<Integer> getScoreArray() {
         return scoreArray;
     }
@@ -273,6 +270,4 @@ public class HighScoreView extends JPanel {
         this.scoreArray = scoreArray;
     }
 
-
-    
 }

@@ -5,10 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class NavController {
 
@@ -127,32 +124,23 @@ public class NavController {
 
         public void actionPerformed(ActionEvent ae) {
             if ((g_view.getTotalQuestionNumber() + 2) > ((gameCounter + 2) / 2)) {
-                System.out.println("if 1");
-                System.out.println("First If total question and game counter" + g_view.getTotalQuestionNumber() + " " + gameCounter);
-                if (gameCounter % 2 != 0) {
+               if (gameCounter % 2 != 0) {
                     g_view.setAnswer(g_view.getCurrentQuestionNumber());
                     if (g_view.getAnswer(g_view.getCurrentQuestionNumber()).equalsIgnoreCase(g_view.getUserAnswer().getText())) {
                         userScore++;
                     }
-                    System.out.println("current question number for answer" + g_view.getCurrentQuestionNumber());
                     g_view.increaseCurrentQuestionNumber();
-                    System.out.println("Counter " + gameCounter);
-                    System.out.println("total q " + g_view.getTotalQuestionNumber());
                 } else if (gameCounter % 2 == 0) {
                     g_view.getNext().setText("Next");
                     g_view.getLabel().setText("Question " + g_view.getCurrentQuestionNumber());
                     g_view.getCorrectAnswerLabel().setText("");
                     g_view.setQuestion(g_view.getCurrentQuestionNumber());
-                    System.out.println(g_view.getCurrentQuestionNumber());
-                    System.out.println("else 2");
-                    System.out.println("Counter " + gameCounter);
                 }
 
                 //End of game//
             } else {
                 congrats_view = new CongratsView(o_view.getUserName().getText(), userScore);
                 n_view.switchToCongrats(congrats_view);
-                System.out.println("end of game");
                 // reset current g_view.
                 addNewScore(o_view.getUserName().getText(), userScore);
 
@@ -170,13 +158,10 @@ public class NavController {
 
         public void actionPerformed(ActionEvent ae) {
             String subject = (String) o_view.getSubjectList().getSelectedItem();
-            System.out.println(o_view.getSubjectList().getSelectedItem());
             int difficulty = o_view.getDifficulty().getValue();
-            System.out.println(o_view.getDifficulty().getValue());
             if (o_view.getSettingSaveState().getText().equalsIgnoreCase("Saved")) {
                 g_view = new GameView(subject, difficulty);
                 g_view.addTestButtonListener(new NextButtonListener());
-                System.out.println(hs_view.getScoreArray());
                 gameCounter = 2;
 
                 n_view.switchToPlayGamePanel(g_view);
@@ -313,8 +298,6 @@ public class NavController {
     public void saveHighScoreArray() {
         try {
             FileWriter fout = new FileWriter("src/Highscores.txt");
-            System.out.println("hs save" + hs_view.getNameAndScoreArray().get(0));
-            System.out.println("hs save" + hs_view.getNameAndScoreArray().get(1));
             for (int i = 0; i < 10; i++) {
                 fout.write(hs_view.getNameAndScoreArray().get(0).get(i) + "\n");
                 fout.write(hs_view.getNameAndScoreArray().get(1).get(i) + "\n");
@@ -353,9 +336,6 @@ public class NavController {
         } while (sorted == false);
         hs_view.setNameArray(hs_view.getNameAndScoreArray().get(0));
         hs_view.setScoreArray(hs_view.getNameAndScoreArray().get(1));
-        System.out.println("new array  sorted" + hs_view.getNameAndScoreArray());
-        System.out.println(hs_view.getNameArray());
-        System.out.println(hs_view.getScoreArray());
     }
 
 }

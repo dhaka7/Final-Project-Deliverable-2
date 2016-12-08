@@ -1,6 +1,5 @@
 
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -42,21 +41,13 @@ public class OptionsView extends JPanel {
         difficulty.setPaintLabels(true);
         difficulty.setPaintTicks(true);
         
-
-        
-      //  subject = new JTextField(" Please Choose Math, Geography, History or Science ");
-        
-        
         EnterDiff = new JLabel(" Enter Difficulty: ");
         saveSetting = new JButton(" Save Settings ");
-        // It may be useful to have a Save & Return button
-        //retButton = new JButton("Save and Return");
         settingSaveState = new JLabel(" Settings Not Saved ");
         difficultyLabel = new JLabel(" Difficulty level Not Set! ");
         userNameLabel = new JLabel(" Username Not Set! ");
         subjectSaveState = new JLabel(" Subject Not Set! ");
         add(userName);
-        //add(subject);
         
         add(subjectList);
         add(EnterDiff);
@@ -66,8 +57,7 @@ public class OptionsView extends JPanel {
         add(settingSaveState);
         add(difficultyLabel);
         add(userNameLabel);
-        add(subjectSaveState);
-        //add(retButton);               
+        add(subjectSaveState);     
     }
 
     public JLabel getSubjectSaveState() {
@@ -77,14 +67,6 @@ public class OptionsView extends JPanel {
     public void setSubjectSaveState(JLabel subjectSaveState) {
         this.subjectSaveState = subjectSaveState;
     }
-
-//    public JTextField getSubject() {
-  //      return subject;
-    //}
-
-//    public void setSubject(JTextField subject) {
-  //      this.subject = subject;
-    //}
 
     public void addSaveButtonListener(ActionListener al) {
         this.saveSetting.addActionListener(al);

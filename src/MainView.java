@@ -4,7 +4,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 public class MainView extends JPanel {
 
@@ -17,13 +16,13 @@ public class MainView extends JPanel {
     JLabel subject;
 
     MainView() {
-        grid = new GridLayout(10,1);
+        grid = new GridLayout(10, 1);
         setLayout(grid);
         subject = new JLabel(" Subject Not Set! ");
         difficulty = new JLabel(" Difficulty Level Not Set! ");
         textField = new JLabel(" Please, Set Your Settings ");
         userName = new JLabel(" Username Not Set! ");
-        playGame = new JButton (" Play Game! ");
+        playGame = new JButton(" Play Game! ");
         add(textField);
         add(difficulty);
         add(userName);
@@ -70,8 +69,8 @@ public class MainView extends JPanel {
     public void setUserName(JLabel userName) {
         this.userName = userName;
     }
-    
-     public void addPlayGameButtonListener(ActionListener al) {
+
+    public void addPlayGameButtonListener(ActionListener al) {
         this.playGame.addActionListener(al);
     }
 }

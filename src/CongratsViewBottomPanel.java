@@ -1,5 +1,4 @@
 
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -8,27 +7,23 @@ import javax.swing.JPanel;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Lapper
  */
-public class CongratsViewBottomPanel extends JPanel{
-    
+public class CongratsViewBottomPanel extends JPanel {
+
     JLabel userScoreLabel;
     JLabel userNameLabel;
-    
-    public CongratsViewBottomPanel(String name, int score) {
-        super();
-                userNameLabel = new JLabel(" Congrats " + name +".");
-        userScoreLabel = new JLabel("Your Total Score Was " + String.valueOf(score)+ ".");
 
+    public CongratsViewBottomPanel(String name, int score) {
         
+        super();
+        userNameLabel = new JLabel(" Congrats " + name + ".");
+        userScoreLabel = new JLabel("Your Total Score Was " + String.valueOf(score) + ".");
+
         add(userScoreLabel);
         add(userNameLabel);
 
     }
 }
-
-    
-
