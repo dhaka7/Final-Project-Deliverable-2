@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.util.ArrayList;
 import javax.swing.JPanel;
@@ -16,6 +17,8 @@ import javax.swing.JTextArea;
 public class HighScoreView extends JPanel {
 
     JTextArea highScore;
+    
+  
 
     String p1Name;
     String p2Name;
@@ -40,7 +43,8 @@ public class HighScoreView extends JPanel {
     ArrayList<String> nameArray = new ArrayList();
     ArrayList<Integer> scoreArray = new ArrayList();
     ArrayList<ArrayList> nameAndScoreArray = new ArrayList();
-
+    
+   
     HighScoreView() {
         setLayout(new FlowLayout());
         p1Name = "N/A";
@@ -69,6 +73,10 @@ public class HighScoreView extends JPanel {
                 + "   " + p5Score + "\n 6. " + p6Name + "   " + p6Score + "\n 7. " + p7Name + "   " + p7Score + "\n 8. " + p8Name + "   " + p8Score
                 + "\n 9. " + p9Name + "   " + p9Score + "\n 10. " + p10Name + "   " + p10Score);
         add(highScore);
+        
+    highScore.setForeground(Color.RED);
+    highScore.setBackground(Color.GREEN);
+
     }
 
     public String getP1Name() {
