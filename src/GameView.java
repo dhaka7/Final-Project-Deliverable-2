@@ -50,44 +50,45 @@ public class GameView extends JPanel {
         answerList.add(answerTwoList);
         answerList.add(answerThreeList);
         answerList.add(answerFourList);
-        
 
         if (subject.equalsIgnoreCase("math")) {
+            if (difficulty == 1) {
                 generateQuestion(math_model.getMathLevelGen());
-
-
-        } else if (subject.equalsIgnoreCase("geography")) {
-           // if (difficulty == 1) {
-                generateQuestion(geo_model.getGeoLevelGen());
-            //}
-            
-            //else if (difficulty == 2) {
-              //  generateQuestion(geo_model.getGeoLevelTwo());
-           // } else {
-            //    generateQuestion(geo_model.getGeoLevelThree());
-            //}
-
-        } else if (subject.equalsIgnoreCase("history")) {
-       //     if (difficulty == 1) {
-                generateQuestion(hist_model.getHistLevelGen());
-         //   } else if (difficulty == 2) {
-           //     generateQuestion(hist_model.getHistLevelTwo());
-            //} else {
-             //   generateQuestion(hist_model.getHistLevelThree());
+            } else if (difficulty == 2) {
+                generateQuestion(math_model.getMathLevelGen());
+            } else {
+                generateQuestion(math_model.getMathLevelGen());
             }
-            
-         else if (subject.equalsIgnoreCase("science")) {
-       //     if(difficulty == 1) {
+        } else if (subject.equalsIgnoreCase("geography")) {
+            if (difficulty == 1) {
+                generateQuestion(geo_model.getGeoLevelGen());
+            } else if (difficulty == 2) {
+                generateQuestion(geo_model.getGeoLevelGen());
+            } else {
+                generateQuestion(geo_model.getGeoLevelGen());
+            }
+        } else if (subject.equalsIgnoreCase("history")) {
+            if (difficulty == 1) {
+                generateQuestion(hist_model.getHistLevelGen());
+            } else if (difficulty == 2) {
+                generateQuestion(hist_model.getHistLevelGen());
+            } else {
+                generateQuestion(hist_model.getHistLevelGen());
+            }
+        } else if (subject.equalsIgnoreCase("science")) {
+            if (difficulty == 1) {
                 generateQuestion(sci_model.getSciLevelGen());
-         //   } else if(difficulty == 2) {
-           //     generateQuestion(sci_model.getSciLevelTwo());
-           // } else {
-             //   generateQuestion(sci_model.getSciLevelThree());
-          //  }
-            
+            } else if (difficulty == 2) {
+                generateQuestion(sci_model.getSciLevelGen());
+            } else {
+                generateQuestion(sci_model.getSciLevelGen());
+            }
         } else {
             game_model = new GameModel();
         }
+        
+        
+        
         setLayout(grid);
         label = new JLabel("    Press Start to Play! ");
         next = new JButton("Start");
@@ -175,8 +176,7 @@ public class GameView extends JPanel {
         int i = questionNumber - 1;
         correctAnswerLabel.setText("The Correct Answer is " + correctAnswerList.get(i));
     }
-    
-    
+
     public String getAnswer(int questionNumber) {
         int i = questionNumber - 1;
         return correctAnswerList.get(i);
@@ -210,5 +210,4 @@ public class GameView extends JPanel {
     public void setUserAnswer(JTextField userAnswer) {
         this.userAnswer = userAnswer;
     }
-
 }
