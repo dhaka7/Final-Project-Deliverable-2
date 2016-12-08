@@ -94,10 +94,10 @@ public class GeographyModel {
         answerListOne.get(3).add("2");
         correctAnswerListOne.add("5");
 
-        questionListOne.add("  which is the longest river in the U.S.");
+        questionListOne.add("  Which is the longest river in the U.S.");
         answerListOne.get(0).add("Missouri");
         answerListOne.get(1).add("Yukon");
-        answerListOne.get(2).add("colorado");
+        answerListOne.get(2).add("Colorado");
         answerListOne.get(3).add("Indian");
         correctAnswerListOne.add("Missouri");
 
@@ -105,8 +105,8 @@ public class GeographyModel {
         answerListOne.get(0).add("Madrid");
         answerListOne.get(1).add("Barcelona");
         answerListOne.get(2).add("pargue");
-        answerListOne.get(3).add("moscow");
-        correctAnswerListOne.add("moscow");
+        answerListOne.get(3).add("Moscow");
+        correctAnswerListOne.add("Moscow");
 
         questionListOne.add("   The location distance north or south of the equator is");
         answerListOne.get(0).add("longitude");
@@ -143,11 +143,11 @@ public class GeographyModel {
         answerListOne.get(3).add("7");
         correctAnswerListOne.add("4");
 
-        questionListOne.add("  which of the following countries do not border France");
+        questionListOne.add("  Which of the following countries do not border France");
         answerListOne.get(0).add("Germany");
         answerListOne.get(1).add("Italy");
         answerListOne.get(2).add("Netherland");
-        answerListOne.get(3).add("spain");
+        answerListOne.get(3).add("Spain");
         correctAnswerListOne.add("Netherland");
 
         questionListOne.add("  What is the imaginary line called that connects the north and south pole?");
@@ -181,7 +181,7 @@ public class GeographyModel {
         questionListOne.add(" What is this colored area of land called? ");
         answerListOne.get(0).add("MiddleEast");
         answerListOne.get(1).add("Arbian");
-        answerListOne.get(2).add("berian");
+        answerListOne.get(2).add("Berian");
         answerListOne.get(3).add("Saharan");
         correctAnswerListOne.add("Arbian");
 
@@ -196,14 +196,14 @@ public class GeographyModel {
         answerListOne.get(0).add("English-Spanish");
         answerListOne.get(1).add("English-Hindi");
         answerListOne.get(2).add("English");
-        answerListOne.get(3).add("(D)English-Madrin Chinese");
+        answerListOne.get(3).add("English-Madrin Chinese");
         correctAnswerListOne.add("English-Madrin Chinese");
 
         questionListOne.add(" The capital of Fiji is_______ ");
         answerListOne.get(0).add("Suva");
-        answerListOne.get(1).add("lova");
-        answerListOne.get(2).add("kova");
-        answerListOne.get(3).add("mova");
+        answerListOne.get(1).add("Lova");
+        answerListOne.get(2).add("Kova");
+        answerListOne.get(3).add("Mova");
         correctAnswerListOne.add("Suva");
 
         questionListOne.add(" Which is the largest body of water? ");
@@ -216,9 +216,9 @@ public class GeographyModel {
         questionListOne.add(" Which is the smallest country, measured by total land area? ");
         answerListOne.get(0).add("Maldives");
         answerListOne.get(1).add("Monaco");
-        answerListOne.get(2).add("vatican");
-        answerListOne.get(3).add("city");
-        correctAnswerListOne.add("vatican");
+        answerListOne.get(2).add("Vatican");
+        answerListOne.get(3).add("Gettysburg");
+        correctAnswerListOne.add("Vatican");
 
         questionListOne.add(" What is the approximate size of Earth's equator? ");
         answerListOne.get(0).add("40,000km");
@@ -235,7 +235,7 @@ public class GeographyModel {
         correctAnswerListOne.add("area");
 
         questionListOne.add(" The great Victoria Desert is located in ");
-        answerListOne.get(0).add("canada");
+        answerListOne.get(0).add("Canada");
         answerListOne.get(1).add("USA");
         answerListOne.get(2).add("Australia");
         answerListOne.get(3).add("America");

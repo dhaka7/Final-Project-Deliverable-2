@@ -58,7 +58,7 @@ public class HistoryModel {
         answerListOne.get(0).add("50");
         answerListOne.get(1).add("51");
         answerListOne.get(2).add("52");
-        answerListOne.get(3).add("none");
+        answerListOne.get(3).add("0");
         correctAnswerListOne.add("50");
 
         questionListOne.add(" World War II began in which year?");
@@ -86,7 +86,7 @@ public class HistoryModel {
         answerListOne.get(0).add("Buddhists");
         answerListOne.get(1).add("Hindus");
         answerListOne.get(2).add("Jains");
-        answerListOne.get(3).add("none");
+        answerListOne.get(3).add("None");
         correctAnswerListOne.add("Buddhists");
         
         questionListOne.add("   The trident-shaped symbol of Buddhism does not represent ");
@@ -114,14 +114,14 @@ public class HistoryModel {
         answerListOne.get(0).add("Patrick");
         answerListOne.get(1).add("Adams");
         answerListOne.get(2).add("Samuel");
-        answerListOne.get(3).add("none");
+        answerListOne.get(3).add("None");
         correctAnswerListOne.add("Patrick");
         
         questionListOne.add("  The first successful printing press was developed by");
         answerListOne.get(0).add("Johannes");
         answerListOne.get(1).add("Benjamin");
-        answerListOne.get(2).add("none");
-        answerListOne.get(3).add("obama");
+        answerListOne.get(2).add("None");
+        answerListOne.get(3).add("Obama");
         correctAnswerListOne.add("Johannes");
         
 
@@ -150,7 +150,7 @@ public class HistoryModel {
         answerListOne.get(0).add("Founded");
         answerListOne.get(1).add("Granted");
         answerListOne.get(2).add("Settled");
-        answerListOne.get(3).add("Asmitted");
+        answerListOne.get(3).add("Admitted");
         correctAnswerListOne.add("Admitted");
         
         questionListOne.add("   On what peninsula in Washington would you find the Olympic Mountains? ");
@@ -203,12 +203,12 @@ public class HistoryModel {
         answerListOne.get(3).add("England");
         correctAnswerListOne.add("England");
         
-        questionListOne.add(" n which city would you find the Statue of Liberty?   ");
+        questionListOne.add(" In which city would you find the Statue of Liberty?   ");
         answerListOne.get(0).add("Philadelphia");
-        answerListOne.get(1).add("newyork");
+        answerListOne.get(1).add("NewYork");
         answerListOne.get(2).add("Francisco");
-        answerListOne.get(3).add("california");
-        correctAnswerListOne.add("newyork");
+        answerListOne.get(3).add("California");
+        correctAnswerListOne.add("NewYork");
         
         questionListOne.add("  Through which national park does the Continental Divide not pass?  ");
         answerListOne.get(0).add("Yellowstone");

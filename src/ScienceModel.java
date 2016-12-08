@@ -93,17 +93,17 @@ public class ScienceModel {
         correctAnswerListOne.add("Helium");
 
         questionListOne.add(" Heavy water is");
-        answerListOne.get(0).add("deuterium");
+        answerListOne.get(0).add("Deuterium");
         answerListOne.get(1).add("PH7");
-        answerListOne.get(2).add("rain");
-        answerListOne.get(3).add("tritium");
-        correctAnswerListOne.add("deuterium");
+        answerListOne.get(2).add("Rain");
+        answerListOne.get(3).add("Tritium");
+        correctAnswerListOne.add("Deuterium");
 
         questionListOne.add(" The element common to all acids is");
-        answerListOne.get(0).add("hydrogen");
-        answerListOne.get(1).add("carbon");
-        answerListOne.get(2).add("sulphur");
-        answerListOne.get(3).add("acid");
+        answerListOne.get(0).add("Hydrogen");
+        answerListOne.get(1).add("Carbon");
+        answerListOne.get(2).add("Sulphur");
+        answerListOne.get(3).add("Radius");
         correctAnswerListOne.add("Radius");
 
         questionListOne.add(" When was the first plastic made of artificial materials patented? ");
@@ -114,11 +114,11 @@ public class ScienceModel {
         correctAnswerListOne.add("1909");
 
         questionListOne.add("Which of the following technological developments came first? ");
-        answerListOne.get(0).add("telegraph");
-        answerListOne.get(1).add("telescope");
-        answerListOne.get(2).add("teletype");
-        answerListOne.get(3).add("telephone");
-        correctAnswerListOne.add("telescope");
+        answerListOne.get(0).add("Telegraph");
+        answerListOne.get(1).add("Telescope");
+        answerListOne.get(2).add("Teletype");
+        answerListOne.get(3).add("Telephone");
+        correctAnswerListOne.add("Telescope");
 
         questionListOne.add("Who invented the geodesic dome? ");
         answerListOne.get(0).add("Samuel");
@@ -128,11 +128,11 @@ public class ScienceModel {
         correctAnswerListOne.add("Fuller"); 
 
         questionListOne.add(" Moths are a member of what order?");
-        answerListOne.get(0).add("optica");
-        answerListOne.get(1).add("lepidoptera");
-        answerListOne.get(2).add("leprosy");
-        answerListOne.get(3).add("octagon");
-        correctAnswerListOne.add("lepidoptera");
+        answerListOne.get(0).add("Optica");
+        answerListOne.get(1).add("Lepidoptera");
+        answerListOne.get(2).add("Leprosy");
+        answerListOne.get(3).add("Octagon");
+        correctAnswerListOne.add("Lepidoptera");
 
         questionListOne.add(" A baby blue whale drinks this many liters of milk per day:");
         answerListOne.get(0).add("10");
@@ -142,25 +142,25 @@ public class ScienceModel {
         correctAnswerListOne.add("190");
 
         questionListOne.add("For what is the Jurassic period named? ");
-        answerListOne.get(0).add("soccer");
-        answerListOne.get(1).add("mountain");
-        answerListOne.get(2).add("kind");
-        answerListOne.get(3).add("word");
-        correctAnswerListOne.add("mountain");
+        answerListOne.get(0).add("Soccer");
+        answerListOne.get(1).add("Mountain");
+        answerListOne.get(2).add("Kind");
+        answerListOne.get(3).add("Word");
+        correctAnswerListOne.add("Mountain");
 
         questionListOne.add(" What is the biggest planet in our solar system?");
         answerListOne.get(0).add("Jupiter");
-        answerListOne.get(1).add("pluto");
-        answerListOne.get(2).add("mercury");
-        answerListOne.get(3).add("venus");
+        answerListOne.get(1).add("Pluto");
+        answerListOne.get(2).add("Mercury");
+        answerListOne.get(3).add("Venus");
         correctAnswerListOne.add("Jupiter");
 
         questionListOne.add("What is the chemical symbol for the element oxygen ");
-        answerListOne.get(0).add("o");
-        answerListOne.get(1).add("z");
-        answerListOne.get(2).add("c");
-        answerListOne.get(3).add("q");
-        correctAnswerListOne.add("o");
+        answerListOne.get(0).add("O");
+        answerListOne.get(1).add("Z");
+        answerListOne.get(2).add("C");
+        answerListOne.get(3).add("Q");
+        correctAnswerListOne.add("O");
 
         questionListOne.add("Another name for a tidal wave is a? ");
         answerListOne.get(0).add("Tsunami");
