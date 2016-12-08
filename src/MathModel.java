@@ -50,7 +50,7 @@ public class MathModel {
         answerListGen.add(answerThreeListGen);
         answerListGen.add(answerFourListGen);
 
-        questionListOne.add("  Which number comes next: 42, 43, 44?");
+        questionListOne.add("  Which number comes next: 42, 43, 44, __?");
         answerListOne.get(0).add("45");
         answerListOne.get(1).add("47");
         answerListOne.get(2).add("20");
@@ -65,7 +65,7 @@ public class MathModel {
         correctAnswerListOne.add("5");
 
     
-        questionListOne.add("  Oscar had 17 pencils and gave 8 to Emily?");
+        questionListOne.add("  Oscar had 17 pencils and gave 8 to Emily. How many pencils does Oscar have now?");
         answerListOne.get(0).add("17");
         answerListOne.get(1).add("8");
         answerListOne.get(2).add("25");
@@ -149,14 +149,14 @@ public class MathModel {
         answerListOne.get(3).add("8");
         correctAnswerListOne.add("9");
         
-        questionListOne.add("  What is the bigger number, a googol or a billion?  ");
-        answerListOne.get(0).add(" ");
+        questionListOne.add("  What is the bigger number, a googol or a billion?");
+        answerListOne.get(0).add("googol");
         answerListOne.get(1).add("skip");
         answerListOne.get(2).add("billion");
         answerListOne.get(3).add("number");
         correctAnswerListOne.add("googol");
         
-        questionListOne.add("  the middle value of an ordered set of values is  ");
+        questionListOne.add("  The middle value of an ordered set of values is");
         answerListOne.get(0).add("median");
         answerListOne.get(1).add("mean");
         answerListOne.get(2).add("mode");
