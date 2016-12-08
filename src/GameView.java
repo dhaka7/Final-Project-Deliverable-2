@@ -93,8 +93,8 @@ public class GameView extends JPanel {
         label = new JLabel("    Press Start to Play! ");
         next = new JButton("Start");
         
-        questionLabel = new JTextArea();
-        answerOneLabel = new JLabel();
+        questionLabel = new JTextArea("ANY SPACES YOU ADD TO THE ANSWER WILL BE CONSIDER WRONG!");
+        answerOneLabel = new JLabel("Answers Are Not Cap Sensitive");
         answerTwoLabel = new JLabel();
         answerThreeLabel = new JLabel();
         answerFourLabel = new JLabel();
