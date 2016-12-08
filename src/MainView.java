@@ -28,6 +28,9 @@ public class MainView extends JPanel {
         difficulty.setForeground(Color.RED);
         textField.setForeground(Color.RED);
         userName.setForeground(Color.RED);
+        
+        setBackground(Color.YELLOW);
+        
         add(textField);
         add(difficulty);
         add(userName);

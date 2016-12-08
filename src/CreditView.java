@@ -10,16 +10,7 @@ public class CreditView extends JPanel {
 
     CreditView() {
         text = new JTextArea("Credits:\n\n * Dhaka Kharel \n\n * Oscar Sanjuan \n\n * Andy Lam ");
-        add(text); 
-        text.setForeground(Color.RED);
-        text.setBackground(Color.yellow);
-
-
-        
-        t = new Timer();
-        t.startTimer();
-        t.stopTimer();
-        
-        t.displayTime();
+        setBackground(Color.ORANGE);
+        add(text);    
     }
 }

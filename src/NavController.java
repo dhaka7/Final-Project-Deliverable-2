@@ -27,6 +27,8 @@ public class NavController {
     boolean isInputInt = true;
     CongratsView congrats_view;
     int userScore;
+    Timer time;
+    int totalTime;
 
     public NavController(NavModel n_model, NavView n_view) {
         this.n_model = n_model;
@@ -40,8 +42,9 @@ public class NavController {
         g_view = new GameView("null", 0);
         g_controller = new GameController(g_view);
         hs_view = new HighScoreView();
-        congrats_view = new CongratsView("NoName", 0);
-
+        congrats_view = new CongratsView("NoName", 0, 0);
+        time = new Timer();
+        
         loadHighScoreArray();
 
         n_view.addOptionsButtonListener(new OptionsButtonListener());
@@ -120,6 +123,8 @@ public class NavController {
             m_view.getPlayGame().setText("Play Game!");
             m_view.getPlayGame().setBackground(Color.GREEN);
             o_view.getSaveSetting().setBackground(Color.GREEN);
+            m_view.getTextField().setText("Settings Are Saved! PRESS PLAY GAME TO PLAY!");
+            m_view.getTextField().setForeground(Color.GREEN);
         }
     }
 
@@ -144,7 +149,10 @@ public class NavController {
 
             } else {
                 //End of game//
-                congrats_view = new CongratsView(o_view.getUserName().getText(), userScore);
+                userScore = userScore  * 2000000000;
+                //using integer divison to keep numbers rounded down
+                userScore = userScore / (int)(time.totalTime()/1000);
+                congrats_view = new CongratsView(o_view.getUserName().getText(), userScore, (int)time.totalTime()/1000 );
                 n_view.switchToCongrats(congrats_view);
                 // Storing User Data
                 addNewScore(o_view.getUserName().getText(), userScore);
@@ -153,6 +161,7 @@ public class NavController {
                 loadHighScoreArray();
                 // reset current g_view.
                 userScore = 0;
+                time.stopTimer();
             }
 
             gameCounter++;
@@ -168,7 +177,7 @@ public class NavController {
                 g_view = new GameView(subject, difficulty);
                 g_view.addTestButtonListener(new NextButtonListener());
                 gameCounter = 2;
-
+                time.startTimer();
                 n_view.switchToPlayGamePanel(g_view);
             } else {
                 m_view.getPlayGame().setText("You Cannot Play This Game Until Your Settings Is Set");

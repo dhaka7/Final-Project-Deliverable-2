@@ -51,11 +51,13 @@ public class OptionsView extends JPanel {
         settingSaveState.setForeground(Color.RED);
         saveSetting.setBackground(Color.RED);
         
-        
+        userName.setForeground(Color.WHITE);
         subjectList.setBackground(Color.yellow);
-        userName.setBackground(Color.CYAN);
-        enterDiff.setBackground(Color.MAGENTA);
+        userName.setBackground(Color.BLUE);
+        difficulty.setBackground(Color.CYAN);
         
+        
+        setBackground(Color.CYAN);
         
         add(userName);
         add(subjectList);

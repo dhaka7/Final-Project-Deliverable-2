@@ -15,15 +15,18 @@ public class CongratsViewBottomPanel extends JPanel {
 
     JLabel userScoreLabel;
     JLabel userNameLabel;
+    JLabel timeLabel;
 
-    public CongratsViewBottomPanel(String name, int score) {
+    public CongratsViewBottomPanel(String name, int score, int totalTime) {
         
         super();
         userNameLabel = new JLabel(" Congrats " + name + ".");
         userScoreLabel = new JLabel("Your Total Score Was " + String.valueOf(score) + ".");
-
+        timeLabel = new JLabel("Your Total Time Was " + String.valueOf(totalTime) + "s.");
+        
         add(userScoreLabel);
         add(userNameLabel);
+        add(timeLabel);
 
     }
 }

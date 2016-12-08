@@ -13,9 +13,9 @@ public class CongratsView extends JPanel {
     JLabel congratsPicture;
     CongratsViewBottomPanel congratsBottom;
     
-    CongratsView(String name, int score) {
+    CongratsView(String name, int score, int totalTime) {
         
-        congratsBottom = new CongratsViewBottomPanel(name, score);
+        congratsBottom = new CongratsViewBottomPanel(name, score, totalTime);
         picture = new JTextArea("Congradulations! \n\n * All questions on this level are finished!");
         congratsPicture = new JLabel(new ImageIcon("src/pkgfinal/Image/congrats.png"));
 
