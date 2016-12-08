@@ -44,7 +44,7 @@ public class NavController {
         hs_view = new HighScoreView();
         congrats_view = new CongratsView("NoName", 0, 0);
         time = new Timer();
-        
+
         loadHighScoreArray();
 
         n_view.addOptionsButtonListener(new OptionsButtonListener());
@@ -138,9 +138,13 @@ public class NavController {
                     if (g_view.getAnswer(g_view.getCurrentQuestionNumber()).equalsIgnoreCase(g_view.getUserAnswer().getText())) {
                         userScore++;
                         g_view.getCorrectAnswerLabel().setForeground(Color.GREEN);
+                        g_view.getNext().setBackground(Color.GREEN);
+                    } else {
+                        g_view.getNext().setBackground(Color.RED);
                     }
                     g_view.increaseCurrentQuestionNumber();
                 } else if (gameCounter % 2 == 0) {
+                    g_view.getNext().setBackground(Color.GRAY);
                     g_view.getNext().setText("Next");
                     g_view.getLabel().setText("Question " + g_view.getCurrentQuestionNumber());
                     g_view.getCorrectAnswerLabel().setText("");
@@ -149,10 +153,10 @@ public class NavController {
 
             } else {
                 //End of game//
-                userScore = userScore  * 2000000000;
+                userScore = userScore * 2000000000;
                 //using integer divison to keep numbers rounded down
-                userScore = userScore / (int)(time.totalTime()/1000);
-                congrats_view = new CongratsView(o_view.getUserName().getText(), userScore, (int)time.totalTime()/1000 );
+                userScore = userScore / (int) (time.totalTime() / 1000);
+                congrats_view = new CongratsView(o_view.getUserName().getText(), userScore, (int) time.totalTime() / 1000);
                 n_view.switchToCongrats(congrats_view);
                 // Storing User Data
                 addNewScore(o_view.getUserName().getText(), userScore);

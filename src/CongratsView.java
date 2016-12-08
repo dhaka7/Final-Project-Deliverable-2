@@ -1,5 +1,6 @@
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -20,7 +21,11 @@ public class CongratsView extends JPanel {
         congratsPicture = new JLabel(new ImageIcon("src/pkgfinal/Image/congrats.png"));
 
         setLayout(new BorderLayout());
-
+        
+        setBackground(Color.RED);
+        if(score > 10000){
+        setBackground(Color.GREEN);
+        }
         add(picture, BorderLayout.NORTH);
         add(congratsPicture, BorderLayout.CENTER);
         add(congratsBottom, BorderLayout.SOUTH);

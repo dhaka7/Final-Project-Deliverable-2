@@ -112,6 +112,8 @@ public class GameView extends JPanel {
         questionLabel.setLineWrap(true);
         questionLabel.setWrapStyleWord(true);
         
+        next.setBackground(Color.GRAY);
+        setBackground(Color.ORANGE);
         add(label);
         add(questionLabel);
         add(answerOneLabel);
